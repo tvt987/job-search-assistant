@@ -109,7 +109,7 @@ Theo `CLAUDE.md` Phase 4 và `APPLICANT_CONTEXT.md` §7.2.
 | **G-5** | **Sẵn sàng relocate** | `CLAUDE.md` cấm đoán | VietnamWorks, Glints |
 | **G-6** | **FPT là pháp nhân nào?** | CV chỉ ghi `FPT`. LinkedIn/các sàn có FPT Corporation, FPT Software, FPT Telecom, FPT IS, FPT Shop... Chọn sai = sai lịch sử việc làm. | Cả 6 |
 | **G-7** | **Layout-Store & Ecommerce-Admin là việc công ty hay cá nhân?** | Context gọi là "dự án thực tế & portfolio" nhưng không nói thuộc Con Cung hay tự làm. Ảnh hưởng field "Associated with" trên LinkedIn. | LinkedIn |
-| **G-8** | **Có bật chế độ công khai tìm việc không?** | Con Cung — nơi bạn **đang làm** — cũng tuyển dụng trên các sàn này. Bật `#OpenToWork` / `cho NTD tìm hồ sơ` là công khai việc bạn đang tìm việc. Đây là quyết định của bạn, không phải của tôi. | Cả 6 |
+| ~~**G-8**~~ | ~~Có bật chế độ công khai tìm việc không?~~ | ✅ **ĐÃ QUYẾT 2026-10-14: công khai hoàn toàn.** Bật `#OpenToWork` trên LinkedIn + mở hồ sơ cho mọi NTD trên cả 6 sàn. Bạn đã xác nhận chấp nhận việc Con Cung có thể thấy. | — |
 | **G-9** | **Ngày sinh** | Không có trong bất kỳ nguồn nào; thuộc nhóm thông tin nhạy cảm | ITviec, TopDev, VietnamWorks, CareerViet, Glints |
 | **G-10** | **Work authorization** | Suy luận "công dân VN, không cần sponsor" là hợp lý nhưng là **khai báo pháp lý** → `CLAUDE.md` yêu cầu bạn xác nhận | VietnamWorks |
 | **G-11** | **Ảnh profile + ảnh banner** | Không có file ảnh trong repo | LinkedIn (bắt buộc cho All-Star), Glints |

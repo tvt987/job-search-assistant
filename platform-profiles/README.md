@@ -46,8 +46,25 @@ Sinh ngày **2026-10-14** từ `resumes/*.pdf` + `APPLICANT_CONTEXT.md` + `appli
 3. **Ngày có thể bắt đầu** / notice period?
 4. **FPT là pháp nhân nào** — FPT Software, FPT Corporation, FPT IS, FPT Telecom...?
 
-Cộng một quyết định chính sách: **có bật chế độ công khai đang tìm việc không?**
-Con Cung (nơi bạn đang làm) cũng tuyển dụng trên các sàn này — xem G-8.
+### Quyết định đã chốt
+
+- **G-8 — chế độ hiển thị: ✅ công khai hoàn toàn** *(2026-10-14)*. Bật `#OpenToWork` trên LinkedIn
+  và mở hồ sơ cho mọi NTD trên cả 6 sàn. Đã áp dụng vào cả 6 file nền tảng.
+- **Hướng thực thi: cấp browser access** — xem mục dưới.
+
+---
+
+## Cách thực thi: chạy session trên máy bạn
+
+Bước này cần **máy của bạn** — session hiện tại chạy trong container cloud nên không với tới
+browser và các session đăng nhập của bạn được.
+
+Để tôi tự điền profile, mở lại công việc này trong một session chạy trên máy bạn:
+- **Claude Desktop app**, hoặc
+- `claude remote-control` trong terminal, tại thư mục repo này (session sẽ hiện trong Claude Code app).
+
+Khi đó tôi sẽ: kiểm tra từng trang xem account đang đăng nhập có đúng `tinhkun102@gmail.com` →
+tự điền các field đã xác minh → **dừng và hỏi bạn** ở các field G-1…G-12 và ở mọi bước OTP/MFA/CAPTCHA.
 
 ---
 

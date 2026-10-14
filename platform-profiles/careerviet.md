@@ -59,6 +59,6 @@ Thứ tự FullStack: **P2 → P1 → P3 → P5** (mục 6). P5 để trống re
 `Tiếng Anh — Giao tiếp` · `Tiếng Việt — Bản ngữ`. ❌ Không khai `Thành thạo`.
 
 ## H. Khác
-- Bật cho NTD tìm kiếm hồ sơ ⚠️ cân nhắc G-8.
+- ✅ Bật cho NTD tìm kiếm hồ sơ, đặt hồ sơ ở chế độ `Công khai` *(đã quyết: G-8)*.
 - ❌ Không điền `Chứng chỉ`, `Người tham chiếu` (references), `Giải thưởng` — không có dữ liệu.
 - ❌ Không upload ảnh CCCD/hộ chiếu kể cả khi được gợi ý.

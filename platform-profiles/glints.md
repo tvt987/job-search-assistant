@@ -68,4 +68,4 @@ sẽ xử lý riêng theo từng đơn.
 
 ## G. Khác
 - ❌ Không điền Certifications / Awards — không có dữ liệu.
-- Glints có mục `Open to opportunities` → bật, nhưng ⚠️ cân nhắc G-8.
+- ✅ Bật `Open to opportunities` và mở hồ sơ cho NTD *(đã quyết: công khai hoàn toàn, G-8)*.

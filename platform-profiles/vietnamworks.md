@@ -61,6 +61,6 @@ Khuyến nghị: **phương án 2** nếu có option, không thì phương án 1
 hiển thị trong recruiter search, và đây là sàn có lượng JD lớn nhất trong 6 sàn.
 
 ## E. Khác
-- Bật `Allow employers to search my profile` ⚠️ cân nhắc G-8.
+- ✅ Bật `Allow employers to search my profile` *(đã quyết: công khai hoàn toàn, G-8)*.
 - Upload CV PDF: `resumes/CV_FullStack_TruongVanTinh.pdf`.
 - ❌ Không điền Certifications / Awards / References — không có dữ liệu xác minh.

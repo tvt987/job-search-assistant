@@ -110,9 +110,9 @@ Associated with (`Con Cung` cho P1/P2 nếu là việc công ty — ⚠️ xem G
 - Locations: `Ho Chi Minh City, Vietnam` + bật `Remote`
 - Start date: ⚠️ NEEDS_USER_INPUT
 - Job types: `Full-time`
-- Visibility: **`All LinkedIn members`** (bật khung #OpenToWork) hoặc **`Recruiters only`**
-  → ⚠️ cần bạn chọn: khung #OpenToWork tăng inbound rõ rệt nhưng hiển thị công khai cho cả
-  đồng nghiệp hiện tại ở Con Cung. Mục G-8.
+- Visibility: ✅ **`All LinkedIn members`** — bật khung **#OpenToWork** quanh ảnh profile.
+  *(Đã quyết 2026-10-14: công khai hoàn toàn. G-8 đã chốt.)*
+- Bật thêm `Let recruiters know you're open to work` ở mục **Job seeking preferences**.
 
 ---
 

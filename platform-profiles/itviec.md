@@ -118,7 +118,7 @@ Nội dung + repo lấy từ mục 6. P5 để trống link.
 - **Không tạo account mới nếu có thể đã tồn tại account.** Phải kiểm tra login trước
   (`CLAUDE.md` Phase 1). Nếu quên mật khẩu → dùng luồng khôi phục của ITviec với
   `tinhkun102@gmail.com`, không tạo account thứ hai.
-- **Chế độ hiển thị hồ sơ:** bật cho NTD tìm thấy (`Allow employers to find my profile`)
-  — nhưng ⚠️ cân nhắc: Con Cung cũng tuyển dụng trên ITviec. Xem G-8.
+- **Chế độ hiển thị hồ sơ:** ✅ **bật** cho NTD tìm thấy (`Allow employers to find my profile`).
+  *(Đã quyết 2026-10-14: công khai hoàn toàn. G-8 đã chốt.)*
 - CV PDF dành cho ITviec: `resumes/CV_Backend_TruongVanTinh.pdf`.
   Khi ứng tuyển JD Angular/FullStack thì đổi sang `CV_FullStack_...`, JD AI thì `CV_AI_...`.
