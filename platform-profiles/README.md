@@ -15,6 +15,7 @@ Sinh ngày **2026-10-14** từ `resumes/*.pdf` + `APPLICANT_CONTEXT.md` + `appli
 
 | # | File | Nội dung |
 | :-- | :--- | :--- |
+| 0 | **`SETUP_BROWSER.md`** | Bật Claude in Chrome để agent điền profile bằng session đăng nhập sẵn của bạn |
 | 1 | **`VERIFICATION_AND_GAPS.md`** | **Bắt đầu từ đây.** Kết quả đối chiếu 3 CV (6 điểm lệch cần bạn xác nhận) + 12 field `NEEDS_USER_INPUT` + trạng thái đăng nhập |
 | 2 | `MASTER_CONTENT.md` | Khối nội dung chuẩn: headline, About (4 bản), experience bullets theo 3 track, 5 project, skill đã xếp hạng, số năm kinh nghiệm |
 | 3 | `linkedin.md` | 18 bước lên All-Star + 50 skill đúng thứ tự |
@@ -66,6 +67,8 @@ Ngày sinh (G-9) · ảnh profile (G-11) · LinkedIn slug (G-12) · số năm Py
 ---
 
 ## Cách thực thi: chạy session trên máy bạn
+
+> 📖 **Hướng dẫn bật Claude in Chrome từng bước: [`SETUP_BROWSER.md`](SETUP_BROWSER.md)**
 
 Bước này cần **máy của bạn** — session hiện tại chạy trong container cloud nên không với tới
 browser và các session đăng nhập của bạn được.
