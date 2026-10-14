@@ -163,7 +163,7 @@ Full Stack Developer, 3+ years. Enterprise .NET + AngularJS at Con Cung: Web API
 | Field | Giá trị |
 | :--- | :--- |
 | Job title | `Frontend Intern` |
-| Company | `FPT` |
+| Company | `FPT Software` |
 | Employment type | `Internship` |
 | Location | `Ho Chi Minh City, Vietnam` |
 | Start | `September 2023` |
@@ -185,8 +185,8 @@ Full Stack Developer, 3+ years. Enterprise .NET + AngularJS at Con Cung: Web API
 | Tên tiếng Việt | `Trường Đại học Công nghệ Thông tin, ĐHQG-HCM` |
 | Degree | `Bachelor's degree` |
 | Field of study | `Information Technology` |
-| Graduation year | `2026` |
-| Graduation **month** | ⚠️ **NEEDS_USER_INPUT** — CV chỉ ghi "Graduated 2026", không có tháng. Xem `VERIFICATION_AND_GAPS.md` mục G-1. |
+| Graduation | `June 2026` / `06/2026` ✅ *(bạn xác nhận 2026-10-14)* |
+| Start year | `2022` ⚠️ **suy luận** từ chương trình 4 năm — xác nhận lại nếu khác |
 | GPA | Không điền (không có trong CV) |
 
 ---
@@ -195,19 +195,21 @@ Full Stack Developer, 3+ years. Enterprise .NET + AngularJS at Con Cung: Web API
 
 Thứ tự ưu tiên thay đổi theo track. Repo chỉ điền với 4 project đầu; **Retail Reliability Lab không có repo công khai trong nguồn** → để trống link.
 
-### P1. Layout-Store
+### P1. Layout-Store 🔴 **TẠM GIỮ — KHÔNG ĐƯA LÊN PROFILE**
 - **Role:** Contributor
-- **Repo:** `https://github.com/tvt987/Layout-Store`
-- **Tech:** C#, ASP.NET Core, Dapper, PostgreSQL, Angular
+- **Repo:** 🔴 **KHÔNG điền link.** Repo public này chứa source code Con Cung (`CCI.*`,
+  `nexus.ingress.concung.io`). Xem `VERIFICATION_AND_GAPS.md` mục **D-7** — chờ bạn quyết A/B/C/D.
+- **Tech:** C#, ASP.NET Core, Dapper, PostgreSQL, Angular *(đã xác minh trong code: Npgsql 25 file, Dapper 33 file)*
 - **Mô tả:**
 ```
 Contributed 10 ASP.NET Core / PostgreSQL routes covering search, CRUD, approval and Excel import. Connected HTTP handlers to stored-procedure data access through async interfaces and dependency injection.
 ```
 
-### P2. Ecommerce-Admin
-- **Role:** Frontend development
-- **Repo:** `https://github.com/tvt987/Ecommerce-Admin`
-- **Tech:** Angular 19, TypeScript, RxJS, NgRx SignalStore
+### P2. Ecommerce-Admin 🔴 **TẠM GIỮ — KHÔNG ĐƯA LÊN PROFILE**
+- **Role:** Frontend development *(đã xác minh: thuần frontend, 0 file .cs — xem D-7)*
+- **Repo:** 🔴 **KHÔNG điền link.** Repo public này chứa branding/hạ tầng Con Cung
+  (`cdn1.concung.com`, `123test.concung.com`). Xem **D-7** — chờ bạn quyết.
+- **Tech:** Angular 19, TypeScript, RxJS, NgRx SignalStore *(đã xác minh: Angular 19.2.14, @ngrx/signals 19.2.1, signalStore 29 file)*
 - **Mô tả:**
 ```
 Built responsive Angular 19 admin screens and integrated authenticated REST APIs for search, creation and updates. Managed loading, success and error states with RxJS and NgRx SignalStore across admin workflows.
@@ -240,10 +242,14 @@ Automated LLM-assisted triage for 5 ticket categories with priority/sentiment va
 Validated a Redis cache-aside pattern with a 60-second TTL, invalidation and outage fallback; 22 local API/cache tests passed against a real Redis instance. Reduced local SQLite median lookup from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows. Authored Docker Compose and Azure templates (not deployed).
 ```
 
-**Thứ tự project theo track:**
-- Backend: P1 → P5 → P4 → P2
-- FullStack: P2 → P1 → P3 → P5
-- AI: P3 → P4 → P5 → P1
+**Thứ tự project theo track** *(đã đổi: 3 project tự làm lên trước, P1/P2 tạm giữ theo D-7)*:
+- Backend: **P4 → P5 → P3** · *(P1 thêm vào đầu danh sách nếu bạn chọn phương án C ở D-7)*
+- FullStack: **P3 → P4 → P5** · *(P2 → P1 thêm vào đầu nếu chọn C)*
+- AI: **P3 → P4 → P5**
+
+> 🔴 Hiện mọi profile chỉ dùng **P3, P4, P5** — ba project bạn tự viết, không liên quan Con Cung,
+> có repo công khai an toàn để recruiter mở xem. P1/P2 vẫn giữ trong CV PDF (mô tả phần việc bạn làm),
+> chỉ **không gắn link repo** cho tới khi D-7 được xử lý.
 
 ---
 
@@ -303,7 +309,7 @@ Mốc tính: FPT từ **09/2023**, Con Cung từ **11/2023**. Hôm nay: **14/10/
 | Years of C# / .NET | `2+ years` | Con Cung 11/2023 → nay = 2 năm 11 tháng. `screening_qa.md` đã chốt "2+" — giữ nguyên, đừng tự nâng lên 3. |
 | Years of Angular / AngularJS | `2+ years` | FPT (Angular) + Con Cung (AngularJS) |
 | Years of SQL / Database | `2+ years` | SQL Server/Dapper tại Con Cung |
-| Years of Python / FastAPI | ⚠️ **NEEDS_USER_INPUT** | Chỉ có project cá nhân, nguồn không ghi thời điểm bắt đầu → không suy đoán. Mục G-2. |
+| Years of Python / FastAPI | ⚠️ **vẫn để trống** | Chỉ có project cá nhân, nguồn không ghi mốc bắt đầu → không suy đoán. Mục G-2. |
 | Experience level | `Middle` / `Mid-level` | 3+ năm, không phải Fresher, chưa đủ cơ sở khai Senior |
 
 ---
@@ -316,8 +322,8 @@ Mốc tính: FPT từ **09/2023**, Con Cung từ **11/2023**. Hôm nay: **14/10/
 | Location | `Ho Chi Minh City, Vietnam` (ưu tiên 1) |
 | Work arrangement | `On-site`, `Hybrid`, `Remote` — nhận cả ba |
 | Job type | `Full-time` |
-| Start date | ⚠️ **NEEDS_USER_INPUT** (mục G-3) |
-| Expected salary | ⚠️ **NEEDS_USER_INPUT** (mục G-4) |
+| Start date | `1 month after offer acceptance` ✅ *(notice period 1 tháng)* |
+| Expected salary | `28,000,000 – 32,000,000 VND/tháng`, **Negotiable** ✅ |
 | Relocation | ⚠️ **NEEDS_USER_INPUT** (mục G-5) |
 
 ---

@@ -28,8 +28,8 @@ field nguyện vọng là **bắt buộc** mới cho lưu — trong đó có m�
 | Preferred location | `Ho Chi Minh City` |
 | Preferred industry | `IT - Software Development`, `IT - Hardware/Networking` *(chọn 1–3)* |
 | Work type | `Permanent` / `Full-time` |
-| Expected salary | ⚠️ **NEEDS_USER_INPUT** (G-4) — xem mục D |
-| Available start date | ⚠️ **NEEDS_USER_INPUT** (G-3) |
+| Expected salary | `28,000,000 – 32,000,000 VND/month` ✅ (Negotiable) |
+| Available start date | `1 month after offer acceptance` ✅ |
 | Willing to relocate | ⚠️ **NEEDS_USER_INPUT** (G-5) |
 | Work authorization | `Vietnamese citizen — no sponsorship required` ⚠️ **cần bạn xác nhận** (G-10) |
 
@@ -38,10 +38,10 @@ field nguyện vọng là **bắt buộc** mới cho lưu — trong đó có m�
 
 ## C. Experience / Education / Skills / Projects
 - **Experience:** Con Cung (bullets **track FullStack**, mục 4.1) + FPT (mục 4.2, ⚠️ G-6)
-- **Education:** mục 5 — ⚠️ thiếu tháng tốt nghiệp (G-1)
+- **Education:** mục 5 — `2022` – `06/2026` ✅
 - **Skills:** dán khối ATS keyword mục **10** của `MASTER_CONTENT.md`
   (VietnamWorks nhận skill dạng text tự do), ❌ trừ `Node.js`/`Java`/`Spring Boot`
-- **Projects:** thứ tự FullStack **P2 → P1 → P3 → P5** (mục 6)
+- **Projects:** **P3 → P4 → P5** (mục 6) — 🔴 bỏ P1/P2, xem **D-7**
 - **Languages:** `English — Intermediate` · `Vietnamese — Native`
 
 ## D. ⚠️ Vấn đề mức lương trên VietnamWorks

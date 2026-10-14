@@ -22,8 +22,8 @@ cho tên skill và tên vị trí — đó là từ khoá NTD search.
 | Hình thức làm việc | `Full-time` · nhận `Onsite` / `Hybrid` / `Remote` |
 | Ngày sinh | ⚠️ **NEEDS_USER_INPUT** (G-9) |
 | Giới tính | ⚠️ **NEEDS_USER_INPUT** |
-| Mức lương mong muốn | ⚠️ **NEEDS_USER_INPUT** (G-4) |
-| Thời gian có thể bắt đầu | ⚠️ **NEEDS_USER_INPUT** (G-3) |
+| Mức lương mong muốn | `28.000.000 – 32.000.000 VND/tháng` ✅ (Thương lượng) |
+| Thời gian có thể bắt đầu | `1 tháng sau khi nhận offer` ✅ |
 | GitHub | `https://github.com/tvt987` |
 | LinkedIn | ⚠️ điền sau khi chốt custom URL |
 
@@ -37,12 +37,11 @@ Full Stack Developer, 3+ năm kinh nghiệm. Phát triển .NET + AngularJS tạ
 
 ## C. Kinh nghiệm
 - **Con Cung** · `Full Stack Developer` · `11/2023` – `Hiện tại` → bullets **track Backend** (mục 4.1)
-- **FPT** · `Frontend Intern` · `09/2023` – `11/2023` → bullets mục 4.2
-  *(⚠️ tên pháp nhân FPT — xem G-6)*
+- **FPT Software** · `Frontend Intern` · `09/2023` – `11/2023` → bullets mục 4.2
 
 ## D. Học vấn
 `University of Information Technology (UIT), VNU-HCM` · `Cử nhân` · `Information Technology` ·
-tốt nghiệp `2026` — ⚠️ thiếu tháng (G-1)
+tốt nghiệp `06/2026` ✅
 
 ## E. Kỹ năng
 Dán nhóm A→E của mục 7 `MASTER_CONTENT.md`, thứ tự Backend-first:
@@ -57,7 +56,8 @@ Docker, CI/CD, GitHub Actions, IIS, Git, Git Flow, Swagger/OpenAPI, Unit Testing
 ❌ Không thêm `Node.js`, `Java`, `Spring Boot`, `Message Queues`, `Vector Databases`.
 
 ## F. Dự án
-4 project, thứ tự Backend: **P1 → P5 → P4 → P2** (mục 6). P5 để trống repo.
+**3 project**: **P4 → P5 → P3** (mục 6). P5 để trống repo.
+🔴 Không nhập P1/P2 kèm link — xem **D-7**.
 
 ## G. Ngoại ngữ
 `English — Giao tiếp (Conversational)` · `Vietnamese — Bản ngữ`. ❌ Không khai Thành thạo/Fluent.

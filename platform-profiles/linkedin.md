@@ -22,11 +22,11 @@ FullStack rồi nêu rõ cả 3 hướng trong phần "Open to".
 | 9 | Custom URL | Đổi thành `linkedin.com/in/truongvantinh` (hoặc `-tvt987` nếu trùng) | ⚠️ cần bạn chọn |
 | 10 | About | Mục 3.1 — bản EN dài (2.462/2.600 ký tự) | ✅ sẵn |
 | 11 | Experience × 2 | Mục 4.1 (Con Cung) + 4.2 (FPT) | ✅ sẵn |
-| 12 | Education | Mục 5 | ⚠️ thiếu tháng tốt nghiệp |
+| 12 | Education | Mục 5 | ✅ sẵn (06/2026) |
 | 13 | Skills (tối đa 50) | Mục 7, nhóm A→F | ✅ sẵn |
 | 14 | Projects × 5 | Mục 6 | ✅ sẵn |
 | 15 | Languages | `English — Professional working proficiency`<br>`Vietnamese — Native or bilingual proficiency` | ✅ sẵn |
-| 16 | Open to work | Mục 9 | ⚠️ 3 field cần bạn xác nhận |
+| 16 | Open to work | Mục 9 | ✅ sẵn |
 | 17 | Featured | Ghim 2 repo: `retail-rag-assistant`, `Ecommerce-Admin` | ✅ sẵn |
 | 18 | Recommendations | Xin 1–2 recommendation từ đồng nghiệp Con Cung | ⚠️ cần bạn liên hệ |
 
@@ -56,22 +56,20 @@ Full Stack Developer | .NET & Angular | ASP.NET Core · C# · SQL Server/Dapper 
 
 ### B.4 Experience — FPT
 - Title: `Frontend Intern` · Employment type: `Internship`
-- Company name: `FPT`
+- Company name: `FPT Software`
 - Location: `Ho Chi Minh City, Vietnam`
 - Dates: `September 2023` → `November 2023`
 - Description: dán bullets mục 4.2
 - Skills: `Angular` · `JavaScript` · `REST APIs`
 
-> ⚠️ **Lưu ý về tên công ty "FPT":** LinkedIn sẽ gợi ý nhiều pháp nhân (FPT Corporation, FPT Software,
-> FPT Telecom, FPT IS...). CV chỉ ghi `FPT`, không chỉ rõ công ty con. **Đừng chọn bừa** — xem mục G-6
-> trong `VERIFICATION_AND_GAPS.md`. Nếu không chắc, chọn `FPT Corporation` (pháp nhân mẹ) hoặc
-> gõ tay `FPT` và bỏ qua gợi ý.
+> ✅ **Tên công ty đã xác nhận: `FPT Software`** (2026-10-14). Khi LinkedIn gợi ý, chọn đúng
+> **FPT Software** — không chọn FPT Corporation / FPT Telecom / FPT IS.
 
 ### B.5 Education
 - School: `University of Information Technology (UIT), VNU-HCM`
 - Degree: `Bachelor's degree` · Field of study: `Information Technology`
-- End year: `2026` — **tháng:** ⚠️ NEEDS_USER_INPUT
-- Start year: ⚠️ NEEDS_USER_INPUT (CV không ghi năm bắt đầu; nếu học 4 năm thì thường là 2022)
+- End date: `June 2026` ✅
+- Start year: `2022` ⚠️ *(suy luận từ chương trình 4 năm — sửa nếu khác)*
 
 ### B.6 Skills — 50 slot, thứ tự đã tối ưu
 
@@ -108,7 +106,7 @@ Associated with (`Con Cung` cho P1/P2 nếu là việc công ty — ⚠️ xem G
 ### B.8 Open to work
 - Job titles: dán 9 title ở mục 9
 - Locations: `Ho Chi Minh City, Vietnam` + bật `Remote`
-- Start date: ⚠️ NEEDS_USER_INPUT
+- Start date: `1 month after offer acceptance` ✅
 - Job types: `Full-time`
 - Visibility: ✅ **`All LinkedIn members`** — bật khung **#OpenToWork** quanh ảnh profile.
   *(Đã quyết 2026-10-14: công khai hoàn toàn. G-8 đã chốt.)*

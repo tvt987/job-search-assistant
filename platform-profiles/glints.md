@@ -27,8 +27,8 @@
 | LinkedIn | ⚠️ điền sau khi chốt custom URL |
 | Date of birth | ⚠️ **NEEDS_USER_INPUT** (G-9) |
 | Gender | ⚠️ **NEEDS_USER_INPUT** |
-| Expected salary | ⚠️ **NEEDS_USER_INPUT** (G-4) — Glints hay đặt field này **bắt buộc**, xem mục E |
-| Notice period | ⚠️ **NEEDS_USER_INPUT** (G-3) |
+| Expected salary | `28,000,000 – 32,000,000 VND/month` ✅ (Negotiable) — xem mục E về JD khu vực |
+| Notice period | `1 month` ✅ |
 | Willing to relocate | ⚠️ **NEEDS_USER_INPUT** (G-5) |
 
 ## B. About me
@@ -38,10 +38,10 @@ Nếu Glints giới hạn ngắn hơn → dùng mục **3.4** (298 ký tự).
 
 ## C. Experience / Education / Projects
 - **Con Cung** · `Full Stack Developer` · `Nov 2023` – `Present` → bullets **track FullStack** (mục 4.1)
-- **FPT** · `Frontend Intern` · `Sep 2023` – `Nov 2023` → bullets mục 4.2 *(⚠️ G-6)*
-- **Education:** mục 5 — ⚠️ thiếu tháng tốt nghiệp (G-1)
-- **Projects:** Glints coi portfolio rất nặng với JD startup → nhập **cả 5**, thứ tự
-  **P3 → P2 → P4 → P1 → P5** (đưa RAG + Angular 19 lên trước)
+- **FPT Software** · `Frontend Intern` · `Sep 2023` – `Nov 2023` → bullets mục 4.2
+- **Education:** mục 5 — `2022` – `06/2026` ✅
+- **Projects:** Glints coi portfolio rất nặng với JD startup → nhập **P3 → P4 → P5**
+  🔴 bỏ P1/P2 vì chứa code Con Cung, xem **D-7**
 
 ## D. Skills
 Glints thường giới hạn ~20–30 skill tag. Lấy đúng 25 tag này:

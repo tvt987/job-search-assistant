@@ -41,8 +41,8 @@ ITviec có **2 thực thể khác nhau** trong mục *"Hồ sơ và CV"*:
 | Cấp bậc hiện tại | `Middle` *(3+ năm — không phải Fresher, chưa đủ cơ sở khai Senior)* |
 | Địa điểm làm việc mong muốn | `Ho Chi Minh City` |
 | Hình thức | `Full-time` — nhận `On-site` / `Hybrid` / `Remote` |
-| Mức lương mong muốn | ⚠️ **NEEDS_USER_INPUT** (G-4). ITviec cho **ẩn** field này với NTD — nếu bạn chưa muốn chốt số, bật chế độ ẩn thay vì điền số bừa. |
-| Sẵn sàng đi làm từ | ⚠️ **NEEDS_USER_INPUT** (G-3) |
+| Mức lương mong muốn | `28.000.000 – 32.000.000 VND/tháng` ✅ (chọn **Thương lượng** nếu có option) |
+| Sẵn sàng đi làm từ | `1 tháng sau khi nhận offer` ✅ |
 
 ### B.3 Giới thiệu bản thân / About me
 → Dán khối mục **3.2** (EN, 748 ký tự) của `MASTER_CONTENT.md`.
@@ -54,7 +54,7 @@ Nhập **2 mục**, thứ tự thời gian đảo ngược (ITviec khuyến ngh�
 **Mục 1 —** Con Cung · `Full Stack Developer` · `11/2023` – `Hiện tại`
 → bullets **track Backend** (mục 4.1) vì ITviec mapping JD .NET nhiều hơn.
 
-**Mục 2 —** FPT · `Frontend Intern` · `09/2023` – `11/2023`
+**Mục 2 —** FPT Software · `Frontend Intern` · `09/2023` – `11/2023`
 → bullets mục 4.2.
 
 > ⚠️ **Quan trọng — nhãn hồ sơ:** ITviec tự gán nhãn **"Fresher"** dựa trên *kinh nghiệm làm việc chuyên nghiệp
@@ -94,12 +94,12 @@ Skill thêm (không cần số năm): `Web API` · `REST API Design` · `Entity 
 | Trường | `University of Information Technology (UIT), VNU-HCM` |
 | Bằng | `Bachelor` |
 | Chuyên ngành | `Information Technology` |
-| Thời gian | `?/2022` – `?/2026` ⚠️ **NEEDS_USER_INPUT** cả tháng bắt đầu và kết thúc (G-1) |
+| Thời gian | `2022` – `06/2026` ✅ *(tháng tốt nghiệp đã xác nhận; năm bắt đầu là suy luận)* |
 | GPA | Để trống — không có trong CV |
 
 ### B.7 Dự án
-Nhập **4 project** (ITviec có mục Dự án riêng), thứ tự track Backend: **P1 → P5 → P4 → P2**.
-Nội dung + repo lấy từ mục 6. P5 để trống link.
+Nhập **3 project**: **P4 → P5 → P3** (mục 6). P5 để trống link.
+🔴 **Không nhập P1/P2 kèm link repo** — xem `VERIFICATION_AND_GAPS.md` mục **D-7**.
 
 ### B.8 Ngoại ngữ
 | Ngôn ngữ | Mức |

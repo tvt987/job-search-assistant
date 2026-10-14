@@ -39,12 +39,23 @@ Sinh ngày **2026-10-14** từ `resumes/*.pdf` + `APPLICANT_CONTEXT.md` + `appli
 
 ---
 
-## 4 câu hỏi mở khoá ~90% công việc còn lại
+## 🔴 ĐANG CHẶN: xem `VERIFICATION_AND_GAPS.md` mục **D-7**
 
-1. **Tháng tốt nghiệp** và năm bắt đầu học UIT? *(CV chỉ ghi "Graduated 2026")*
-2. **Mức lương mong muốn** — một khoảng VND/tháng, hoặc "chọn Thương lượng", hoặc "để trống"?
-3. **Ngày có thể bắt đầu** / notice period?
-4. **FPT là pháp nhân nào** — FPT Software, FPT Corporation, FPT IS, FPT Telecom...?
+Hai repo `tvt987/Layout-Store` và `tvt987/Ecommerce-Admin` đang **public** và chứa **source code
+Con Cung** (`CCI.*` namespace, `nexus.ingress.concung.io`, `cdn1.concung.com`). Tôi đã **bỏ link
+hai repo này khỏi mọi profile** và chờ bạn quyết. Không có credential nào bị lộ — đã quét riêng.
+
+## 4 câu hỏi đã trả lời ✅ *(2026-10-14)*
+
+| | Trả lời |
+| :--- | :--- |
+| Tháng tốt nghiệp | `06/2026` *(năm bắt đầu `2022` là suy luận — xác nhận nếu khác)* |
+| Mức lương mong muốn | `28.000.000 – 32.000.000 VND/tháng`, thương lượng |
+| Ngày bắt đầu | 1 tháng sau khi nhận offer |
+| FPT | `FPT Software` ⚠️ *3 CV PDF vẫn ghi `FPT` — nên sửa cho khớp* |
+
+### Còn thiếu (ít quan trọng hơn)
+Ngày sinh (G-9) · ảnh profile (G-11) · LinkedIn slug (G-12) · số năm Python/FastAPI (G-2)
 
 ### Quyết định đã chốt
 
