@@ -6,6 +6,48 @@ Nguồn: [Claude Code — Use Claude Code with Chrome](https://code.claude.com/d
 
 ---
 
+## ❓ Cài extension rồi thì session CLOUD có dùng được không? → **KHÔNG**
+
+Đây là câu dễ hiểu sai nhất, nên ghi rõ:
+
+| | |
+| :--- | :--- |
+| Claude Code chạy **trên máy bạn** (terminal / Desktop app / VS Code) | ✅ Dùng được Chrome của bạn |
+| Claude Code chạy **trên cloud** (claude.ai/code, app mobile, `--cloud`) | ❌ **Không dùng được**, kể cả khi đã cài extension |
+
+**Cơ sở:**
+1. [Docs cloud sessions](https://code.claude.com/docs/en/claude-code-on-the-web) ghi: *"each cloud session is
+   **separated from your machine** and from other sessions"*, chạy trong **isolated VM**. Trang đó liệt kê
+   đầy đủ năng lực cloud session và **không có** Chrome integration / browser automation.
+2. **Cơ chế kỹ thuật:** Chrome integration dựa vào file *native messaging host config* ghi **trên máy bạn**
+   (`~/.config/google-chrome/NativeMessagingHosts/...`). Chrome đọc file này lúc startup để nói chuyện với
+   Claude Code **cùng máy**. Container cloud không có máy bạn → không có kênh này.
+3. **Kiểm chứng thực tế:** session cloud không có tool `mcp__claude-in-chrome__*` nào,
+   cũng không có `enable__mcp__claude-in-chrome`.
+
+→ Extension chỉ phục vụ Claude Code chạy **trên chính máy bạn**. Cài extension không "mở khoá" cloud session.
+
+### Mang công việc từ cloud về máy
+
+Mọi thứ đã push lên branch `claude/serene-archimedes-3bvvdm` nên không mất gì.
+
+**Cách 1 — khuyến nghị.** Các file trong `platform-profiles/` được viết để **tự chứa đủ ngữ cảnh**,
+không cần lịch sử chat:
+```bash
+git clone https://github.com/tvt987/job-search-assistant.git
+cd job-search-assistant
+git checkout claude/serene-archimedes-3bvvdm
+claude --chrome
+```
+
+**Cách 2 — mang cả hội thoại về.** `claude --teleport <session-id>` kéo session cloud + branch về terminal
+kèm full conversation history. Yêu cầu: git state sạch, cùng tài khoản claude.ai, chạy từ checkout đúng repo.
+
+> ⚠️ Teleport xong phiên đó **vẫn chưa có Chrome**. Docs: *"exit and start again with `claude --chrome`"*.
+> Nên Cách 2 là hai bước: teleport lấy history → thoát → `claude --chrome`.
+
+---
+
 ## Tại sao phải làm trên máy bạn
 
 Claude in Chrome *"opens new tabs for browser tasks and **shares your browser's login state**, so it can
