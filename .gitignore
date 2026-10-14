@@ -1,0 +1,41 @@
+# Credentials and Secrets (Never commit)
+*.env
+*.env.*
+*.pem
+*.key
+*.crt
+*.pfx
+credentials/
+secrets/
+tokens/
+*_token*
+*_secret*
+
+# Browser Sessions & Cookies
+cookies.json
+session*.json
+storage.json
+state.json
+browser_data/
+auth_state/
+*.session
+
+# Claude / AI Assistant internal logs
+.claude/
+.anthropic/
+logs/
+*.log
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Node / Python temporary caches
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
