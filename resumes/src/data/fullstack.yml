@@ -55,11 +55,11 @@ projects:
       - "Contributed Angular workflows and PostgreSQL data structures for store layouts and product placement."
   - name: Retail RAG Assistant
     role: Personal project
-    stack: "Python, FastAPI, TF-IDF, Docker"
+    stack: "Python, FastAPI, LangChain, Qdrant, Docker"
     link: github.com/tvt987/retail-rag-assistant
     bullets:
-      - "Built FastAPI document question-answering with cited retrieval, score-based abstention and extractive fallback."
-      - "Evaluated 8 queries on 2 policy documents: 6 correct top-3 matches and 2 correct abstentions; CI green."
+      - "Built FastAPI document question-answering with cited retrieval from Qdrant, a LangChain pipeline, score-based abstention and extractive fallback."
+      - "Evaluated 16 questions on 3 policy documents for hit rate, MRR, fact recall and groundedness; 29 tests in CI."
   - name: Retail Reliability Lab
     role: AI-assisted lab
     stack: "FastAPI, Redis, SQLite, Docker Compose, Azure"

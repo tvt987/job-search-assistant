@@ -100,6 +100,11 @@ Sử dụng AI Agent (Claude Code / Claude Cloud) để hỗ trợ toàn bộ qu
    - Repo: https://github.com/tvt987/retail-rag-assistant
    - Hệ thống hỏi đáp tài liệu có dẫn nguồn (citations) bằng TF-IDF/cosine similarity, chunking, hỗ trợ SentenceTransformers.
    - FastAPI endpoints, cơ chế abstention khi điểm thấp và extractive fallback khi LLM lỗi; CI pass trên 8 synthetic test queries.
+   - Mở rộng 10/2026 (branch `claude/vigilant-johnson-b7w4u8`, CI xanh cả 2 job; cần merge vào `main`):
+     document parsing Markdown/TXT/HTML/PDF + data preprocessing (NFKC, nối chữ ngắt dòng, bỏ boilerplate);
+     Qdrant vector database (sparse TF-IDF offline hoặc dense embeddings; embedded/on-disk/server);
+     LangChain LCEL pipeline với citation check; đánh giá 16 câu hỏi / 3 tài liệu: hit rate, MRR, abstention,
+     fact recall, groundedness (bắt sai số liệu, câu không trích dẫn, trích dẫn bịa); 29 tests.
 4. **Support Ticket AI Triage** *(Personal project)*:
    - Repo: https://github.com/tvt987/support-ticket-ai-triage
    - Phân loại tự động 5 nhóm ticket bằng LLM, validate priority/sentiment, rule-based fallback, token-protected human review, masking thông tin liên hệ; không lưu raw ticket text. 10 HTTP tests, 120 schema combinations, 1.000 SQLite synthetic decisions.

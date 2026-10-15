@@ -1,6 +1,5 @@
 variant: ai
 theme: teal
-density: relaxed
 output: CV_AI_TruongVanTinh.pdf
 role: AI Application Engineer
 tagline: "Python · FastAPI · RAG · LLM Integration · Evaluation"
@@ -24,12 +23,13 @@ facts:
 projects:
   - name: Retail RAG Assistant
     role: Personal project
-    stack: "Python, FastAPI, TF-IDF, SentenceTransformers, Docker"
+    stack: "Python, FastAPI, LangChain, Qdrant, TF-IDF, Docker"
     link: github.com/tvt987/retail-rag-assistant
     bullets:
-      - "Built cited document retrieval with TF-IDF and cosine similarity over paragraph chunks, with optional SentenceTransformers embeddings."
-      - "Developed FastAPI question, document and health endpoints with low-score abstention and extractive fallback when LLM calls fail."
-      - "Evaluated 8 queries across 2 documents: 6 correct top-3 matches and 2 correct abstentions; GitHub Actions CI green on main."
+      - "Built document parsing and preprocessing for Markdown, HTML and PDF (Unicode normalization, boilerplate removal) into cited chunks."
+      - "Stored TF-IDF sparse or SentenceTransformers dense vectors in a Qdrant vector database; added a LangChain LCEL pipeline."
+      - "Developed FastAPI endpoints with low-score abstention and extractive fallback when LLM calls fail or answers lack citations."
+      - "Evaluated 16 questions on hit rate, MRR, fact recall and groundedness that rejects wrong numbers and uncited claims; 29 tests in CI."
   - name: Support Ticket AI Triage
     role: Personal project
     stack: "Python, FastAPI, LLM Integration, SQLite, Docker"
@@ -43,7 +43,7 @@ projects:
     stack: "FastAPI, Redis, SQLite, Docker Compose, Azure"
     bullets:
       - "Validated Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests against real Redis."
-      - "Cut median SQLite lookup from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows; authored Docker Compose and Azure templates."
+      - "Cut median SQLite lookup 3.63 ms → 0.005 ms (200 queries, 100,000 synthetic rows); authored Docker Compose and Azure templates."
 
 experience:
   - role: Full Stack Developer
@@ -68,10 +68,10 @@ experience:
 skills:
   - label: AI applications
     primary: true
-    items: [RAG, Document Retrieval, Data Pipelines, NLP (text retrieval), TF-IDF, Semantic Embeddings, LLM Integration, Prompt Engineering, Output Validation, Evaluation, Abstention and Fallbacks, Vector Search, Vector Databases, AI Agents, Human-in-the-loop Workflows]
+    items: [RAG, Document Retrieval, Data Pipelines, NLP (text retrieval), TF-IDF, Semantic Embeddings, LLM Integration, Prompt Engineering, Output Validation, Evaluation, Abstention and Fallbacks, Groundedness Evaluation, Vector Search, Vector Databases, Human-in-the-loop Workflows]
   - label: Python & APIs
     primary: true
-    items: [Python, FastAPI, REST APIs, SQLite, Input Validation]
+    items: [Python, FastAPI, REST APIs, SQLite, Input Validation, Document Parsing, Data Preprocessing]
   - label: Backend & data
     items: [C#, .NET, ASP.NET Core, Dapper, SQL Server, PostgreSQL, Redis, Database Design, Query Optimization]
   - label: Security
@@ -79,7 +79,7 @@ skills:
   - label: Testing & DevOps
     items: [Unit Testing, Integration Testing, Docker, CI/CD, GitHub Actions, Git, Logging, Monitoring/Observability, Azure, AWS, IIS]
   - label: Tools & frontend
-    items: [OpenAI (ChatGPT, Custom GPTs), Claude, Cursor, GitHub Copilot, MCP, n8n, Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
+    items: [LangChain, Qdrant, AI Agents, OpenAI (ChatGPT, Custom GPTs), Claude, Cursor, GitHub Copilot, MCP, n8n, Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
   - label: Practices
     items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
 
