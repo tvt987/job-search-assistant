@@ -39,3 +39,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# CV build previews (regenerate with: python3 resumes/src/build.py --png)
+resumes/src/build/

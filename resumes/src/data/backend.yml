@@ -1,0 +1,94 @@
+variant: backend
+theme: navy
+output: CV_Backend_TruongVanTinh.pdf
+role: Backend Developer
+tagline: "C# · .NET · ASP.NET Core · SQL Server · REST APIs"
+
+summary: >-
+  Backend developer with 3+ years of software development experience. Builds and maintains .NET web
+  applications at Con Cung on SQL Server and Dapper, integrating ERP services and securing endpoints
+  with Keycloak (JWT / OAuth 2.0 / OIDC). Portfolio API work covers 10 ASP.NET Core / PostgreSQL routes
+  with async data access and dependency injection, plus FastAPI services backed by automated tests and
+  GitHub Actions CI.
+
+highlights:
+  - value: "3+ yrs"
+    label: "Software development experience, .NET focus"
+  - value: "10"
+    label: "ASP.NET Core / PostgreSQL routes shipped"
+  - value: "OAuth 2.0"
+    label: "Keycloak JWT / OIDC + RBAC in production"
+  - value: "0.005 ms"
+    label: "Median cached lookup, down from 3.63 ms"
+
+experience:
+  - role: Full Stack Developer
+    company: Con Cung
+    period: Nov 2023 – Present
+    note: "Voucher & subscription workflows — .NET, AngularJS, SQL Server, Dapper, Keycloak"
+    bullets:
+      - "Delivered .NET voucher APIs for search, creation and updates, adding permission checks, promotion validation and Excel preview before batch creation."
+      - "Implemented typed Dapper mappings for SQL Server stored-procedure results across 3-, 6- and 12-month subscription plans, covering 7 benefit calculations with side-by-side comparison."
+      - "Resolved SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
+      - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization for application actions; supported Docker and IIS deployment."
+      - "Built a preview and copy tool for 4 generated template types: controller, repository, view and script."
+  - role: Frontend Intern
+    company: FPT
+    period: Sep 2023 – Nov 2023
+    bullets:
+      - "Developed Angular / JavaScript components, integrated e-commerce REST APIs and corrected mobile UI defects."
+
+projects:
+  - name: Layout-Store
+    role: Contributor
+    stack: "C#, ASP.NET Core, Dapper, PostgreSQL, Angular"
+    link: github.com/tvt987/Layout-Store
+    bullets:
+      - "Contributed 10 ASP.NET Core / PostgreSQL routes covering search, CRUD, approval and Excel import."
+      - "Connected HTTP handlers to stored-procedure access through async interfaces and dependency injection."
+  - name: Support Ticket AI Triage
+    role: Personal project
+    stack: "Python, FastAPI, SQLite, Docker"
+    link: github.com/tvt987/support-ticket-ai-triage
+    bullets:
+      - "Built FastAPI automation for 5 ticket categories with validated outputs, contact masking, token-protected review and LLM-failure fallback."
+      - "Tested 10 HTTP scenarios with mocked LLM responses; GitHub Actions CI passed on main."
+      - "Validated 1,000 synthetic SQLite review decisions; duplicate IDs were rejected without overwriting existing records."
+  - name: Retail Reliability Lab
+    role: AI-assisted lab
+    stack: "FastAPI, Redis, SQLite, Azure"
+    bullets:
+      - "Validated Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 local API and cache tests passed against real Redis."
+      - "Reduced local SQLite median lookup from 3.63 ms to 0.005 ms (200 queries, 100,000 synthetic rows); authored undeployed Docker Compose and Azure templates."
+  - name: Ecommerce-Admin
+    role: Frontend / API integration
+    stack: "C#, Angular, PostgreSQL, REST APIs"
+    link: github.com/tvt987/Ecommerce-Admin
+    bullets:
+      - "Integrated authenticated REST APIs and PostgreSQL data contracts with Angular admin screens."
+
+skills:
+  - label: Backend
+    primary: true
+    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Entity Framework / EF Core, Dapper, LINQ, Web API, REST API Design, Message Queues]
+  - label: Data
+    primary: true
+    items: [SQL Server, PostgreSQL, MySQL, Redis, Database Design, Stored Procedures, Query Optimization, Indexing]
+  - label: Security
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC]
+  - label: Engineering
+    items: [OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, Debugging, Performance Optimization]
+  - label: Testing & DevOps
+    items: [Unit Testing, Integration Testing, Logging, Observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git, Git Flow, Swagger/OpenAPI]
+  - label: Frontend integration
+    items: [Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
+  - label: AI-assisted development
+    items: [LLMs, Prompt Engineering, Custom GPTs, MCP, AI Agents, Claude, Cursor, GitHub Copilot, n8n, OpenClaw, Agent Skills]
+  - label: Additional stacks
+    items: [Python, FastAPI, Node.js, Java Spring Boot]
+  - label: Practices
+    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
+
+pages:
+  - [summary, highlights, experience, {section: projects, take: 1}]
+  - [{section: projects, skip: 1, continued: true}, skills, footerinfo]

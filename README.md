@@ -13,7 +13,11 @@ An automated, safety-first job-search and application tracking assistant powered
 ├── resumes/                      # The 3 specialized PDF resumes
 │   ├── CV_Backend_TruongVanTinh.pdf     # Backend .NET / C# track
 │   ├── CV_FullStack_TruongVanTinh.pdf   # Full Stack .NET + Angular track
-│   └── CV_AI_TruongVanTinh.pdf          # AI Application Engineer / GenAI track
+│   ├── CV_AI_TruongVanTinh.pdf          # AI Application Engineer / GenAI track
+│   └── src/                             # Source of the 3 PDFs (YAML content + HTML/CSS design)
+│       ├── build.py                     # Rebuild: python3 resumes/src/build.py
+│       ├── template.html.j2 / styles.css
+│       └── data/*.yml                   # Per-track content, traceable to APPLICANT_CONTEXT.md
 ├── application-templates/        # Standard cover letters, outreach messages, and Q&A references
 │   ├── cover_letter_backend.md
 │   ├── cover_letter_fullstack.md
@@ -53,6 +57,22 @@ An automated, safety-first job-search and application tracking assistant powered
 - Attach this repository (or copy `CLAUDE.md` and `APPLICANT_CONTEXT.md`).
 - Ensure browser automation tools are enabled.
 - Always check active authenticated sessions before initiating searches or form-filling.
+
+---
+
+## 📄 Rebuilding the resumes
+
+The PDFs are generated, not hand-edited. Change the content in `resumes/src/data/*.yml`
+or the design in `resumes/src/styles.css`, then run:
+
+```bash
+python3 resumes/src/build.py          # rebuilds all three PDFs (resumes/ + repo root)
+python3 resumes/src/build.py --png    # also writes page previews to resumes/src/build/
+```
+
+The build prints a fit report per CV (`2p  slack p1 +4mm / p2 +4mm`); a negative slack
+value means the sheet overflows and the layout has to be rebalanced before shipping.
+See `resumes/src/README.md` for details.
 
 ---
 

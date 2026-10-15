@@ -1,0 +1,18 @@
+# Verified applicant facts. Source of truth: ../../APPLICANT_CONTEXT.md
+# Do not add anything here that is not verified in APPLICANT_CONTEXT.md.
+name: Truong Van Tinh
+phone: "+84 931 467 024"
+email: tinhkun102@gmail.com
+location: Ho Chi Minh City, Vietnam
+github: github.com/tvt987
+github_url: https://github.com/tvt987
+photo: assets/headshot.jpg
+
+education:
+  school: University of Information Technology (UIT), VNU-HCM
+  degree: Information Technology
+  detail: Graduated 2026
+
+languages:
+  - name: English
+    level: Conversational

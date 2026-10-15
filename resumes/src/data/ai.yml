@@ -1,0 +1,88 @@
+variant: ai
+theme: teal
+density: relaxed
+output: CV_AI_TruongVanTinh.pdf
+role: AI Application Engineer
+tagline: "Python · FastAPI · RAG · LLM Integration · Evaluation"
+
+summary: >-
+  Software engineer with 3+ years of development experience, including .NET retail workflows at Con Cung.
+  Builds Python and FastAPI applications for RAG document question-answering with citations and
+  LLM-assisted ticket triage, each with validated outputs, abstention and rule-based fallbacks,
+  automated tests, GitHub Actions CI and human review in the loop.
+
+highlights:
+  - value: "RAG"
+    label: "Cited retrieval with low-score abstention"
+  - value: "8 / 8"
+    label: "Eval queries: 6 top-3 matches, 2 abstentions"
+  - value: "10"
+    label: "FastAPI HTTP tests, CI green on main"
+  - value: "1,000"
+    label: "Synthetic review decisions validated"
+
+projects:
+  - name: Retail RAG Assistant
+    role: Personal project
+    stack: "Python, FastAPI, TF-IDF, SentenceTransformers, Docker"
+    link: github.com/tvt987/retail-rag-assistant
+    bullets:
+      - "Built cited document retrieval with TF-IDF and cosine similarity over paragraph chunks, with optional SentenceTransformers embeddings."
+      - "Developed FastAPI question, document and health endpoints with low-score abstention and extractive fallback when LLM calls fail."
+      - "Evaluated retrieval accuracy on 8 synthetic queries across 2 documents: 6 correct top-3 matches and 2 correct abstentions; GitHub Actions CI passed."
+  - name: Support Ticket AI Triage
+    role: Personal project
+    stack: "Python, FastAPI, LLM Integration, SQLite, Docker"
+    link: github.com/tvt987/support-ticket-ai-triage
+    bullets:
+      - "Automated LLM-assisted triage for 5 ticket categories with priority and sentiment validation plus a rules fallback; passed 5 synthetic fixtures."
+      - "Protected human-review endpoints with a token, masked contact data and added urgent-rule overrides; excluded raw ticket text from storage."
+      - "Tested 10 FastAPI HTTP scenarios with mocked LLM responses; GitHub Actions CI passed on main."
+      - "Validated 120 synthetic schema combinations and 720 urgent-rule cases; verified SQLite persistence for 1,000 review decisions."
+  - name: Retail Reliability Lab
+    role: AI-assisted lab
+    stack: "FastAPI, Redis, SQLite, Azure"
+    bullets:
+      - "Validated Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 local API and cache tests passed against real Redis."
+      - "Reduced local SQLite median lookup from 3.63 ms to 0.005 ms (200 queries, 100,000 synthetic rows); authored undeployed Docker Compose and Azure templates."
+
+experience:
+  - role: Full Stack Developer
+    company: Con Cung
+    period: Nov 2023 – Present
+    note: "Voucher & subscription workflows — .NET, AngularJS, SQL Server, Dapper, Keycloak"
+    bullets:
+      - "Delivered AngularJS and .NET voucher workflows, 7 subscription benefit calculations and a tool for 4 generated code-template types."
+      - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
+      - "Resolved SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
+  - role: Frontend Intern
+    company: FPT
+    period: Sep 2023 – Nov 2023
+    bullets:
+      - "Developed Angular / JavaScript components, integrated e-commerce REST APIs and corrected mobile UI defects."
+
+skills:
+  - label: AI applications
+    primary: true
+    items: [RAG, Document Retrieval, Data Pipelines, NLP (text retrieval), TF-IDF, Semantic Embeddings, LLM Integration, Prompt Engineering, Output Validation, Evaluation, Human-in-the-loop Workflows]
+  - label: Python & APIs
+    primary: true
+    items: [Python, FastAPI, REST APIs, SQLite, Input Validation]
+  - label: Backend & data
+    items: [C#, .NET, ASP.NET Core, Dapper, SQL Server, PostgreSQL, Database Design, Query Optimization]
+  - label: Security
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, RBAC, Contact-data Masking]
+  - label: Testing & DevOps
+    items: [Unit Testing, Integration Testing, Docker, CI/CD, GitHub Actions, Git, Logging, Monitoring/Observability]
+  - label: Infrastructure
+    items: [Redis, Azure, AWS, IIS]
+  - label: Developer tools
+    items: [ChatGPT, Claude, Cursor, GitHub Copilot, MCP, n8n]
+  - label: Frontend
+    items: [Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
+  - label: Practices
+    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
+
+pages:
+  - [summary, highlights, {section: projects, take: 2}]
+  - [{section: projects, skip: 2, continued: true}, experience, skills, footerinfo]
