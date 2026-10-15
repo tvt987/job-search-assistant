@@ -21,11 +21,11 @@ body {
   color: var(--ink);
   background: #fff;
 
-  --ink:     #1A2433;
-  --muted:   #5C6B80;
-  --rule:    #E4E9F0;
+  --ink:     #111827;
+  --muted:   #374151;
+  --rule:    #D5DCE5;
   --chip-bg: #F2F5F9;
-  --chip-ink:#3A4859;
+  --chip-ink:#1F2937;
 }
 
 /* ---------- Per-track accent themes ---------- */
@@ -50,36 +50,36 @@ a { color: inherit; text-decoration: none; }
 .sheet > .deco-arc {
   position: absolute; right: -30mm; bottom: -34mm;
   width: 86mm; height: 86mm; border-radius: 50%;
-  background: radial-gradient(circle at 32% 30%, var(--soft), rgba(255,255,255,0) 72%);
+  display: none;
 }
 .sheet > .deco-dots {
   position: absolute; left: 13mm; bottom: 14.6mm;
   width: 19mm; height: 6.5mm;
-  background-image: radial-gradient(var(--line) .9px, rgba(255,255,255,0) 1px);
+  display: none;
   background-size: 3.1mm 3.1mm;
   opacity: .6;
 }
 
 /* ---------- Page 1 header band ---------- */
-.band-top { height: 1.7mm; background: linear-gradient(90deg, var(--accent) 0%, var(--line) 62%, var(--accent) 100%); }
+.band-top { height: 1.7mm; background: var(--accent); }
 
 .band {
   position: relative;
   overflow: hidden;
   padding: 10mm 13mm 8mm;
   color: #fff;
-  background: linear-gradient(118deg, var(--b900) 0%, var(--b700) 56%, var(--b900) 100%);
+  background: var(--b900);
 }
 .band::before {
   content: ""; position: absolute; inset: 0;
-  background-image: radial-gradient(rgba(255,255,255,.17) 1px, rgba(255,255,255,0) 1.1px);
+  display: none;
   background-size: 4.4mm 4.4mm;
   opacity: .55;
 }
 .band::after {
   content: ""; position: absolute; right: -14mm; top: -30mm;
   width: 88mm; height: 88mm; border-radius: 50%;
-  background: radial-gradient(circle, var(--glow) 0%, rgba(255,255,255,0) 68%);
+  display: none;
 }
 
 .band-inner { position: relative; display: flex; align-items: center; gap: 9mm; }
@@ -92,17 +92,17 @@ a { color: inherit; text-decoration: none; }
 .role-line { margin-top: 2.6mm; display: flex; align-items: center; gap: 2.8mm; }
 .role-line .role { font-size: 12.2pt; font-weight: 700; }
 .role-line .sep { width: 9mm; height: .7mm; border-radius: 1mm; background: var(--accent); opacity: .95; }
-.tagline { margin-top: 1.7mm; font-size: 9pt; letter-spacing: .25pt; color: rgba(255,255,255,.80); }
+.tagline { margin-top: 1.7mm; font-size: 9pt; letter-spacing: .25pt; color: #FFFFFF; }
 
 .contacts { margin-top: 5.4mm; display: flex; flex-wrap: wrap; gap: 2mm 2.6mm; }
 .contact {
   display: flex; align-items: center; gap: 1.6mm;
-  font-size: 8.7pt; color: rgba(255,255,255,.94);
-  background: rgba(255,255,255,.10);
-  border: .25mm solid rgba(255,255,255,.20);
+  font-size: 8.7pt; color: #FFFFFF;
+  background: transparent;
+  border: .25mm solid rgba(255,255,255,.55);
   border-radius: 9mm; padding: 1mm 2.8mm;
 }
-.contact svg { width: 3.3mm; height: 3.3mm; stroke: currentColor; fill: none; stroke-width: 1.8; opacity: .95; }
+.contact svg { width: 3.3mm; height: 3.3mm; stroke: currentColor; fill: none; stroke-width: 1.8; }
 
 .photo-ring {
   flex: none; width: 33mm; height: 33mm; border-radius: 50%;
@@ -133,12 +133,12 @@ a { color: inherit; text-decoration: none; }
 }
 .sh .ic svg { width: 3.6mm; height: 3.6mm; stroke: currentColor; fill: none; stroke-width: 1.9; }
 .sh h2 { font-size: 10pt; font-weight: 700; letter-spacing: 1.35pt; text-transform: uppercase; color: var(--b900); white-space: nowrap; }
-.sh .ln { flex: 1; height: .35mm; background: linear-gradient(90deg, var(--line), rgba(255,255,255,0)); }
+.sh .ln { flex: 1; height: .35mm; background: var(--line); }
 
 /* summary */
 .summary {
-  font-size: 9.5pt; line-height: 1.48; color: #27333F;
-  background: linear-gradient(90deg, var(--soft) 0%, rgba(255,255,255,0) 86%);
+  font-size: 9.5pt; line-height: 1.48; color: var(--ink);
+  background: var(--soft);
   border-left: 1.1mm solid var(--accent);
   border-radius: 0 2mm 2mm 0;
   padding: 2.6mm 4mm 2.6mm 4mm;
@@ -172,7 +172,7 @@ ul.bul li:first-child { margin-top: 0; }
 ul.bul li::before {
   content: ""; position: absolute; left: .7mm; top: 1.55mm;
   width: 1.5mm; height: 1.5mm; border-radius: .35mm;
-  background: var(--accent); opacity: .8; transform: rotate(45deg);
+  background: var(--accent); transform: rotate(45deg);
 }
 
 /* projects */
@@ -269,7 +269,7 @@ body.den-relaxed:not(.one-page) .sheet:first-of-type .proj { padding: 3.6mm 3.8m
   display: flex;
   border: .25mm solid var(--rule); border-top: .9mm solid var(--accent);
   border-radius: 1.5mm 1.5mm 2mm 2mm;
-  background: linear-gradient(90deg, var(--soft) 0%, #FCFDFF 72%);
+  background: var(--soft);
   overflow: hidden;
 }
 .fact { flex: 1; padding: 1.9mm 3mm; border-left: .25mm solid var(--rule); }
@@ -290,8 +290,7 @@ body.one-page .tagline { margin-top: 1mm; font-size: 8pt; }
 body.one-page .contacts { margin-top: 2.2mm; gap: .9mm 1.3mm; }
 body.one-page .contact { font-size: 7.6pt; padding: .6mm 1.9mm; gap: 1.2mm; }
 body.one-page .contact svg { width: 3mm; height: 3mm; }
-body.one-page .photo-ring { width: 26mm; height: 26mm; padding: .7mm; background: rgba(255,255,255,.9); border: none;
-  box-shadow: 0 0 0 1.2mm rgba(255,255,255,.12), 0 1.5mm 4mm rgba(0,0,0,.35); }
+body.one-page .photo-ring { width: 26mm; height: 26mm; padding: .7mm; background: #FFFFFF; border: none; box-shadow: none; }
 body.one-page .photo-ring img { filter: brightness(1.1) contrast(1.06) saturate(1.05); }
 
 body.one-page .body { padding: 3.4mm 12mm 0; }
@@ -316,7 +315,7 @@ body.one-page ul.bul li::before { top: 1.2mm; width: 1.3mm; height: 1.3mm; }
 
 body.one-page .proj {
   border: none; border-left: .9mm solid var(--line); border-radius: 0 1.5mm 1.5mm 0;
-  background: linear-gradient(90deg, #FAFCFF 0%, rgba(255,255,255,0) 72%);
+  background: none;
   padding: 1.3mm 0 1.3mm 3mm; margin-top: 1.7mm;
 }
 body.one-page .proj-name { font-size: 9.3pt; }
