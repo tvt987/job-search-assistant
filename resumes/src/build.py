@@ -158,7 +158,7 @@ def set_metadata(pdf: Path, me: dict, cv: dict) -> None:
     writer.add_metadata({
         "/Title": f"{me['name']} - {cv['role']} CV",
         "/Author": me["name"],
-        "/Subject": f"{cv['role']} CV - {cv['tagline']}",
+        "/Subject": f"{cv['role']} CV - {cv.get('tagline') or ', '.join(cv['skills'][0]['items'][:5])}",
         "/Keywords": ", ".join(dict.fromkeys(keywords)),
         "/Creator": "resumes/src/build.py",
     })

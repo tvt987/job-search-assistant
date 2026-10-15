@@ -78,6 +78,12 @@ Sử dụng AI Agent (Claude Code / Claude Cloud) để hỗ trợ toàn bộ qu
    - Triển khai Keycloak JWT, OAuth 2.0, OpenID Connect và phân quyền vai trò (RBAC).
    - Hỗ trợ triển khai Docker và IIS.
    - Xây dựng công cụ preview/copy cho 4 loại code template (controller, repository, view, script).
+   - Thiết kế kiến trúc dữ liệu retail phức tạp: kệ (shelves), facings, display groups — phục vụ tối ưu bố cục trưng bày cửa hàng.
+   - Ứng dụng vector semantic search trong portal thương mại.
+   - Xây dựng pipeline n8n cho competitor scraping và market intelligence.
+   - Tăng tốc phát triển bằng AI workflows: Custom GPTs + prompt engineering.
+   - Triển khai autonomous debugging / dev-test loop với Claude + Agent Skills + MCP.
+   *(5 mục trên do ứng viên xác nhận 10/2026; nguồn gốc là README GitHub profile.)*
 2. **FPT — Frontend Intern** *(09/2023 – 11/2023)*:
    - Phát triển các component bằng Angular / JavaScript.
    - Tích hợp REST APIs cho hệ thống e-commerce.
@@ -138,7 +144,8 @@ Với mỗi vị trí tìm thấy, ghi nhận vào `job-tracker.csv`:
 
 ---
 
-## 8. Mâu thuẫn cần ứng viên xác nhận (phát hiện 10/2026 — CHƯA xử lý)
+## 8. Mâu thuẫn CV ↔ GitHub (phát hiện 10/2026 — ĐÃ XỬ LÝ)
+**Ứng viên xác nhận: CV đúng.** README GitHub profile là bản cũ; bản sửa nằm ở `github-profile/README.md` (chờ ứng viên dán lên repo `tvt987/tvt987`). Bảng dưới giữ lại để tham chiếu.
 Profile README công khai tại https://github.com/tvt987 ghi khác với CV và tài liệu này. Không tự sửa bên nào cho tới khi ứng viên xác nhận:
 
 | Mục | CV / tài liệu này | GitHub profile README |
@@ -148,4 +155,4 @@ Profile README công khai tại https://github.com/tvt987 ghi khác với CV và
 | Thực tập | FPT — Frontend Intern (09/2023 – 11/2023) | Galaxy Industrial — Fullstack Intern (08/2023 – 11/2023); VNPT — Frontend Intern (12/2023 – 04/2024) |
 | Học vấn | UIT, VNU-HCM — tốt nghiệp 2026 | FPT Polytechnic, Software Application (2021 – 2024); UIT, VNU-HCM (2024 – 2025) |
 
-README GitHub còn liệt kê công việc tại Con Cung chưa có trong tài liệu này (cần xác nhận trước khi đưa vào CV): thiết kế kiến trúc dữ liệu retail (shelves, facings, display groups); AI workflows (Custom GPTs, prompt engineering); autonomous debugging loop với Claude + Agent Skills + MCP; pipeline n8n cho competitor scraping & market intelligence; vector semantic search trong portal thương mại.
+Các công việc tại Con Cung trên README GitHub đã được ứng viên xác nhận và chuyển vào mục 4A: thiết kế kiến trúc dữ liệu retail (shelves, facings, display groups); AI workflows (Custom GPTs, prompt engineering); autonomous debugging loop với Claude + Agent Skills + MCP; pipeline n8n cho competitor scraping & market intelligence; vector semantic search trong portal thương mại.

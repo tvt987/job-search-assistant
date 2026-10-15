@@ -367,3 +367,8 @@ body.one-page.den-relaxed .proj { margin-top: .9mm; padding: .7mm 0 .7mm 2.5mm; 
 body.one-page.den-relaxed .skill-row { padding: .55mm 0; }
 
 .job-note .ctx { color: var(--ink); font-weight: 700; }
+
+/* one-page: name, role and links already sit in the header and availability
+   rides on the location chip, so the footer line is dropped. The element stays
+   (zero height, invisible) as the bottom limit for the build's fit check. */
+body.one-page .foot { visibility: hidden; height: 0; padding: 0; border: 0; bottom: 7mm; overflow: hidden; }

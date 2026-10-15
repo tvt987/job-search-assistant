@@ -11,6 +11,7 @@ linkedin_url: https://www.linkedin.com/in/trương-văn-tình-651b12289/
 photo: assets/headshot.jpg
 # Location preference stated in APPLICANT_CONTEXT.md (HCMC first, hybrid/remote considered).
 availability: "Open to on-site, hybrid or remote roles in Ho Chi Minh City"
+availability_short: "on-site / hybrid / remote"
 
 education:
   school: University of Information Technology (UIT), VNU-HCM

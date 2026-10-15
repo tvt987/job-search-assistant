@@ -28,8 +28,11 @@ experience:
     bullets:
       - "Delivered AngularJS and .NET voucher search, creation and update workflows with permission checks, promotion validation and Excel preview before batch creation."
       - "Implemented 7 subscription benefit calculations across 3-, 6- and 12-month plans with side-by-side comparisons."
+      - "Designed retail data structures for shelves, facings and display groups behind store-layout optimization."
       - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
+      - "Built vector semantic search into a commerce portal and n8n pipelines for competitor scraping and market intelligence."
+      - "Sped up delivery with Custom GPTs, prompt engineering and an autonomous debug loop built on Claude, Agent Skills and MCP."
       - "Built an AngularJS preview and copy tool for 4 generated template types: controller, repository, view and script."
   - role: Frontend Intern
     company: FPT
@@ -83,4 +86,4 @@ skills:
     items: [Python, FastAPI, Node.js, Java Spring Boot, Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
 
 pages:
-  - [summary, facts, experience, projects, skills, footerinfo]
+  - [summary, experience, projects, skills, footerinfo]

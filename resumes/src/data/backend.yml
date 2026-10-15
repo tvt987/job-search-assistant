@@ -2,7 +2,6 @@ variant: backend
 theme: navy
 output: CV_Backend_TruongVanTinh.pdf
 role: Backend Developer
-tagline: "C# · .NET · ASP.NET Core · SQL Server · REST APIs"
 
 summary: >-
   Backend developer with 3+ years of software development experience. Builds .NET applications at Con Cung
@@ -27,9 +26,11 @@ experience:
     note: ".NET · AngularJS · SQL Server · Dapper · Keycloak · ERP integration"
     bullets:
       - "Delivered .NET voucher APIs for search, creation and updates with permission checks, promotion validation and pre-batch Excel preview."
+      - "Designed retail data structures for shelves, facings and display groups behind store-layout optimization."
       - "Mapped SQL Server stored procedures to typed Dapper models for 7 subscription benefit calculations across 3-, 6- and 12-month plans."
       - "Fixed Dapper retrieval defects and verified ERP API request and response mappings."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
+      - "Added vector semantic search to a commerce portal; built n8n competitor-scraping pipelines and a Claude + MCP debug loop."
       - "Built a preview and copy tool for 4 generated template types: controller, repository, view and script."
   - role: Frontend Intern
     company: FPT
