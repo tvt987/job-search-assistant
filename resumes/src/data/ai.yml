@@ -39,6 +39,12 @@ projects:
     stack: "FastAPI, Redis, SQLite, Azure"
     bullets:
       - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests against real Redis; median SQLite lookup cut from 3.63 ms to 0.005 ms over 100,000 synthetic rows."
+  - name: Layout-Store
+    role: Contributor
+    stack: "C#, ASP.NET Core, Dapper, PostgreSQL"
+    link: github.com/tvt987/Layout-Store
+    bullets:
+      - "Contributed 10 ASP.NET Core / PostgreSQL routes for search, CRUD, approval and Excel import via async DI handlers."
 
 experience:
   - role: Full Stack Developer
@@ -47,7 +53,8 @@ experience:
     note: ".NET · AngularJS · SQL Server · Dapper · Keycloak · ERP integration"
     bullets:
       - "Delivered AngularJS and .NET voucher workflows, 7 subscription benefit calculations and a tool for 4 generated code-template types."
-      - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment and verified ERP API mappings."
+      - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
+      - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
   - role: Frontend Intern
     company: FPT
     period: Sep 2023 – Nov 2023
@@ -56,17 +63,19 @@ experience:
 
 skills:
   - label: AI applications
-    primary: true
-    items: [RAG, document retrieval, TF-IDF, semantic embeddings, LLM integration, prompt engineering, output validation, evaluation, abstention and fallbacks, human-in-the-loop workflows]
+    items: [RAG, Document Retrieval, Data Pipelines, NLP (text retrieval), TF-IDF, Semantic Embeddings, LLM Integration, Prompt Engineering, Output Validation, Evaluation, Abstention and Fallbacks, Human-in-the-loop Workflows]
   - label: Python & APIs
-    primary: true
-    items: [Python, FastAPI, REST APIs, SQLite, input validation, data pipelines]
+    items: [Python, FastAPI, REST APIs, SQLite, Input Validation, Data Pipelines]
   - label: Backend & data
-    items: [C#, .NET, ASP.NET Core, Dapper, SQL Server, PostgreSQL, Redis, database design, query optimization]
+    items: [C#, .NET, ASP.NET Core, Dapper, SQL Server, PostgreSQL, Redis, Database Design, Query Optimization]
+  - label: Security
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, RBAC, Contact-data Masking]
   - label: Testing & DevOps
-    items: [unit and integration testing, Docker, CI/CD, GitHub Actions, Git, logging, monitoring and observability, Azure, AWS, IIS]
-  - label: Additional
-    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, RBAC, contact-data masking, Angular, AngularJS, TypeScript, RxJS, Claude, Cursor, GitHub Copilot, MCP, n8n, Agile/Scrum, code review]
+    items: [Unit Testing, Integration Testing, Docker, CI/CD, GitHub Actions, Git, Logging, Monitoring/Observability, Azure, AWS, IIS]
+  - label: Tools & frontend
+    items: [ChatGPT, Claude, Cursor, GitHub Copilot, MCP, n8n, Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
+  - label: Practices
+    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
 
 pages:
   - [summary, facts, projects, experience, skills, footerinfo]

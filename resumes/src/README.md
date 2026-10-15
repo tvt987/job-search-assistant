@@ -10,7 +10,7 @@ resumes/src/
 ├── styles.css          # the design system: themes, spacing, decoration
 ├── assets/headshot.jpg # photo used in the header band
 └── data/
-    ├── common.yml      # verified personal facts (shared by all three CVs)
+    ├── common.yml      # verified personal facts + availability line (all three CVs)
     ├── backend.yml     # Backend Developer track   (navy theme)
     ├── fullstack.yml   # Full Stack Developer track (violet theme)
     └── ai.yml          # AI Application Engineer track (teal theme)
@@ -49,6 +49,10 @@ sheet 1: HEADER=38 Professional=21 facts=11 Work=58 Projects=59 Skills=54 cards=
 1. **Content lives in `data/*.yml` only.** Every claim must be traceable to
    `APPLICANT_CONTEXT.md`. Never add employment history, certifications, metrics
    or years of experience that are not verified there.
+   **Never drop keywords to win space.** The skill groups are at least as complete
+   as the original CVs (git `5e8e9db`) — recruiters and ATS filters match on them.
+   When a page overflows, tighten spacing or shorten a sentence instead; the
+   `--debug` heights show where the room actually is.
 2. **Design lives in `styles.css`.** Each track picks a theme (`navy`, `violet`,
    `teal`) and a density (`compact`, `relaxed`, `comfortable`) so the two sheets
    stay evenly filled.

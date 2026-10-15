@@ -54,21 +54,29 @@ projects:
     stack: "Python, FastAPI, TF-IDF, Docker"
     link: github.com/tvt987/retail-rag-assistant
     bullets:
-      - "FastAPI document question-answering with cited retrieval, score-based abstention and extractive fallback; 8 evaluation queries gave 6 correct top-3 matches and 2 correct abstentions, CI green."
+      - "FastAPI document question-answering with cited retrieval, score-based abstention and extractive fallback."
+      - "8 evaluation queries on 2 policy documents gave 6 correct top-3 matches and 2 correct abstentions; CI green."
+  - name: Retail Reliability Lab
+    role: AI-assisted lab
+    stack: "FastAPI, Redis, SQLite, Azure"
+    bullets:
+      - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
 
 skills:
   - label: Frontend
-    primary: true
     items: [Angular, Angular 19, AngularJS, TypeScript, JavaScript, RxJS, NgRx SignalStore, HTML5, CSS3, Tailwind CSS, React]
   - label: Backend
-    primary: true
-    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API design, Entity Framework / EF Core, Dapper, LINQ]
-  - label: Data & security
-    items: [SQL Server, PostgreSQL, MySQL, Redis, database design, stored procedures, query optimization, Keycloak, JWT, OAuth 2.0, OpenID Connect, RBAC]
+    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API Design, Entity Framework / EF Core, Dapper, LINQ, Message Queues]
+  - label: Data
+    items: [SQL Server, PostgreSQL, MySQL, Redis, Database Design, Stored Procedures, Query Optimization, Indexing, Vector Databases]
+  - label: Security & engineering
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, Debugging, Performance Optimization]
   - label: Testing & DevOps
-    items: [unit and integration testing, logging, observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git / Git Flow, Swagger/OpenAPI]
-  - label: Additional
-    items: [Python, FastAPI, Node.js, Java Spring Boot, SOLID, clean architecture, microservices, LLM integration, prompt engineering, MCP, Claude, Cursor, GitHub Copilot, Agile/Scrum, code review]
+    items: [Unit Testing, Integration Testing, Logging, Observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git, Git Flow, Swagger/OpenAPI]
+  - label: AI-assisted dev
+    items: [LLMs, Prompt Engineering, Custom GPTs, MCP, AI Agents, Claude, Cursor, GitHub Copilot, n8n, OpenClaw, Agent Skills]
+  - label: Other stacks
+    items: [Python, FastAPI, Node.js, Java Spring Boot, Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
 
 pages:
   - [summary, facts, experience, projects, skills, footerinfo]

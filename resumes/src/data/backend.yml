@@ -17,7 +17,7 @@ facts:
   - value: "OAuth 2.0"
     label: "Keycloak JWT / OIDC"
   - value: "0.005 ms"
-    label: "cached lookup median"
+    label: "median cached lookup, from 3.63 ms"
 
 experience:
   - role: Full Stack Developer
@@ -42,30 +42,42 @@ projects:
     stack: "C#, ASP.NET Core, Dapper, PostgreSQL"
     link: github.com/tvt987/Layout-Store
     bullets:
-      - "Contributed 10 ASP.NET Core / PostgreSQL routes for search, CRUD, approval and Excel import, wired to stored procedures through async interfaces and dependency injection."
+      - "Contributed 10 ASP.NET Core / PostgreSQL routes for search, CRUD, approval and Excel import, wired to stored procedures via async interfaces and DI."
   - name: Support Ticket AI Triage
     role: Personal project
     stack: "Python, FastAPI, SQLite, Docker"
     link: github.com/tvt987/support-ticket-ai-triage
     bullets:
-      - "FastAPI triage for 5 ticket categories with validated outputs, contact masking and LLM-failure fallback; 10 HTTP tests and 1,000 synthetic SQLite review decisions validated, CI green."
+      - "FastAPI triage for 5 ticket categories with validated outputs, contact masking and LLM-failure fallback."
+      - "10 HTTP scenarios tested with mocked LLM responses and 1,000 synthetic SQLite review decisions validated; CI green."
   - name: Retail Reliability Lab
     role: AI-assisted lab
     stack: "FastAPI, Redis, SQLite, Azure"
     bullets:
-      - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis; median SQLite lookup cut from 3.63 ms to 0.005 ms."
+      - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
+      - "Median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows."
+  - name: Ecommerce-Admin
+    role: Frontend / API integration
+    stack: "C#, Angular, PostgreSQL, REST APIs"
+    link: github.com/tvt987/Ecommerce-Admin
+    bullets:
+      - "Integrated authenticated REST APIs and PostgreSQL data contracts with Angular admin screens."
 
 skills:
   - label: Backend
-    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API design, Entity Framework / EF Core, Dapper, LINQ]
+    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API Design, Entity Framework / EF Core, Dapper, LINQ, Message Queues]
   - label: Data
-    items: [SQL Server, PostgreSQL, MySQL, Redis, database design, stored procedures, indexing, query optimization]
-  - label: Security & architecture
-    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, RBAC, OOP, SOLID, design patterns, dependency injection, repository pattern, clean architecture, microservices]
+    items: [SQL Server, PostgreSQL, MySQL, Redis, Database Design, Stored Procedures, Query Optimization, Indexing]
+  - label: Security & engineering
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, Debugging, Performance Optimization]
   - label: Testing & DevOps
-    items: [unit and integration testing, logging, observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git / Git Flow, Swagger/OpenAPI]
-  - label: Additional
-    items: [Python, FastAPI, Angular, AngularJS, TypeScript, Node.js, Java Spring Boot, LLM integration, prompt engineering, MCP, Claude, Cursor, GitHub Copilot, Agile/Scrum, code review]
+    items: [Unit Testing, Integration Testing, Logging, Observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git, Git Flow, Swagger/OpenAPI]
+  - label: Frontend
+    items: [Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
+  - label: AI-assisted dev
+    items: [LLMs, Prompt Engineering, Custom GPTs, MCP, AI Agents, Claude, Cursor, GitHub Copilot, n8n, OpenClaw, Agent Skills]
+  - label: Other stacks
+    items: [Python, FastAPI, Node.js, Java Spring Boot, Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
 
 pages:
   - [summary, facts, experience, projects, skills, footerinfo]
