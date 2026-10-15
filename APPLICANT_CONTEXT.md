@@ -23,7 +23,8 @@ Sử dụng AI Agent (Claude Code / Claude Cloud) để hỗ trợ toàn bộ qu
 - **Tổng kinh nghiệm phần mềm**: 3+ năm (tính từ 09/2023 đến hiện tại, bao gồm cả thời gian thực tập)
 - **Nơi làm việc hiện tại / gần nhất**: Con Cung (Full Stack Developer, từ 11/2023 đến nay)
 - **Nơi thực tập trước đó**: FPT (Frontend Intern, từ 09/2023 đến 11/2023)
-- **Trình độ tiếng Anh**: Conversational (Giao tiếp công việc, đọc hiểu tài liệu chuyên ngành; không khai báo fluent/bản ngữ)
+- **Trình độ tiếng Anh**: Đọc và viết tốt (tài liệu kỹ thuật); giao tiếp nói ở mức cơ bản; chưa có chứng chỉ (IELTS/TOEIC). Không khai báo fluent/bản ngữ.
+- **Chứng chỉ**: Chưa có.
 
 > **Lưu ý an toàn**: Chỉ sử dụng thông tin cá nhân trên khi điền hồ sơ tuyển dụng. Tuyệt đối không tự suy đoán ngày sinh, số CCCD, địa chỉ nhà chi tiết, mức lương mong muốn, thời gian báo trước (notice period), tình trạng visa hoặc thông tin cá nhân nhạy cảm khác.
 

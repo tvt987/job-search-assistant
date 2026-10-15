@@ -19,7 +19,7 @@ Pre-verified answers for common ATS and recruiter screening questions.
 | **Years of .NET / C# Exp** | 2+ years (Enterprise at Con Cung + projects) | |
 | **Years of Angular Exp** | 2+ years (AngularJS / Angular 19) | |
 | **Years of SQL / Database Exp**| 2+ years (SQL Server, PostgreSQL, Dapper) | |
-| **English Proficiency** | Conversational (Professional reading, writing, and communication) | Do not claim native / bilingual |
+| **English Proficiency** | Good reading and writing (technical documents); basic spoken communication; no certificate | Do not claim fluent, native or bilingual; do not invent IELTS/TOEIC scores |
 | **Current / Recent Employer** | Con Cung | Full Stack Developer |
 | **Previous Internship** | FPT | Frontend Intern (Sep 2023 – Nov 2023) |
 
