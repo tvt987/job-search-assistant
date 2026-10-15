@@ -31,9 +31,9 @@ experience:
       - "Designed retail data structures for shelves, facings and display groups behind store-layout optimization."
       - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
-      - "Built vector semantic search into a commerce portal and n8n pipelines for competitor scraping and market intelligence."
+      - "Added vector semantic search to a commerce portal; automated competitor scraping and market intelligence with n8n pipelines."
       - "Sped up delivery with Custom GPTs, prompt engineering and an autonomous debug loop built on Claude, Agent Skills and MCP."
-      - "Built an AngularJS preview and copy tool for 4 generated template types: controller, repository, view and script."
+      - "Created an AngularJS preview and copy tool for 4 generated template types: controller, repository, view and script."
   - role: Frontend Intern
     company: FPT
     period: Sep 2023 – Nov 2023
@@ -58,26 +58,26 @@ projects:
     stack: "Python, FastAPI, TF-IDF, Docker"
     link: github.com/tvt987/retail-rag-assistant
     bullets:
-      - "FastAPI document question-answering with cited retrieval, score-based abstention and extractive fallback."
-      - "8 evaluation queries on 2 policy documents gave 6 correct top-3 matches and 2 correct abstentions; CI green."
+      - "Built FastAPI document question-answering with cited retrieval, score-based abstention and extractive fallback."
+      - "Evaluated 8 queries on 2 policy documents: 6 correct top-3 matches and 2 correct abstentions; CI green."
   - name: Retail Reliability Lab
     role: AI-assisted lab
     stack: "FastAPI, Redis, SQLite, Docker Compose, Azure"
     bullets:
-      - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
-      - "Median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows; authored Docker Compose and Azure templates."
+      - "Validated Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
+      - "Cut median SQLite lookup from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows; authored Docker Compose and Azure templates."
 
 skills:
   - label: Frontend
     primary: true
-    items: [Angular, Angular 19, AngularJS, TypeScript, JavaScript, RxJS, NgRx SignalStore, HTML5, CSS3, Tailwind CSS, React]
+    items: [Angular, Angular 19, AngularJS, TypeScript, JavaScript, RxJS, NgRx SignalStore, HTML5, CSS3, Tailwind CSS, ReactJS]
   - label: Backend
     primary: true
-    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API Design, Entity Framework / EF Core, Dapper, LINQ, Message Queues]
+    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, .NET Web API, REST API Design (RESTful), Entity Framework Core (EF Core), Dapper, LINQ]
   - label: Data
     items: [SQL Server, PostgreSQL, MySQL, Redis, Database Design, Stored Procedures, Query Optimization, Indexing, Vector Databases]
   - label: Security & engineering
-    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, Debugging, Performance Optimization]
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, Message Queues, Debugging, Performance Optimization]
   - label: Testing & DevOps
     items: [Unit Testing, Integration Testing, Logging, Observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git, Git Flow, Swagger/OpenAPI]
   - label: AI-assisted dev

@@ -31,7 +31,7 @@ experience:
       - "Fixed Dapper retrieval defects and verified ERP API request and response mappings."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
       - "Added vector semantic search to a commerce portal; built n8n competitor-scraping pipelines and a Claude + MCP debug loop."
-      - "Built a preview and copy tool for 4 generated template types: controller, repository, view and script."
+      - "Created a preview and copy tool for 4 generated template types: controller, repository, view and script."
   - role: Frontend Intern
     company: FPT
     period: Sep 2023 – Nov 2023
@@ -44,8 +44,8 @@ projects:
     stack: ".NET 8, RabbitMQ, Polly, FluentValidation"
     link: github.com/tvt987/partner-integration-bff
     bullets:
-      - ".NET 8 partner-transaction BFF: API-key auth, FluentValidation, idempotency (202 replay / 409 conflict), RabbitMQ publishing."
-      - "Polly retry/timeout around a flaky verification API, ProblemDetails errors, unit and WebApplicationFactory integration tests."
+      - "Built a .NET 8 partner-transaction BFF: API-key auth, FluentValidation, idempotency (202 replay / 409 conflict), RabbitMQ."
+      - "Added Polly retry/timeout around a flaky verification API, ProblemDetails errors, unit and WebApplicationFactory integration tests."
   - name: Layout-Store
     role: Contributor
     stack: "C#, ASP.NET Core, Dapper, PostgreSQL"
@@ -57,14 +57,14 @@ projects:
     stack: "Python, FastAPI, SQLite, Docker"
     link: github.com/tvt987/support-ticket-ai-triage
     bullets:
-      - "FastAPI triage automation for 5 ticket categories: validated outputs, contact masking, protected review, LLM-failure fallback."
-      - "10 HTTP scenarios tested with mocked LLM responses; 1,000 synthetic SQLite review decisions validated, duplicate IDs rejected without overwriting existing records; CI green on main."
+      - "Built FastAPI triage automation for 5 ticket categories: validated outputs, contact masking, protected review, LLM-failure fallback."
+      - "Tested 10 HTTP scenarios with mocked LLM responses; validated 1,000 synthetic SQLite review decisions, duplicate IDs rejected without overwriting existing records; CI green on main."
   - name: Retail Reliability Lab
     role: AI-assisted lab
     stack: "FastAPI, Redis, SQLite, Docker Compose, Azure"
     bullets:
-      - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
-      - "Median SQLite lookup 3.63 ms → 0.005 ms (200 queries, 100,000 synthetic rows); authored Docker Compose and Azure templates."
+      - "Validated Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
+      - "Cut median SQLite lookup 3.63 ms → 0.005 ms (200 queries, 100,000 synthetic rows); authored Docker Compose and Azure templates."
   - name: Ecommerce-Admin
     role: Frontend / API integration
     stack: "C#, Angular, PostgreSQL, REST APIs"
@@ -75,12 +75,12 @@ projects:
 skills:
   - label: Backend
     primary: true
-    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API Design, Entity Framework / EF Core, Dapper, LINQ, Message Queues]
+    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API Design (RESTful), Entity Framework Core (EF Core), Dapper, LINQ]
   - label: Data
     primary: true
     items: [SQL Server, PostgreSQL, MySQL, Redis, Database Design, Stored Procedures, Query Optimization, Indexing]
   - label: Security & engineering
-    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, RabbitMQ, Polly, FluentValidation, Debugging, Performance Optimization]
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, Message Queues, RabbitMQ, Polly, FluentValidation, Debugging, Performance Optimization]
   - label: Testing & DevOps
     items: [Unit Testing, Integration Testing, Logging, Observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git, Git Flow, Swagger/OpenAPI]
   - label: Frontend

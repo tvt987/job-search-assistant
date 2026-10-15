@@ -28,19 +28,22 @@ projects:
     link: github.com/tvt987/retail-rag-assistant
     bullets:
       - "Built cited document retrieval with TF-IDF and cosine similarity over paragraph chunks, with optional SentenceTransformers embeddings."
-      - "Developed FastAPI question, document and health endpoints with low-score abstention and extractive fallback when LLM calls fail; 8 evaluation queries across 2 documents gave 6 correct top-3 matches and 2 correct abstentions, CI green."
+      - "Developed FastAPI question, document and health endpoints with low-score abstention and extractive fallback when LLM calls fail."
+      - "Evaluated 8 queries across 2 documents: 6 correct top-3 matches and 2 correct abstentions; GitHub Actions CI green on main."
   - name: Support Ticket AI Triage
     role: Personal project
     stack: "Python, FastAPI, LLM Integration, SQLite, Docker"
     link: github.com/tvt987/support-ticket-ai-triage
     bullets:
-      - "Automated LLM-assisted triage for 5 ticket categories with priority and sentiment validation, urgent-rule overrides and a rules fallback; 5 synthetic fixtures passed, human review protected by a token, masked contact data and no raw ticket text in storage."
-      - "Tested 10 FastAPI HTTP scenarios with mocked LLM responses, 120 schema combinations and 720 urgent-rule cases; verified SQLite persistence for 1,000 review decisions, GitHub Actions CI green on main."
+      - "Automated LLM-assisted triage for 5 ticket categories with priority and sentiment validation, urgent-rule overrides and a rules fallback."
+      - "Protected human review with a token, masked contact data and kept raw ticket text out of storage; 5 synthetic fixtures passed."
+      - "Tested 10 FastAPI HTTP scenarios with mocked LLM responses, 120 schema combinations and 720 urgent-rule cases; verified SQLite persistence for 1,000 review decisions."
   - name: Retail Reliability Lab
     role: AI-assisted lab
     stack: "FastAPI, Redis, SQLite, Docker Compose, Azure"
     bullets:
-      - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests against real Redis; median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows; authored Docker Compose and Azure templates."
+      - "Validated Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests against real Redis."
+      - "Cut median SQLite lookup from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows; authored Docker Compose and Azure templates."
 
 experience:
   - role: Full Stack Developer
@@ -65,7 +68,7 @@ experience:
 skills:
   - label: AI applications
     primary: true
-    items: [RAG, Document Retrieval, Data Pipelines, NLP (text retrieval), TF-IDF, Semantic Embeddings, LLM Integration, Prompt Engineering, Output Validation, Evaluation, Abstention and Fallbacks, Vector Semantic Search, Human-in-the-loop Workflows]
+    items: [RAG, Document Retrieval, Data Pipelines, NLP (text retrieval), TF-IDF, Semantic Embeddings, LLM Integration, Prompt Engineering, Output Validation, Evaluation, Abstention and Fallbacks, Vector Search, Vector Databases, AI Agents, Human-in-the-loop Workflows]
   - label: Python & APIs
     primary: true
     items: [Python, FastAPI, REST APIs, SQLite, Input Validation]
@@ -76,9 +79,9 @@ skills:
   - label: Testing & DevOps
     items: [Unit Testing, Integration Testing, Docker, CI/CD, GitHub Actions, Git, Logging, Monitoring/Observability, Azure, AWS, IIS]
   - label: Tools & frontend
-    items: [ChatGPT, Claude, Cursor, GitHub Copilot, MCP, n8n, Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
+    items: [OpenAI (ChatGPT, Custom GPTs), Claude, Cursor, GitHub Copilot, MCP, n8n, Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
   - label: Practices
     items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
 
 pages:
-  - [summary, facts, experience, projects, skills, footerinfo]
+  - [summary, experience, projects, skills, footerinfo]
