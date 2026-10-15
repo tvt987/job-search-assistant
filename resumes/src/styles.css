@@ -365,3 +365,5 @@ body.one-page .job-note { margin-bottom: .3mm; }
 body.one-page.den-relaxed .body > section { margin-top: 2.1mm; }
 body.one-page.den-relaxed .proj { margin-top: .9mm; padding: .7mm 0 .7mm 2.5mm; }
 body.one-page.den-relaxed .skill-row { padding: .55mm 0; }
+
+.job-note .ctx { color: var(--ink); font-weight: 700; }

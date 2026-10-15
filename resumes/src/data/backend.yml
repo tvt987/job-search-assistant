@@ -22,6 +22,7 @@ facts:
 experience:
   - role: Full Stack Developer
     company: Con Cung
+    context: "Vietnam's mother-and-baby retail chain"
     period: Nov 2023 – Present
     note: ".NET · AngularJS · SQL Server · Dapper · Keycloak · ERP integration"
     bullets:

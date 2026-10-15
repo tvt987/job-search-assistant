@@ -52,7 +52,9 @@
       <div class="job-title">{{ j.role }} <i>at</i> <em>{{ j.company }}</em></div>
       <span class="period">{{ j.period }}</span>
     </div>
-    {% if j.get('note') %}<div class="job-note">{{ j.note }}</div>{% endif %}
+    {% if j.get('context') or j.get('note') %}<div class="job-note">
+      {%- if j.get('context') %}<span class="ctx">{{ j.context }}</span>{% if j.get('note') %} · {% endif %}{% endif %}
+      {%- if j.get('note') %}{{ j.note }}{% endif %}</div>{% endif %}
     {{ bullets(j.bullets) }}
   </div>
   {% endfor %}
