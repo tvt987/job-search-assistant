@@ -32,13 +32,13 @@ projects:
     stack: "Python, FastAPI, LLM Integration, SQLite, Docker"
     link: github.com/tvt987/support-ticket-ai-triage
     bullets:
-      - "Automated LLM-assisted triage for 5 ticket categories with priority and sentiment validation, urgent-rule overrides and a rules fallback; token-protected human review, masked contact data and no raw ticket text in storage."
-      - "Tested 10 FastAPI HTTP scenarios with mocked LLM responses and 120 schema combinations; verified SQLite persistence for 1,000 review decisions, GitHub Actions CI green on main."
+      - "Automated LLM-assisted triage for 5 ticket categories with priority and sentiment validation, urgent-rule overrides and a rules fallback; 5 synthetic fixtures passed, human review protected by a token, masked contact data and no raw ticket text in storage."
+      - "Tested 10 FastAPI HTTP scenarios, 120 schema combinations and 720 urgent-rule cases; verified SQLite persistence for 1,000 review decisions, GitHub Actions CI green on main."
   - name: Retail Reliability Lab
     role: AI-assisted lab
     stack: "FastAPI, Redis, SQLite, Azure"
     bullets:
-      - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests against real Redis; median SQLite lookup cut from 3.63 ms to 0.005 ms over 100,000 synthetic rows."
+      - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests against real Redis; median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows."
   - name: Layout-Store
     role: Contributor
     stack: "C#, ASP.NET Core, Dapper, PostgreSQL"

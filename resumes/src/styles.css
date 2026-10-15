@@ -293,7 +293,7 @@ body.one-page .contact svg { width: 3mm; height: 3mm; }
 body.one-page .photo-ring { width: 21.5mm; height: 21.5mm; }
 
 body.one-page .body { padding: 3.6mm 12mm 0; }
-body.one-page .body > section { margin-top: 2.1mm; }
+body.one-page .body > section { margin-top: 2mm; }
 body.one-page .sh { gap: 2mm; margin-bottom: 1.8mm; }
 body.one-page .sh .ic { width: 5.4mm; height: 5.4mm; border-radius: 1.5mm; }
 body.one-page .sh .ic svg { width: 3.2mm; height: 3.2mm; }
@@ -301,7 +301,7 @@ body.one-page .sh h2 { font-size: 9.2pt; letter-spacing: 1.2pt; }
 
 body.one-page .summary { font-size: 8.9pt; line-height: 1.38; padding: 1.8mm 3.2mm; }
 
-body.one-page .job { padding-left: 6.2mm; padding-bottom: 1.9mm; }
+body.one-page .job { padding-left: 6.2mm; padding-bottom: 1.7mm; }
 body.one-page .job .node { width: 3.9mm; height: 3.9mm; border-width: 1mm; top: 1.3mm; }
 body.one-page .job::before { left: 1.75mm; top: 5mm; }
 body.one-page .job-title { font-size: 10pt; }

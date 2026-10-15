@@ -25,7 +25,7 @@ experience:
     period: Nov 2023 – Present
     note: ".NET · AngularJS · SQL Server · Dapper · Keycloak · ERP integration"
     bullets:
-      - "Delivered AngularJS and .NET voucher search, creation and update workflows with promotion validation and Excel preview."
+      - "Delivered AngularJS and .NET voucher search, creation and update workflows with permission checks, promotion validation and Excel preview before batch creation."
       - "Implemented 7 subscription benefit calculations across 3-, 6- and 12-month plans with side-by-side comparisons."
       - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
@@ -48,7 +48,7 @@ projects:
     stack: "C#, ASP.NET Core, PostgreSQL, Angular"
     link: github.com/tvt987/Layout-Store
     bullets:
-      - "Contributed Angular workflows and PostgreSQL data structures for store layouts and product placement, connecting HTTP handlers to stored procedures through async interfaces."
+      - "Contributed Angular workflows and PostgreSQL data structures for store layouts and product placement."
   - name: Retail RAG Assistant
     role: Personal project
     stack: "Python, FastAPI, TF-IDF, Docker"
@@ -61,6 +61,7 @@ projects:
     stack: "FastAPI, Redis, SQLite, Azure"
     bullets:
       - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
+      - "Median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows."
 
 skills:
   - label: Frontend

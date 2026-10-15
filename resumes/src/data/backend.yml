@@ -25,8 +25,8 @@ experience:
     period: Nov 2023 – Present
     note: ".NET · AngularJS · SQL Server · Dapper · Keycloak · ERP integration"
     bullets:
-      - "Delivered .NET voucher APIs for search, creation and updates with promotion validation and Excel preview."
-      - "Mapped SQL Server stored procedures to typed Dapper models for 7 subscription benefit calculations."
+      - "Delivered .NET voucher APIs for search, creation and updates with permission checks, promotion validation and Excel preview before batch creation."
+      - "Mapped SQL Server stored procedures to typed Dapper models for 7 benefit calculations across 3-, 6- and 12-month plans."
       - "Fixed Dapper retrieval defects and verified ERP API request and response mappings."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
       - "Built a preview and copy tool for 4 generated template types: controller, repository, view and script."
@@ -48,8 +48,8 @@ projects:
     stack: "Python, FastAPI, SQLite, Docker"
     link: github.com/tvt987/support-ticket-ai-triage
     bullets:
-      - "FastAPI triage for 5 ticket categories with validated outputs, contact masking and LLM-failure fallback."
-      - "10 HTTP scenarios tested with mocked LLM responses and 1,000 synthetic SQLite review decisions validated; CI green."
+      - "FastAPI triage for 5 ticket categories with validated outputs, contact masking, protected review and LLM-failure fallback."
+      - "10 HTTP scenarios tested with mocked LLM responses; 1,000 synthetic SQLite review decisions validated and duplicate IDs rejected; CI green."
   - name: Retail Reliability Lab
     role: AI-assisted lab
     stack: "FastAPI, Redis, SQLite, Azure"
