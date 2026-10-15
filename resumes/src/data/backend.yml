@@ -14,8 +14,8 @@ facts:
     label: "software development"
   - value: "10"
     label: "ASP.NET Core routes"
-  - value: "OAuth 2.0"
-    label: "Keycloak JWT / OIDC"
+  - value: "7"
+    label: "subscription benefit calculations"
   - value: "0.005 ms"
     label: "median cached lookup, from 3.63 ms"
 

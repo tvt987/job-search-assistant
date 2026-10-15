@@ -68,7 +68,7 @@ skills:
     items: [RAG, Document Retrieval, Data Pipelines, NLP (text retrieval), TF-IDF, Semantic Embeddings, LLM Integration, Prompt Engineering, Output Validation, Evaluation, Abstention and Fallbacks, Human-in-the-loop Workflows]
   - label: Python & APIs
     primary: true
-    items: [Python, FastAPI, REST APIs, SQLite, Input Validation, Data Pipelines]
+    items: [Python, FastAPI, REST APIs, SQLite, Input Validation]
   - label: Backend & data
     items: [C#, .NET, ASP.NET Core, Dapper, SQL Server, PostgreSQL, Redis, Database Design, Query Optimization]
   - label: Security
