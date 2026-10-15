@@ -99,6 +99,10 @@ Sử dụng AI Agent (Claude Code / Claude Cloud) để hỗ trợ toàn bộ qu
    - Phân loại tự động 5 nhóm ticket bằng LLM, validate priority/sentiment, rule-based fallback, token-protected human review, masking thông tin liên hệ; không lưu raw ticket text. 10 HTTP tests, 120 schema combinations, 1.000 SQLite synthetic decisions.
 5. **Retail Reliability Lab** *(AI-assisted lab)*:
    - Thử nghiệm cache-aside Redis với TTL 60s, invalidation và outage fallback; 22 unit/integration tests trên real Redis; giảm median lookup từ 3.63ms xuống 0.005ms (100.000 rows synthetic).
+6. **Partner Integration BFF** *(Take-home project)*:
+   - Repo: https://github.com/tvt987/partner-integration-bff (nội dung xác minh từ README công khai, 10/2026)
+   - .NET 8 BFF nhận giao dịch đối tác: API-key auth (so sánh constant-time), FluentValidation, idempotency theo partnerId + transactionReference (202 replay / 409 conflict), publish sang RabbitMQ (hoặc in-memory khi dev).
+   - Polly retry + timeout quanh API xác minh giả lập (~30% timeout); lỗi trả về ProblemDetails; unit test + integration test bằng WebApplicationFactory; Docker Compose (BFF, verification API, RabbitMQ).
 
 ---
 
@@ -130,3 +134,18 @@ Với mỗi vị trí tìm thấy, ghi nhận vào `job-tracker.csv`:
    - Sẵn sàng di dời địa điểm (Relocation willingness).
    Khi gặp các trường này, agent phải ghi trạng thái `NEEDS_USER_INPUT` và xin xác nhận từ người dùng.
 3. **Không tự ý submit**: Không tự động nộp đơn nếu có câu hỏi chưa chắc chắn. Chỉ nộp khi các thông tin đã được kiểm chứng và form hoàn thiện hợp lệ.
+
+
+---
+
+## 8. Mâu thuẫn cần ứng viên xác nhận (phát hiện 10/2026 — CHƯA xử lý)
+Profile README công khai tại https://github.com/tvt987 ghi khác với CV và tài liệu này. Không tự sửa bên nào cho tới khi ứng viên xác nhận:
+
+| Mục | CV / tài liệu này | GitHub profile README |
+|---|---|---|
+| Bắt đầu tại Con Cung | 11/2023 | 07/2024 |
+| Số năm kinh nghiệm | 3+ năm | 2+ năm .NET + Angular |
+| Thực tập | FPT — Frontend Intern (09/2023 – 11/2023) | Galaxy Industrial — Fullstack Intern (08/2023 – 11/2023); VNPT — Frontend Intern (12/2023 – 04/2024) |
+| Học vấn | UIT, VNU-HCM — tốt nghiệp 2026 | FPT Polytechnic, Software Application (2021 – 2024); UIT, VNU-HCM (2024 – 2025) |
+
+README GitHub còn liệt kê công việc tại Con Cung chưa có trong tài liệu này (cần xác nhận trước khi đưa vào CV): thiết kế kiến trúc dữ liệu retail (shelves, facings, display groups); AI workflows (Custom GPTs, prompt engineering); autonomous debugging loop với Claude + Agent Skills + MCP; pipeline n8n cho competitor scraping & market intelligence; vector semantic search trong portal thương mại.
