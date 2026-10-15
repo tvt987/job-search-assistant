@@ -6,13 +6,13 @@ role: AI Application Engineer
 tagline: "Python · FastAPI · RAG · LLM Integration · Evaluation"
 
 summary: >-
-  Software engineer with 3+ years of development experience, including .NET retail workflows at Con Cung.
-  Python and FastAPI portfolio projects deliver RAG document question-answering with citations and
-  LLM-assisted ticket-triage automation, with validated outputs, fallbacks, automated tests and human review.
+  Software engineer building LLM and RAG applications in Python and FastAPI, backed by 3+ years of software
+  development including production .NET, SQL Server and Keycloak work at Con Cung. Focused on reliable AI
+  features: cited retrieval, validated outputs, abstention and fallbacks, automated evaluation and human review.
 
 facts:
-  - value: "RAG"
-    label: "cited retrieval, abstention"
+  - value: "3+ yrs"
+    label: "software development"
   - value: "8 / 8"
     label: "eval queries resolved"
   - value: "10"
