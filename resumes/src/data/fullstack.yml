@@ -5,9 +5,9 @@ role: Full Stack Developer
 tagline: ".NET · Angular · TypeScript · SQL Server · REST APIs"
 
 summary: >-
-  Full stack developer with 3+ years of experience delivering .NET and AngularJS voucher and subscription
-  workflows at Con Cung on SQL Server, Dapper and Keycloak. Portfolio work adds Angular 19 admin screens
-  with RxJS and NgRx SignalStore against authenticated APIs.
+  Full stack developer with 3+ years of software development experience, delivering .NET and AngularJS
+  voucher and subscription workflows at Con Cung on SQL Server, Dapper and Keycloak. Portfolio work adds
+  Angular 19 admin screens with RxJS and NgRx SignalStore.
 
 facts:
   - value: "3+ yrs"
@@ -58,10 +58,10 @@ projects:
       - "8 evaluation queries on 2 policy documents gave 6 correct top-3 matches and 2 correct abstentions; CI green."
   - name: Retail Reliability Lab
     role: AI-assisted lab
-    stack: "FastAPI, Redis, SQLite, Azure"
+    stack: "FastAPI, Redis, SQLite, Docker Compose, Azure"
     bullets:
       - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
-      - "Median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows."
+      - "Median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows; authored Docker Compose and Azure templates."
 
 skills:
   - label: Frontend

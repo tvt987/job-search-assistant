@@ -287,21 +287,21 @@ body.one-page .role-line { margin-top: 1.4mm; }
 body.one-page .role-line .role { font-size: 10.2pt; }
 body.one-page .role-line .sep { width: 7mm; }
 body.one-page .tagline { margin-top: 1mm; font-size: 8pt; }
-body.one-page .contacts { margin-top: 2.4mm; gap: 1.1mm 1.5mm; }
-body.one-page .contact { font-size: 7.8pt; padding: .7mm 2.1mm; gap: 1.3mm; }
+body.one-page .contacts { margin-top: 2.2mm; gap: .9mm 1.3mm; }
+body.one-page .contact { font-size: 7.6pt; padding: .6mm 1.9mm; gap: 1.2mm; }
 body.one-page .contact svg { width: 3mm; height: 3mm; }
 body.one-page .photo-ring { width: 21.5mm; height: 21.5mm; }
 
-body.one-page .body { padding: 3.6mm 12mm 0; }
-body.one-page .body > section { margin-top: 2mm; }
-body.one-page .sh { gap: 2mm; margin-bottom: 1.8mm; }
+body.one-page .body { padding: 3.4mm 12mm 0; }
+body.one-page .body > section { margin-top: 1.75mm; }
+body.one-page .sh { gap: 2mm; margin-bottom: 1.5mm; }
 body.one-page .sh .ic { width: 5.4mm; height: 5.4mm; border-radius: 1.5mm; }
 body.one-page .sh .ic svg { width: 3.2mm; height: 3.2mm; }
 body.one-page .sh h2 { font-size: 9.2pt; letter-spacing: 1.2pt; }
 
 body.one-page .summary { font-size: 8.9pt; line-height: 1.38; padding: 1.8mm 3.2mm; }
 
-body.one-page .job { padding-left: 6.2mm; padding-bottom: 1.7mm; }
+body.one-page .job { padding-left: 6.2mm; padding-bottom: 1.3mm; }
 body.one-page .job .node { width: 3.9mm; height: 3.9mm; border-width: 1mm; top: 1.3mm; }
 body.one-page .job::before { left: 1.75mm; top: 5mm; }
 body.one-page .job-title { font-size: 10pt; }
@@ -309,7 +309,7 @@ body.one-page .period { font-size: 7.8pt; padding: .7mm 2.2mm; }
 body.one-page .job-note { font-size: 8pt; margin-top: .4mm; }
 
 body.one-page ul.bul { margin-top: 1mm; }
-body.one-page ul.bul li { font-size: 8.7pt; line-height: 1.3; margin-top: .75mm; padding-left: 3.5mm; }
+body.one-page ul.bul li { font-size: 8.7pt; line-height: 1.28; margin-top: .65mm; padding-left: 3.5mm; }
 body.one-page ul.bul li::before { top: 1.2mm; width: 1.3mm; height: 1.3mm; }
 
 body.one-page .proj {
@@ -322,13 +322,13 @@ body.one-page .proj-role { font-size: 7.2pt; letter-spacing: .4pt; }
 body.one-page .proj-stack { flex-basis: auto; font-size: 8pt; }
 body.one-page .proj-stack::before { content: "· "; color: var(--line); }
 body.one-page .proj-top .link { font-size: 8pt; }
-body.one-page .proj { padding: .85mm 0 .85mm 2.6mm; margin-top: .9mm; }
+body.one-page .proj { padding: .6mm 0 .6mm 2.5mm; margin-top: .7mm; }
 body.one-page .proj ul.bul { margin-top: .6mm; }
 body.one-page .proj ul.bul li { font-size: 8.7pt; }
 
 /* skills read as compact comma lists instead of chips */
-body.one-page .skill-row { grid-template-columns: 26mm 1fr; gap: 2mm; padding: .5mm 0; }
-body.one-page .skill-label { font-size: 8.3pt; padding-top: 0; }
+body.one-page .skill-row { grid-template-columns: 24mm 1fr; gap: 1.8mm; padding: .45mm 0; }
+body.one-page .skill-label { font-size: 8.2pt; padding-top: 0; }
 body.one-page .chips { display: block; line-height: 1.32; }
 body.one-page .chip { display: inline-block; white-space: nowrap; background: none; padding: 0; border-radius: 0; font-size: 8.2pt; }
 body.one-page .chip.pri { background: none; color: var(--chip-ink); font-weight: 400; }
@@ -338,7 +338,7 @@ body.one-page .chip:not(:last-child)::after { content: ","; }
 /* education + languages collapse into one bordered strip, one line each */
 body.one-page .cards {
   display: block; border: .25mm solid var(--rule); border-radius: 2mm;
-  background: #FCFDFF; padding: 1mm 2.8mm;
+  background: #FCFDFF; padding: .9mm 2.8mm;
 }
 body.one-page .card { display: flex; align-items: baseline; gap: 2.2mm; border: none; background: none; padding: .35mm 0; }
 body.one-page .card .ct { flex: none; width: 24mm; gap: 1.5mm; }
@@ -353,7 +353,7 @@ body.one-page .card .lang { margin: 0; font-size: 8.2pt; display: inline-flex; g
 body.one-page .foot { left: 12mm; right: 12mm; bottom: 5.6mm; font-size: 7.5pt; padding-top: 1.5mm; }
 body.one-page .deco-dots { bottom: 13.5mm; }
 
-body.one-page .fact { padding: 1.1mm 2.4mm; }
+body.one-page .fact { padding: .95mm 2.3mm; }
 body.one-page .fact b { font-size: 9.3pt; }
 body.one-page .fact span { font-size: 7.2pt; margin-top: .3mm; }
 body.one-page .job-note { margin-bottom: .3mm; }

@@ -18,6 +18,7 @@ import glob
 import mimetypes
 import re
 import shutil
+from urllib.parse import quote
 import subprocess
 import sys
 import tempfile
@@ -82,6 +83,8 @@ def render_html(variant: str) -> tuple[str, str]:
         lstrip_blocks=True,
     )
     cv["pages"] = [[normalise(s, cv) for s in page] for page in cv["pages"]]
+
+    env.filters["urlquote"] = lambda u: quote(u, safe=":/?#[]@!$&'()*+,;=~")
 
     tpl = env.get_template("template.html.j2")
     html = tpl.render(

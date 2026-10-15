@@ -5,9 +5,9 @@ role: Backend Developer
 tagline: "C# · .NET · ASP.NET Core · SQL Server · REST APIs"
 
 summary: >-
-  Backend developer with 3+ years of experience building .NET web applications at Con Cung on SQL Server,
-  Dapper and Keycloak, with ERP integration. Portfolio API work covers 10 ASP.NET Core / PostgreSQL routes
-  with async data access and dependency injection.
+  Backend developer with 3+ years of software development experience. Builds .NET applications at Con Cung
+  on SQL Server, Dapper, Keycloak and ERP integration. Portfolio APIs cover 10 ASP.NET Core / PostgreSQL
+  routes with async data access and dependency injection.
 
 facts:
   - value: "3+ yrs"
@@ -25,8 +25,8 @@ experience:
     period: Nov 2023 – Present
     note: ".NET · AngularJS · SQL Server · Dapper · Keycloak · ERP integration"
     bullets:
-      - "Delivered .NET voucher APIs for search, creation and updates with permission checks, promotion validation and Excel preview before batch creation."
-      - "Mapped SQL Server stored procedures to typed Dapper models for 7 benefit calculations across 3-, 6- and 12-month plans."
+      - "Delivered .NET voucher APIs for search, creation and updates with permission checks, promotion validation and pre-batch Excel preview."
+      - "Mapped SQL Server stored procedures to typed Dapper models for 7 subscription benefit calculations across 3-, 6- and 12-month plans."
       - "Fixed Dapper retrieval defects and verified ERP API request and response mappings."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
       - "Built a preview and copy tool for 4 generated template types: controller, repository, view and script."
@@ -42,20 +42,20 @@ projects:
     stack: "C#, ASP.NET Core, Dapper, PostgreSQL"
     link: github.com/tvt987/Layout-Store
     bullets:
-      - "Contributed 10 ASP.NET Core / PostgreSQL routes for search, CRUD, approval and Excel import, wired to stored procedures via async interfaces and DI."
+      - "Contributed 10 ASP.NET Core / PostgreSQL routes for search, CRUD, approval and Excel import, with HTTP handlers wired to stored procedures through async interfaces and dependency injection."
   - name: Support Ticket AI Triage
     role: Personal project
     stack: "Python, FastAPI, SQLite, Docker"
     link: github.com/tvt987/support-ticket-ai-triage
     bullets:
-      - "FastAPI triage for 5 ticket categories with validated outputs, contact masking, protected review and LLM-failure fallback."
-      - "10 HTTP scenarios tested with mocked LLM responses; 1,000 synthetic SQLite review decisions validated and duplicate IDs rejected; CI green."
+      - "FastAPI triage automation for 5 ticket categories: validated outputs, contact masking, protected review, LLM-failure fallback."
+      - "10 HTTP scenarios tested with mocked LLM responses; 1,000 synthetic SQLite review decisions validated, duplicate IDs rejected without overwriting existing records; CI green on main."
   - name: Retail Reliability Lab
     role: AI-assisted lab
-    stack: "FastAPI, Redis, SQLite, Azure"
+    stack: "FastAPI, Redis, SQLite, Docker Compose, Azure"
     bullets:
       - "Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 API and cache tests on real Redis."
-      - "Median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows."
+      - "Median SQLite lookup cut from 3.63 ms to 0.005 ms over 200 queries on 100,000 synthetic rows; authored Docker Compose and Azure templates."
   - name: Ecommerce-Admin
     role: Frontend / API integration
     stack: "C#, Angular, PostgreSQL, REST APIs"
