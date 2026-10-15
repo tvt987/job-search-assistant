@@ -70,9 +70,9 @@ python3 resumes/src/build.py          # rebuilds all three PDFs (resumes/ + repo
 python3 resumes/src/build.py --png    # also writes page previews to resumes/src/build/
 ```
 
-The build prints a fit report per CV (`2p  slack p1 +4mm / p2 +4mm`); a negative slack
-value means the sheet overflows and the layout has to be rebalanced before shipping.
-See `resumes/src/README.md` for details.
+Each CV is a single A4 page. The build prints a fit report per CV
+(`1p  slack p1 +6mm`); a negative slack value means the page overflows and the copy
+has to be trimmed before shipping. See `resumes/src/README.md` for details.
 
 ---
 

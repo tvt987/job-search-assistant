@@ -100,6 +100,9 @@ def measure(chrome: str, page: Path, tmp: str) -> str:
          f"--user-data-dir={tmp}/profile-dom", "--dump-dom", page.as_uri()],
         capture_output=True, text=True,
     )
+    if "--debug" in sys.argv:
+        for i, sec in enumerate(re.findall(r'data-sections="([^"]*)"', res.stdout), 1):
+            print(f"   sheet {i}: {sec}")
     m = re.search(r'data-fit="([^"]*)"', res.stdout)
     if not m:
         return "fit: unknown"

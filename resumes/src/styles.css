@@ -184,12 +184,12 @@ ul.bul li::before {
 }
 .proj:first-of-type { margin-top: 0; }
 .proj-top { display: flex; align-items: baseline; justify-content: space-between; gap: 3mm; }
+.proj-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: .8mm 2.2mm; }
 .proj-name { font-size: 10.1pt; font-weight: 700; color: var(--b900); }
-.proj-role { flex: none; font-size: 7.8pt; font-weight: 700; letter-spacing: .55pt; text-transform: uppercase; color: var(--accent); }
-.proj-meta { margin-top: .9mm; font-size: 8.5pt; color: var(--muted); display: flex; flex-wrap: wrap; align-items: center; gap: 1.6mm 2.6mm; }
-.proj-meta .link { display: inline-flex; align-items: center; gap: 1.2mm; color: var(--accent); }
-.proj-meta .link svg { width: 3mm; height: 3mm; stroke: currentColor; fill: none; stroke-width: 1.9; }
-.proj-meta .dot { width: 1mm; height: 1mm; border-radius: 50%; background: var(--line); }
+.proj-role { font-size: 7.8pt; font-weight: 700; letter-spacing: .55pt; text-transform: uppercase; color: var(--accent); }
+.proj-stack { flex-basis: 100%; font-size: 8.5pt; color: var(--muted); }
+.proj-top .link { flex: none; display: inline-flex; align-items: center; gap: 1.2mm; font-size: 8.5pt; color: var(--accent); white-space: nowrap; }
+.proj-top .link svg { width: 3mm; height: 3mm; stroke: currentColor; fill: none; stroke-width: 1.9; }
 .proj ul.bul { margin-top: 1.6mm; }
 .proj ul.bul li { font-size: 9.1pt; }
 
@@ -250,16 +250,110 @@ body.den-relaxed .card { padding: 3mm 3.4mm; }
 /* ---------- Vertical justification on the opening sheet ----------
    Page 1 carries the header band, so it holds less body copy than page 2.
    A touch more air there keeps both sheets optically balanced. */
-.sheet:first-of-type .body > section { margin-top: 5.2mm; }
-.sheet:first-of-type .summary { font-size: 9.7pt; line-height: 1.5; padding: 3mm 4.2mm; }
-.sheet:first-of-type .stat { padding: 2.9mm 3.1mm; }
-.sheet:first-of-type .job { padding-bottom: 3.6mm; }
-.sheet:first-of-type ul.bul li { margin-top: 1.5mm; line-height: 1.43; }
-.sheet:first-of-type .proj { padding: 2.8mm 3.4mm; margin-top: 2.6mm; }
+body:not(.one-page) .sheet:first-of-type .body > section { margin-top: 5.2mm; }
+body:not(.one-page) .sheet:first-of-type .summary { font-size: 9.7pt; line-height: 1.5; padding: 3mm 4.2mm; }
+body:not(.one-page) .sheet:first-of-type .stat { padding: 2.9mm 3.1mm; }
+body:not(.one-page) .sheet:first-of-type .job { padding-bottom: 3.6mm; }
+body:not(.one-page) .sheet:first-of-type ul.bul li { margin-top: 1.5mm; line-height: 1.43; }
+body:not(.one-page) .sheet:first-of-type .proj { padding: 2.8mm 3.4mm; margin-top: 2.6mm; }
 
 /* the lighter AI track gets more air on its opening sheet */
-body.den-relaxed .sheet:first-of-type .body > section { margin-top: 7.2mm; }
-body.den-relaxed .sheet:first-of-type .summary { font-size: 9.9pt; line-height: 1.56; padding: 3.8mm 4.6mm; }
-body.den-relaxed .sheet:first-of-type .stat { padding: 3.6mm 3.3mm; }
-body.den-relaxed .sheet:first-of-type ul.bul li { margin-top: 2mm; line-height: 1.5; }
-body.den-relaxed .sheet:first-of-type .proj { padding: 3.6mm 3.8mm; margin-top: 3.4mm; }
+body.den-relaxed:not(.one-page) .sheet:first-of-type .body > section { margin-top: 7.2mm; }
+body.den-relaxed:not(.one-page) .sheet:first-of-type .summary { font-size: 9.9pt; line-height: 1.56; padding: 3.8mm 4.6mm; }
+body.den-relaxed:not(.one-page) .sheet:first-of-type .stat { padding: 3.6mm 3.3mm; }
+body.den-relaxed:not(.one-page) .sheet:first-of-type ul.bul li { margin-top: 2mm; line-height: 1.5; }
+body.den-relaxed:not(.one-page) .sheet:first-of-type .proj { padding: 3.6mm 3.8mm; margin-top: 3.4mm; }
+
+/* ---------- Key-facts strip (one-page tracks) ---------- */
+.facts {
+  display: flex;
+  border: .25mm solid var(--rule); border-top: .9mm solid var(--accent);
+  border-radius: 1.5mm 1.5mm 2mm 2mm;
+  background: linear-gradient(90deg, var(--soft) 0%, #FCFDFF 72%);
+  overflow: hidden;
+}
+.fact { flex: 1; padding: 1.9mm 3mm; border-left: .25mm solid var(--rule); }
+.fact:first-child { border-left: none; }
+.fact b { display: block; font-size: 10.4pt; line-height: 1.15; color: var(--b900); letter-spacing: .15pt; }
+.fact span { display: block; margin-top: .5mm; font-size: 7.5pt; line-height: 1.25; color: var(--muted); }
+
+/* =========================================================
+   ONE-PAGE MODE — everything on a single A4 sheet
+   ========================================================= */
+body.one-page .band { padding: 6mm 12mm 4.3mm; }
+body.one-page .band-inner { gap: 7mm; }
+body.one-page .name { font-size: 20pt; letter-spacing: .55pt; }
+body.one-page .role-line { margin-top: 1.7mm; }
+body.one-page .role-line .role { font-size: 10.6pt; }
+body.one-page .role-line .sep { width: 7mm; }
+body.one-page .tagline { margin-top: 1.2mm; font-size: 8.2pt; }
+body.one-page .contacts { margin-top: 2.7mm; gap: 1.2mm 1.6mm; }
+body.one-page .contact { font-size: 7.8pt; padding: .7mm 2.1mm; gap: 1.3mm; }
+body.one-page .contact svg { width: 3mm; height: 3mm; }
+body.one-page .photo-ring { width: 23mm; height: 23mm; }
+
+body.one-page .body { padding: 4mm 12mm 0; }
+body.one-page .body > section { margin-top: 2.9mm; }
+body.one-page .sh { gap: 2.2mm; margin-bottom: 2.1mm; }
+body.one-page .sh .ic { width: 5.4mm; height: 5.4mm; border-radius: 1.5mm; }
+body.one-page .sh .ic svg { width: 3.2mm; height: 3.2mm; }
+body.one-page .sh h2 { font-size: 9.2pt; letter-spacing: 1.2pt; }
+
+body.one-page .summary { font-size: 9pt; line-height: 1.42; padding: 2.4mm 3.4mm; }
+
+body.one-page .job { padding-left: 6.4mm; padding-bottom: 2.2mm; }
+body.one-page .job .node { width: 3.9mm; height: 3.9mm; border-width: 1mm; top: 1.3mm; }
+body.one-page .job::before { left: 1.75mm; top: 5mm; }
+body.one-page .job-title { font-size: 10pt; }
+body.one-page .period { font-size: 7.8pt; padding: .7mm 2.2mm; }
+body.one-page .job-note { font-size: 8pt; margin-top: .4mm; }
+
+body.one-page ul.bul { margin-top: 1.2mm; }
+body.one-page ul.bul li { font-size: 8.8pt; line-height: 1.33; margin-top: .9mm; padding-left: 3.6mm; }
+body.one-page ul.bul li::before { top: 1.2mm; width: 1.3mm; height: 1.3mm; }
+
+body.one-page .proj {
+  border: none; border-left: .9mm solid var(--line); border-radius: 0 1.5mm 1.5mm 0;
+  background: linear-gradient(90deg, #FAFCFF 0%, rgba(255,255,255,0) 72%);
+  padding: 1.3mm 0 1.3mm 3mm; margin-top: 1.7mm;
+}
+body.one-page .proj-name { font-size: 9.3pt; }
+body.one-page .proj-role { font-size: 7.2pt; letter-spacing: .4pt; }
+body.one-page .proj-stack { flex-basis: auto; font-size: 8pt; }
+body.one-page .proj-stack::before { content: "· "; color: var(--line); }
+body.one-page .proj-top .link { font-size: 8pt; }
+body.one-page .proj { padding: 1.2mm 0 1.2mm 2.8mm; margin-top: 1.5mm; }
+body.one-page .proj ul.bul { margin-top: .9mm; }
+body.one-page .proj ul.bul li { font-size: 8.7pt; }
+
+/* skills read as compact comma lists instead of chips */
+body.one-page .skill-row { grid-template-columns: 28mm 1fr; gap: 2.2mm; padding: .85mm 0; }
+body.one-page .skill-label { font-size: 8.3pt; padding-top: 0; }
+body.one-page .chips { display: block; line-height: 1.38; }
+body.one-page .chip { display: inline-block; white-space: nowrap; background: none; padding: 0; border-radius: 0; font-size: 8.4pt; }
+body.one-page .chip.pri { background: none; color: var(--chip-ink); font-weight: 400; }
+body.one-page .chip:not(:last-child) { margin-right: .9mm; }
+body.one-page .chip:not(:last-child)::after { content: ","; }
+
+/* education + languages collapse into one bordered strip, one line each */
+body.one-page .cards {
+  display: block; border: .25mm solid var(--rule); border-radius: 2mm;
+  background: #FCFDFF; padding: 1.2mm 3mm;
+}
+body.one-page .card { display: flex; align-items: baseline; gap: 2.2mm; border: none; background: none; padding: .35mm 0; }
+body.one-page .card .ct { flex: none; width: 24mm; gap: 1.5mm; }
+body.one-page .card .ct svg { width: 3.1mm; height: 3.1mm; }
+body.one-page .card .ct h3 { font-size: 7.4pt; letter-spacing: .35pt; }
+body.one-page .card .main,
+body.one-page .card .sub { display: inline; margin: 0; font-size: 8.4pt; }
+body.one-page .card .sub { color: var(--muted); }
+body.one-page .card .sub::before { content: "· "; }
+body.one-page .card .lang { margin: 0; font-size: 8.4pt; display: inline-flex; gap: 1.8mm; }
+
+body.one-page .foot { left: 12mm; right: 12mm; bottom: 6mm; font-size: 7.6pt; padding-top: 1.6mm; }
+body.one-page .deco-dots { bottom: 13.5mm; }
+
+body.one-page .fact { padding: 1.3mm 2.6mm; }
+body.one-page .fact b { font-size: 9.8pt; }
+body.one-page .fact span { font-size: 7.2pt; margin-top: .3mm; }
+body.one-page .job-note { margin-bottom: .3mm; }

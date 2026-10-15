@@ -35,6 +35,12 @@
     {% for h in cv.highlights %}<div class="stat"><b>{{ h.value }}</b><span>{{ h.label }}</span></div>{% endfor %}
   </div>
 </section>
+{%- elif key == 'facts' -%}
+<section>
+  <div class="facts">
+    {% for f in cv.facts %}<div class="fact"><b>{{ f.value }}</b><span>{{ f.label }}</span></div>{% endfor %}
+  </div>
+</section>
 {%- elif key == 'experience' -%}
 <section>
   {{ sechead('case', 'Work Experience (continued)' if sec.continued else 'Work Experience') }}
@@ -56,12 +62,12 @@
   {% for p in cv.projects[sec.skip : sec.skip + sec.take] %}
   <div class="proj">
     <div class="proj-top">
-      <div class="proj-name">{{ p.name }}</div>
-      <div class="proj-role">{{ p.role }}</div>
-    </div>
-    <div class="proj-meta">
-      <span>{{ p.stack }}</span>
-      {% if p.get('link') %}<span class="dot"></span><span class="link">{{ I['link'] | safe }}{{ p.link }}</span>{% endif %}
+      <div class="proj-head">
+        <span class="proj-name">{{ p.name }}</span>
+        <span class="proj-role">{{ p.role }}</span>
+        <span class="proj-stack">{{ p.stack }}</span>
+      </div>
+      {% if p.get('link') %}<span class="link">{{ I['link'] | safe }}{{ p.link }}</span>{% endif %}
     </div>
     {{ bullets(p.bullets) }}
   </div>
@@ -102,7 +108,7 @@
 <title>{{ me.name }} — {{ cv.role }}</title>
 <style>{{ css | safe }}</style>
 </head>
-<body class="theme-{{ cv.theme }} den-{{ cv.get('density', 'compact') }}">
+<body class="theme-{{ cv.theme }} den-{{ cv.get('density', 'compact') }}{% if cv.pages | length == 1 %} one-page{% endif %}">
 {% for page in cv.pages %}
 <div class="sheet">
   <div class="deco-arc"></div>
@@ -142,7 +148,11 @@
 
   <div class="foot">
     <span><b>{{ me.name }}</b> &middot; {{ cv.role }} &middot; {{ me.github }}</span>
+    {% if cv.pages | length > 1 %}
     <span class="pg"><i>{{ loop.index }}</i> of {{ cv.pages | length }}</span>
+    {% else %}
+    <span>{{ me.email }}</span>
+    {% endif %}
   </div>
 </div>
 {% endfor %}
@@ -155,6 +165,15 @@ window.addEventListener('load', function () {
     var body = sh.querySelector('.body'), foot = sh.querySelector('.foot');
     var last = body.lastElementChild;
     out.push((i + 1) + ':' + Math.round(foot.getBoundingClientRect().top - last.getBoundingClientRect().bottom));
+    var parts = [];
+    body.querySelectorAll(':scope > section').forEach(function (sec) {
+      var h2 = sec.querySelector('h2');
+      parts.push((h2 ? h2.textContent.trim().split(' ')[0] : sec.firstElementChild.className) +
+                 '=' + (sec.getBoundingClientRect().height / 96 * 25.4).toFixed(0));
+    });
+    var band = sh.querySelector('.band') || sh.querySelector('.minihead');
+    parts.unshift('HEADER=' + (band.getBoundingClientRect().height / 96 * 25.4).toFixed(0));
+    sh.setAttribute('data-sections', parts.join(' '));
   });
   document.documentElement.setAttribute('data-fit', out.join(','));
 });

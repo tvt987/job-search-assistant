@@ -5,30 +5,29 @@ role: Full Stack Developer
 tagline: ".NET · Angular · TypeScript · SQL Server · REST APIs"
 
 summary: >-
-  Full stack developer with 3+ years of software development experience. Delivers .NET and AngularJS
-  voucher and subscription workflows at Con Cung on SQL Server and Dapper, with ERP integration and
-  Keycloak-secured access. Portfolio work covers Angular 19 admin screens built with RxJS and NgRx
-  SignalStore against authenticated APIs, plus ASP.NET Core / PostgreSQL services.
+  Full stack developer with 3+ years of experience delivering .NET and AngularJS voucher and subscription
+  workflows at Con Cung on SQL Server, Dapper and Keycloak. Portfolio work adds Angular 19 admin screens
+  with RxJS and NgRx SignalStore against authenticated APIs.
 
-highlights:
+facts:
   - value: "3+ yrs"
-    label: "End-to-end .NET and Angular delivery"
+    label: ".NET + Angular delivery"
   - value: "7"
-    label: "Subscription benefit calculations shipped"
+    label: "subscription calculations"
   - value: "Angular 19"
-    label: "RxJS + NgRx SignalStore admin screens"
+    label: "RxJS · NgRx SignalStore"
   - value: "OAuth 2.0"
-    label: "Keycloak JWT / OIDC + RBAC in production"
+    label: "Keycloak JWT / OIDC"
 
 experience:
   - role: Full Stack Developer
     company: Con Cung
     period: Nov 2023 – Present
-    note: "Voucher & subscription workflows — .NET, AngularJS, SQL Server, Dapper, Keycloak"
+    note: ".NET · AngularJS · SQL Server · Dapper · Keycloak · ERP integration"
     bullets:
-      - "Delivered AngularJS and .NET voucher search, creation and update workflows with permission checks, promotion validation and Excel preview before batch creation."
-      - "Implemented 7 subscription benefit calculations across 3-, 6- and 12-month plans, presented as side-by-side comparisons."
-      - "Resolved SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
+      - "Delivered AngularJS and .NET voucher search, creation and update workflows with promotion validation and Excel preview."
+      - "Implemented 7 subscription benefit calculations across 3-, 6- and 12-month plans with side-by-side comparisons."
+      - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and role-based authorization; supported Docker and IIS deployment."
       - "Built an AngularJS preview and copy tool for 4 generated template types: controller, repository, view and script."
   - role: Frontend Intern
@@ -43,28 +42,19 @@ projects:
     stack: "Angular 19, TypeScript, RxJS, NgRx SignalStore"
     link: github.com/tvt987/Ecommerce-Admin
     bullets:
-      - "Built responsive Angular 19 admin screens and integrated authenticated APIs for search, creation and updates."
-      - "Managed loading, success and error states with RxJS and NgRx SignalStore across admin workflows."
+      - "Built responsive Angular 19 admin screens against authenticated APIs for search, creation and updates, managing loading, success and error states with RxJS and NgRx SignalStore."
   - name: Layout-Store
     role: Contributor
-    stack: "C#, ASP.NET Core, PostgreSQL, Angular, REST APIs"
+    stack: "C#, ASP.NET Core, PostgreSQL, Angular"
     link: github.com/tvt987/Layout-Store
     bullets:
-      - "Contributed Angular workflows and PostgreSQL data structures for store layouts and product placement."
-      - "Connected HTTP handlers to stored-procedure access through async interfaces and dependency injection."
+      - "Contributed Angular workflows and PostgreSQL data structures for store layouts and product placement, connecting HTTP handlers to stored procedures through async interfaces."
   - name: Retail RAG Assistant
     role: Personal project
     stack: "Python, FastAPI, TF-IDF, Docker"
     link: github.com/tvt987/retail-rag-assistant
     bullets:
-      - "Built FastAPI document question-answering with cited retrieval, score-based abstention and extractive fallback."
-      - "Evaluated 8 synthetic queries on 2 policy documents: 6 correct top-3 matches and 2 correct abstentions; GitHub Actions CI passed."
-  - name: Retail Reliability Lab
-    role: AI-assisted lab
-    stack: "FastAPI, Redis, SQLite, Azure"
-    bullets:
-      - "Validated Redis cache-aside with a 60-second TTL, invalidation and outage fallback; 22 local API and cache tests passed against real Redis."
-      - "Reduced local SQLite median lookup from 3.63 ms to 0.005 ms (200 queries, 100,000 synthetic rows); authored undeployed Docker Compose and Azure templates."
+      - "FastAPI document question-answering with cited retrieval, score-based abstention and extractive fallback; 8 evaluation queries gave 6 correct top-3 matches and 2 correct abstentions, CI green."
 
 skills:
   - label: Frontend
@@ -72,22 +62,13 @@ skills:
     items: [Angular, Angular 19, AngularJS, TypeScript, JavaScript, RxJS, NgRx SignalStore, HTML5, CSS3, Tailwind CSS, React]
   - label: Backend
     primary: true
-    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Entity Framework / EF Core, Dapper, LINQ, Web API, REST API Design, Message Queues]
-  - label: Data
-    items: [SQL Server, PostgreSQL, MySQL, Redis, Database Design, Stored Procedures, Query Optimization, Indexing, Vector Databases]
-  - label: Security
-    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC]
-  - label: Engineering
-    items: [OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, Debugging, Performance Optimization]
+    items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API design, Entity Framework / EF Core, Dapper, LINQ]
+  - label: Data & security
+    items: [SQL Server, PostgreSQL, MySQL, Redis, database design, stored procedures, query optimization, Keycloak, JWT, OAuth 2.0, OpenID Connect, RBAC]
   - label: Testing & DevOps
-    items: [Unit Testing, Integration Testing, Logging, Observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git, Git Flow, Swagger/OpenAPI]
-  - label: AI-assisted development
-    items: [LLMs, Prompt Engineering, Custom GPTs, MCP, AI Agents, Claude, Cursor, GitHub Copilot, n8n, OpenClaw, Agent Skills]
-  - label: Additional stacks
-    items: [Python, FastAPI, Node.js, Java Spring Boot]
-  - label: Practices
-    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
+    items: [unit and integration testing, logging, observability, Docker, CI/CD, GitHub Actions, IIS, Azure, AWS, Git / Git Flow, Swagger/OpenAPI]
+  - label: Additional
+    items: [Python, FastAPI, Node.js, Java Spring Boot, SOLID, clean architecture, microservices, LLM integration, prompt engineering, MCP, Claude, Cursor, GitHub Copilot, Agile/Scrum, code review]
 
 pages:
-  - [summary, highlights, experience, {section: projects, take: 1}]
-  - [{section: projects, skip: 1, continued: true}, skills, footerinfo]
+  - [summary, facts, experience, projects, skills, footerinfo]
