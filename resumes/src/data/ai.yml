@@ -1,5 +1,6 @@
 variant: ai
 theme: teal
+density: relaxed
 output: CV_AI_TruongVanTinh.pdf
 role: AI Application Engineer
 tagline: "Python · FastAPI · RAG · LLM Integration · Evaluation"
@@ -44,7 +45,7 @@ projects:
     stack: "C#, ASP.NET Core, Dapper, PostgreSQL"
     link: github.com/tvt987/Layout-Store
     bullets:
-      - "Contributed 10 ASP.NET Core / PostgreSQL routes for search, CRUD, approval and Excel import via async DI handlers."
+      - "Contributed 10 ASP.NET Core / PostgreSQL routes for search, CRUD, approval and Excel import, with HTTP handlers wired to stored procedures through async interfaces and dependency injection."
 
 experience:
   - role: Full Stack Developer
@@ -63,8 +64,10 @@ experience:
 
 skills:
   - label: AI applications
+    primary: true
     items: [RAG, Document Retrieval, Data Pipelines, NLP (text retrieval), TF-IDF, Semantic Embeddings, LLM Integration, Prompt Engineering, Output Validation, Evaluation, Abstention and Fallbacks, Human-in-the-loop Workflows]
   - label: Python & APIs
+    primary: true
     items: [Python, FastAPI, REST APIs, SQLite, Input Validation, Data Pipelines]
   - label: Backend & data
     items: [C#, .NET, ASP.NET Core, Dapper, SQL Server, PostgreSQL, Redis, Database Design, Query Optimization]

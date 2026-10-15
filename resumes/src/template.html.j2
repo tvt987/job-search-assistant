@@ -127,6 +127,7 @@
           <a class="contact" href="tel:{{ me.phone | replace(' ', '') }}">{{ I['phone'] | safe }}{{ me.phone }}</a>
           <a class="contact" href="mailto:{{ me.email }}">{{ I['mail'] | safe }}{{ me.email }}</a>
           <span class="contact">{{ I['pin'] | safe }}{{ me.location }}</span>
+          <span class="brk"></span>
           <a class="contact" href="{{ me.github_url }}">{{ I['github'] | safe }}{{ me.github }}</a>
           <a class="contact" href="{{ me.linkedin_url | urlquote }}">{{ I['linkedin'] | safe }}{{ me.linkedin }}</a>
         </div>

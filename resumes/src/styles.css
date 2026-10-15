@@ -280,7 +280,7 @@ body.den-relaxed:not(.one-page) .sheet:first-of-type .proj { padding: 3.6mm 3.8m
 /* =========================================================
    ONE-PAGE MODE — everything on a single A4 sheet
    ========================================================= */
-body.one-page .band { padding: 5.4mm 12mm 4mm; }
+body.one-page .band { padding: 4.8mm 12mm 3.6mm; }
 body.one-page .band-inner { gap: 7mm; }
 body.one-page .name { font-size: 18.6pt; letter-spacing: .5pt; }
 body.one-page .role-line { margin-top: 1.4mm; }
@@ -290,7 +290,9 @@ body.one-page .tagline { margin-top: 1mm; font-size: 8pt; }
 body.one-page .contacts { margin-top: 2.2mm; gap: .9mm 1.3mm; }
 body.one-page .contact { font-size: 7.6pt; padding: .6mm 1.9mm; gap: 1.2mm; }
 body.one-page .contact svg { width: 3mm; height: 3mm; }
-body.one-page .photo-ring { width: 21.5mm; height: 21.5mm; }
+body.one-page .photo-ring { width: 26mm; height: 26mm; padding: .7mm; background: rgba(255,255,255,.9); border: none;
+  box-shadow: 0 0 0 1.2mm rgba(255,255,255,.12), 0 1.5mm 4mm rgba(0,0,0,.35); }
+body.one-page .photo-ring img { filter: brightness(1.1) contrast(1.06) saturate(1.05); }
 
 body.one-page .body { padding: 3.4mm 12mm 0; }
 body.one-page .body > section { margin-top: 1.75mm; }
@@ -331,7 +333,7 @@ body.one-page .skill-row { grid-template-columns: 24mm 1fr; gap: 1.8mm; padding:
 body.one-page .skill-label { font-size: 8.2pt; padding-top: 0; }
 body.one-page .chips { display: block; line-height: 1.32; }
 body.one-page .chip { display: inline-block; white-space: nowrap; background: none; padding: 0; border-radius: 0; font-size: 8.2pt; }
-body.one-page .chip.pri { background: none; color: var(--chip-ink); font-weight: 400; }
+body.one-page .chip.pri { background: none; color: var(--b900); font-weight: 400; }
 body.one-page .chip:not(:last-child) { margin-right: .9mm; }
 body.one-page .chip:not(:last-child)::after { content: ","; }
 
@@ -341,7 +343,7 @@ body.one-page .cards {
   background: #FCFDFF; padding: .9mm 2.8mm;
 }
 body.one-page .card { display: flex; align-items: baseline; gap: 2.2mm; border: none; background: none; padding: .35mm 0; }
-body.one-page .card .ct { flex: none; width: 24mm; gap: 1.5mm; }
+body.one-page .card .ct { flex: none; width: 20.6mm; gap: 1.5mm; }
 body.one-page .card .ct svg { width: 3.1mm; height: 3.1mm; }
 body.one-page .card .ct h3 { font-size: 7.4pt; letter-spacing: .35pt; }
 body.one-page .card .main,
@@ -357,3 +359,10 @@ body.one-page .fact { padding: .95mm 2.3mm; }
 body.one-page .fact b { font-size: 9.3pt; }
 body.one-page .fact span { font-size: 7.2pt; margin-top: .3mm; }
 body.one-page .job-note { margin-bottom: .3mm; }
+
+.contacts .brk { flex-basis: 100%; height: 0; }
+
+/* one-page tracks with spare room breathe a little more */
+body.one-page.den-relaxed .body > section { margin-top: 2.1mm; }
+body.one-page.den-relaxed .proj { margin-top: .9mm; padding: .7mm 0 .7mm 2.5mm; }
+body.one-page.den-relaxed .skill-row { padding: .55mm 0; }

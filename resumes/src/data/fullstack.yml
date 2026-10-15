@@ -11,7 +11,7 @@ summary: >-
 
 facts:
   - value: "3+ yrs"
-    label: ".NET + Angular delivery"
+    label: "software development"
   - value: "7"
     label: "subscription calculations"
   - value: "Angular 19"
@@ -65,8 +65,10 @@ projects:
 
 skills:
   - label: Frontend
+    primary: true
     items: [Angular, Angular 19, AngularJS, TypeScript, JavaScript, RxJS, NgRx SignalStore, HTML5, CSS3, Tailwind CSS, React]
   - label: Backend
+    primary: true
     items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API Design, Entity Framework / EF Core, Dapper, LINQ, Message Queues]
   - label: Data
     items: [SQL Server, PostgreSQL, MySQL, Redis, Database Design, Stored Procedures, Query Optimization, Indexing, Vector Databases]

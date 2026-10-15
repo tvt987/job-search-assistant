@@ -6,12 +6,12 @@ tagline: "C# · .NET · ASP.NET Core · SQL Server · REST APIs"
 
 summary: >-
   Backend developer with 3+ years of software development experience. Builds .NET applications at Con Cung
-  on SQL Server, Dapper, Keycloak and ERP integration. Portfolio APIs cover 10 ASP.NET Core / PostgreSQL
+  with SQL Server, Dapper, Keycloak and ERP integrations. Portfolio APIs cover 10 ASP.NET Core / PostgreSQL
   routes with async data access and dependency injection.
 
 facts:
   - value: "3+ yrs"
-    label: ".NET development"
+    label: "software development"
   - value: "10"
     label: "ASP.NET Core routes"
   - value: "OAuth 2.0"
@@ -65,8 +65,10 @@ projects:
 
 skills:
   - label: Backend
+    primary: true
     items: [C#, .NET, ASP.NET Core, ASP.NET MVC, Web API, REST API Design, Entity Framework / EF Core, Dapper, LINQ, Message Queues]
   - label: Data
+    primary: true
     items: [SQL Server, PostgreSQL, MySQL, Redis, Database Design, Stored Procedures, Query Optimization, Indexing]
   - label: Security & engineering
     items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Microservices, Debugging, Performance Optimization]
