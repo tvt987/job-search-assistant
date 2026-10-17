@@ -7,7 +7,7 @@ stack: "C# · ASP.NET Core Web API · SQL Server · Dapper · Keycloak · Rabbit
 
 summary: >-
   Backend developer with 3+ years of software development (since Sep 2023), building .NET services at Con Cung
-  since Nov 2023: voucher and subscription APIs on SQL Server, Dapper and stored procedures, Keycloak OAuth 2.0 /
+  since Nov 2023: voucher APIs and subscription-benefit logic on SQL Server, Dapper and stored procedures, Keycloak OAuth 2.0 /
   OIDC security, ERP integration. Portfolio: an idempotent .NET 8 API with RabbitMQ, Polly and 42 xUnit tests.
 
 experience:
@@ -37,11 +37,11 @@ projects:
     stack: ".NET 8, RabbitMQ, Polly, xUnit"
     bullets:
       - "Built a partner-transaction API with API-key auth, idempotency on partner and transaction reference (202 replay, 409 conflict) and RabbitMQ queuing; wrapped a verifier that times out on ~30% of calls in Polly retry and timeout."
-      - "Wrote 42 xUnit tests, incl. concurrency (a duplicate payload is published once) and WebApplicationFactory endpoint tests."
-      - "Packaged the API, verifier and RabbitMQ in Docker Compose with health checks, FluentValidation and ProblemDetails errors."
+      - "Wrote 42 xUnit tests, including a concurrency test (duplicate payload published once) and WebApplicationFactory tests."
+      - "Added FluentValidation, ProblemDetails errors and /health checks; ran the API, verifier and RabbitMQ in Docker Compose."
   - key: layout
     role: Contributor
-    stack: "C#, ASP.NET Core, Dapper, PostgreSQL"
+    stack: "C#, ASP.NET Core, Dapper, PostgreSQL, Angular"
     bullets:
       - "Contributed 10 ASP.NET Core routes for search, CRUD, approval and Excel import, calling PostgreSQL stored procedures through async interfaces and dependency injection."
   - key: lab
@@ -49,8 +49,13 @@ projects:
     stack: "FastAPI, Redis, SQLite"
     bullets:
       - "Validated Redis cache-aside (60-second TTL, invalidation, outage fallback) in 22 API and cache tests on real Redis."
-      - "Cut median SQLite lookup 3.63 → 0.005 ms (200 queries, 100,000 synthetic rows); wrote undeployed Compose/Azure templates."
-other_projects: [triage, rag, ecom]
+      - "Cut median SQLite lookup 3.63 to 0.005 ms (200 queries, 100k synthetic rows); wrote undeployed Compose/Azure templates."
+other_projects:
+  - key: triage
+    text: "FastAPI, schema-validated LLM output, PII masking, rules fallback, human review, duplicate ticket 409, CI"
+  - rag
+  - key: ecom
+    text: "Angular 19 admin screens, RxJS, NgRx SignalStore"
 
 skills:
   - label: Backend

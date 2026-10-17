@@ -6,10 +6,10 @@ subtitle: ".NET & Angular"
 stack: "Angular · TypeScript · RxJS · C# · ASP.NET Core · SQL Server · Dapper · Keycloak"
 
 summary: >-
-  Full stack developer with 3+ years of software development (since Sep 2023), delivering AngularJS and .NET
-  features end to end at Con Cung since November 2023: vouchers, subscription plans, Keycloak security, SQL Server
-  stored procedures and Dapper. Also builds Angular 19 admin screens (RxJS, NgRx SignalStore) and a .NET 8 API
-  with 42 xUnit tests.
+  Full stack developer with 3+ years of software development (FPT internship from Sep 2023; Con Cung since
+  Nov 2023), delivering AngularJS and .NET features end to end: vouchers, subscription plans, Keycloak security,
+  SQL Server stored procedures and Dapper. Also built Angular 19 admin screens (RxJS, NgRx SignalStore) and a
+  take-home .NET 8 API with 42 xUnit tests.
 
 experience:
   - role: Full Stack Developer
@@ -20,7 +20,7 @@ experience:
     bullets:
       - "Built AngularJS / .NET voucher search, create and update flows with permission checks, promotion validation and Excel preview before batch creation."
       - "Implemented 7 subscription benefit calculations across 3-, 6- and 12-month plans, with side-by-side plan comparisons."
-      - "Implemented Keycloak JWT / OAuth 2.0 / OIDC auth and role-based authorization; supported Docker and IIS deployment."
+      - "Implemented Keycloak JWT / OAuth 2.0 / OIDC authentication and RBAC; supported Docker and IIS deployment."
       - "Used SQL Server stored procedures with Dapper; fixed retrieval defects and verified ERP API request/response mappings."
       - "Designed retail data structures for shelves, facings and display groups that support store-layout optimization."
       - "Created an AngularJS preview-and-copy tool for 4 generated template types: controller, repository, view and script."
@@ -37,29 +37,34 @@ projects:
     role: Admin screens, shared codebase
     stack: "Angular 19, TypeScript, RxJS"
     bullets:
-      - "Built responsive Angular 19 admin screens in a shared search-management codebase, with search, create and update flows on authenticated APIs."
-      - "Managed loading, success and error states with RxJS and NgRx SignalStore in standalone components, Native Federation."
+      - "Built responsive Angular 19 admin screens in a shared e-commerce admin codebase, with search, create and update flows on authenticated APIs."
+      - "Managed loading, success and error states with RxJS and NgRx SignalStore in standalone components on Native Federation."
   - key: layout
     role: Contributor
     stack: "Angular, C#, ASP.NET Core, Dapper, PostgreSQL"
     bullets:
-      - "Contributed Angular workflows and PostgreSQL data structures for store layouts and product placement, plus 10 ASP.NET Core routes for search, CRUD, approval and Excel import."
+      - "Contributed 10 ASP.NET Core routes (search, CRUD, approval, Excel import), Angular workflows and PostgreSQL data structures for store layouts and product placement."
   - key: bff
     role: Take-home project
     stack: ".NET 8, RabbitMQ, Polly, xUnit"
     bullets:
       - "Built a partner-transaction API with API-key auth, FluentValidation, idempotency (202 replay, 409 conflict), RabbitMQ queuing and Polly retry and timeout; 42 xUnit tests, including concurrency."
-other_projects: [rag, lab, triage]
+other_projects:
+  - key: rag
+    text: "FastAPI, Docker, TF-IDF / Qdrant, LangChain; citations, score-based abstention, extractive fallback; 16-question groundedness eval, 29 tests, CI"
+  - key: lab
+    text: "AI-assisted, no repo: Redis cache-aside, 60 s TTL, invalidation, outage fallback, 22 local tests on real Redis; median SQLite lookup 3.63 to 0.005 ms, 200 queries, 100k synthetic rows; undeployed Compose/Azure templates"
+  - triage
 
 skills:
   - label: Frontend
-    items: [Angular, Angular 19, AngularJS, TypeScript, JavaScript, RxJS, NgRx SignalStore, Native Federation, HTML5, CSS3, Tailwind CSS]
+    items: [Angular, AngularJS, TypeScript, JavaScript, RxJS, NgRx SignalStore, Native Federation, HTML5, CSS3, Tailwind CSS]
   - label: Backend
     items: [C#, .NET 8, .NET Core, ASP.NET Core, Web API, RESTful API Design, Dapper, Entity Framework Core (EF Core), LINQ]
   - label: Data
     items: [SQL Server, PostgreSQL, Stored Procedures, Database Design, Query Optimization, Indexing, Redis, MySQL, Vector Databases]
   - label: Integration & security
-    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, RabbitMQ, Message Queues, Microservices, Polly, FluentValidation]
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, RabbitMQ, Message Queues, Polly]
   - label: Testing & DevOps
     items: [xUnit, Unit Testing, Integration Testing, Docker, IIS, CI/CD, GitHub Actions, Git, Git Flow, Swagger/OpenAPI]
   - label: Engineering
@@ -67,6 +72,6 @@ skills:
   - label: AI-assisted dev
     items: [LLMs, Prompt Engineering, Custom GPTs, AI Agents, Agent Skills, MCP, Claude, Cursor, GitHub Copilot, n8n, OpenClaw]
   - label: Other stacks
-    items: [React, ASP.NET MVC, Logging, Observability, Debugging, Python, FastAPI, Node.js, Java Spring Boot, Azure, AWS]
+    items: [React, ASP.NET MVC, Microservices, Logging, Observability, Debugging, Python, FastAPI, Node.js, Java Spring Boot, Azure, AWS]
   - label: Practices
     items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]

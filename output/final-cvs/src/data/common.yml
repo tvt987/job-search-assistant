@@ -47,4 +47,4 @@ project_catalogue:
     link: github.com/tvt987/support-ticket-ai-triage
   lab:
     name: Retail Reliability Lab
-    short: "AI-assisted, no repo: Redis cache-aside, 60 s TTL, invalidation, outage fallback, 22 tests on real Redis; SQLite lookup 3.63 → 0.005 ms; undeployed Compose/Azure templates"
+    short: "AI-assisted, no repo: Redis cache-aside, 60 s TTL, invalidation, outage fallback, 22 tests on real Redis; SQLite lookup 3.63 to 0.005 ms; undeployed Compose/Azure templates"

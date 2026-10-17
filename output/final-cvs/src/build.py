@@ -105,10 +105,9 @@ def pages(pdf: Path) -> int:
 def main() -> None:
     tracks = [a for a in sys.argv[1:] if not a.startswith("-")] or TRACKS
     BUILD.mkdir(exist_ok=True)
-    docx_data = {}
+    docx_data = {t: dict(zip(("me", "cv"), load(t))) for t in TRACKS}
     for track in tracks:
         me, cv = load(track)
-        docx_data[track] = {"me": me, "cv": cv}
         for mode, suffix in MODES.items():
             pdf = OUT / f"{cv['file_stem']}{suffix}.pdf"
             fit = build_pdf(render(track, mode), pdf)

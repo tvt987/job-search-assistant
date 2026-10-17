@@ -55,7 +55,7 @@
   </div>
   {% endfor %}
   <p class="other"><strong>Other projects:</strong>
-  {% for key in cv.other_projects %}{% set ref = me.project_catalogue[key] %}{% if ref.get('link') %}<a href="https://{{ ref.link }}">{{ ref.name }}</a>{% else %}{{ ref.name }}{% endif %} ({{ ref.short }}){{ '; ' if not loop.last else '.' }}{% endfor %}
+  {% for o in cv.other_projects %}{% set key = o if o is string else o.key %}{% set ref = me.project_catalogue[key] %}{% if ref.get('link') %}<a href="https://{{ ref.link }}">{{ ref.name }}</a>{% else %}{{ ref.name }}{% endif %} ({{ ref.short if o is string else o.text }}){{ '; ' if not loop.last else '.' }}{% endfor %}
   </p>
 </section>
 

@@ -77,10 +77,11 @@ function cvDoc(me, cv) {
     p.bullets.forEach((b) => c.push(bullet(b)));
   });
   const others = [run("Other projects: ", { bold: true, size: SMALL })];
-  cv.other_projects.forEach((key, i) => {
-    const ref = me.project_catalogue[key];
+  cv.other_projects.forEach((o, i) => {
+    const ref = me.project_catalogue[typeof o === "string" ? o : o.key];
+    const short = typeof o === "string" ? ref.short : o.text;
     others.push(ref.link ? link(ref.name, `https://${ref.link}`, SMALL) : run(ref.name, { size: SMALL }));
-    others.push(run(` (${ref.short})${i < cv.other_projects.length - 1 ? "; " : "."}`, { size: SMALL }));
+    others.push(run(` (${short})${i < cv.other_projects.length - 1 ? "; " : "."}`, { size: SMALL }));
   });
   c.push(para(others, { before: 60 }));
 
