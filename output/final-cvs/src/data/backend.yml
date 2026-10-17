@@ -1,0 +1,75 @@
+track: backend
+theme: navy
+file_stem: CV_Backend_TruongVanTinh
+title: Backend Developer
+subtitle: "C# / .NET"
+stack: "C# · ASP.NET Core Web API · SQL Server · Dapper · Keycloak · RabbitMQ · Docker"
+
+summary: >-
+  Backend developer with 3+ years of software development, building .NET services since November 2023 at
+  Con Cung, Vietnam's mother-and-baby retail chain: voucher and subscription APIs on SQL Server, Dapper and
+  stored procedures, Keycloak OAuth 2.0 / OIDC security and ERP integration. Portfolio: an idempotent .NET 8
+  integration API with RabbitMQ, Polly and 42 xUnit tests.
+
+experience:
+  - role: Full Stack Developer
+    company: Con Cung
+    context: con_cung
+    period: Nov 2023 – Present
+    stack: ".NET, AngularJS, SQL Server, Dapper, Keycloak, Docker, IIS, n8n"
+    bullets:
+      - "Delivered .NET voucher APIs (search, create, update) with permission checks, promotion validation and batch Excel preview."
+      - "Mapped stored-procedure results to typed Dapper models for 7 subscription benefit calculations on 3/6/12-month plans."
+      - "Implemented Keycloak JWT / OAuth 2.0 / OpenID Connect authentication and role-based authorization."
+      - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
+      - "Designed retail data structures for shelves, facings and display groups used in store-layout optimization."
+      - "Added vector semantic search to a commerce portal; built n8n competitor-scraping and market-intelligence pipelines."
+      - "Built a preview-and-copy tool for 4 generated code-template types; supported Docker and IIS deployment."
+      - "Used Custom GPTs, prompt engineering and a Claude + Agent Skills + MCP loop to speed up debugging and testing."
+  - role: Frontend Intern
+    company: FPT
+    period: Sep 2023 – Nov 2023
+    bullets:
+      - "Developed Angular / JavaScript components, integrated e-commerce REST APIs and fixed mobile UI defects."
+
+projects:
+  - key: bff
+    role: Take-home project
+    stack: ".NET 8, RabbitMQ, Polly, xUnit"
+    bullets:
+      - "Built a partner-transaction API with API-key auth, idempotency on partner and transaction reference (202 replay, 409 conflict) and RabbitMQ queuing; wrapped a verifier that times out on ~30% of calls in Polly retry and timeout."
+      - "Wrote 42 xUnit tests, incl. concurrency (a duplicate payload is published once) and WebApplicationFactory endpoint tests."
+  - key: layout
+    role: Contributor
+    stack: "C#, ASP.NET Core, Dapper, PostgreSQL"
+    bullets:
+      - "Contributed 10 ASP.NET Core routes for search, CRUD, approval and Excel import, calling PostgreSQL stored procedures through async interfaces and dependency injection."
+  - key: lab
+    role: AI-assisted lab
+    stack: "FastAPI, Redis, SQLite, Docker Compose"
+    bullets:
+      - "Validated Redis cache-aside (60-second TTL, invalidation, outage fallback) in 22 API and cache tests on real Redis."
+      - "Cut median SQLite lookup 3.63 → 0.005 ms (200 queries, 100,000 synthetic rows); wrote undeployed Azure templates."
+other_projects: [triage, rag, ecom]
+
+skills:
+  - label: Backend
+    items: [C#, .NET 8, ASP.NET Core, Web API, RESTful API Design, ASP.NET MVC, Dapper, Entity Framework Core (EF Core), LINQ]
+  - label: Data
+    items: [SQL Server, PostgreSQL, Stored Procedures, Database Design, Query Optimization, Indexing, Redis, MySQL]
+  - label: Integration
+    items: [RabbitMQ, Message Queues, Microservices, Idempotency, Polly, FluentValidation, ERP API Integration, Swagger/OpenAPI]
+  - label: Security
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC]
+  - label: Testing & DevOps
+    items: [xUnit, Moq, Unit Testing, Integration Testing, Docker, IIS, CI/CD, GitHub Actions, Git, Git Flow, Logging, Observability]
+  - label: Engineering
+    items: [OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Debugging, Performance Optimization]
+  - label: Frontend
+    items: [Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
+  - label: AI-assisted dev
+    items: [LLMs, Prompt Engineering, Custom GPTs, AI Agents, Agent Skills, MCP, Claude, Cursor, GitHub Copilot, n8n, OpenClaw]
+  - label: Other stacks
+    items: [Python, FastAPI, Node.js, Java Spring Boot, Azure, AWS]
+  - label: Practices
+    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]

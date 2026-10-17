@@ -42,3 +42,6 @@ venv/
 
 # CV build previews (regenerate with: python3 resumes/src/build.py --png)
 resumes/src/build/
+
+# Local CV build previews
+output/final-cvs/src/build/

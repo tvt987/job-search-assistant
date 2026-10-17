@@ -1,0 +1,72 @@
+track: fullstack
+theme: violet
+file_stem: CV_FullStack_TruongVanTinh
+title: Full Stack Developer
+subtitle: ".NET & Angular"
+stack: "Angular · TypeScript · RxJS · C# · ASP.NET Core · SQL Server · Dapper · Keycloak"
+
+summary: >-
+  Full stack developer with 3+ years of software development, delivering AngularJS and .NET features end to
+  end since November 2023 at Con Cung, Vietnam's mother-and-baby retail chain: vouchers, subscription plans,
+  Keycloak security, SQL Server / Dapper. Also builds Angular 19 admin screens with RxJS and NgRx SignalStore
+  and tested .NET 8 APIs.
+
+experience:
+  - role: Full Stack Developer
+    company: Con Cung
+    context: con_cung
+    period: Nov 2023 – Present
+    stack: "AngularJS, .NET, SQL Server, Dapper, Keycloak, Docker, IIS, n8n"
+    bullets:
+      - "Built AngularJS + .NET voucher search, create and update flows with permission checks, promotion validation, Excel preview."
+      - "Implemented 7 subscription benefit calculations across 3-, 6- and 12-month plans, with side-by-side plan comparisons."
+      - "Implemented Keycloak JWT / OAuth 2.0 / OpenID Connect authentication and role-based authorization."
+      - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
+      - "Designed retail data structures for shelves, facings and display groups that support store-layout optimization."
+      - "Created an AngularJS preview-and-copy tool for 4 generated code-template types; supported Docker and IIS deployment."
+      - "Added vector semantic search to a commerce portal and built n8n pipelines for competitor scraping and market intelligence."
+      - "Used Custom GPTs, prompt engineering and a Claude + Agent Skills + MCP loop to speed up debugging and testing."
+  - role: Frontend Intern
+    company: FPT
+    period: Sep 2023 – Nov 2023
+    bullets:
+      - "Developed Angular / JavaScript components, integrated e-commerce REST APIs and fixed mobile UI defects."
+
+projects:
+  - key: ecom
+    role: Frontend development
+    stack: "Angular 19, TypeScript, RxJS, NgRx"
+    bullets:
+      - "Built responsive Angular 19 admin screens for e-commerce search management, with search, create and update flows on authenticated APIs."
+      - "Managed loading, success and error states with RxJS and NgRx SignalStore in a Native Federation micro-frontend codebase."
+  - key: layout
+    role: Contributor
+    stack: "Angular, C#, ASP.NET Core, Dapper, PostgreSQL"
+    bullets:
+      - "Contributed Angular workflows and PostgreSQL data structures for store layouts and product placement, plus 10 ASP.NET Core routes for search, CRUD, approval and Excel import."
+  - key: bff
+    role: Take-home project
+    stack: ".NET 8, RabbitMQ, Polly, xUnit"
+    bullets:
+      - "Built a partner-transaction API with API-key authentication, validation, idempotency (202 replay, 409 conflict), RabbitMQ queuing and Polly retry and timeout; 42 xUnit tests, including concurrency."
+other_projects: [rag, lab, triage]
+
+skills:
+  - label: Frontend
+    items: [Angular, Angular 19, AngularJS, TypeScript, JavaScript, RxJS, NgRx SignalStore, Native Federation, HTML5, CSS3, Tailwind CSS, React]
+  - label: Backend
+    items: [C#, .NET 8, ASP.NET Core, Web API, RESTful API Design, ASP.NET MVC, Dapper, Entity Framework Core (EF Core), LINQ]
+  - label: Data
+    items: [SQL Server, PostgreSQL, Stored Procedures, Database Design, Query Optimization, Indexing, Redis, MySQL, Vector Databases]
+  - label: Integration & security
+    items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, RabbitMQ, Message Queues, Microservices, Polly, FluentValidation]
+  - label: Testing & DevOps
+    items: [xUnit, Unit Testing, Integration Testing, Docker, IIS, CI/CD, GitHub Actions, Git, Git Flow, Logging, Observability, Swagger/OpenAPI]
+  - label: Engineering
+    items: [OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Debugging, Performance Optimization]
+  - label: AI-assisted dev
+    items: [LLMs, Prompt Engineering, Custom GPTs, AI Agents, Agent Skills, MCP, Claude, Cursor, GitHub Copilot, n8n, OpenClaw]
+  - label: Other stacks
+    items: [Python, FastAPI, Node.js, Java Spring Boot, Azure, AWS]
+  - label: Practices
+    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]

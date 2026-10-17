@@ -100,7 +100,7 @@ Sử dụng AI Agent (Claude Code / Claude Cloud) để hỗ trợ toàn bộ qu
    - Repo: https://github.com/tvt987/retail-rag-assistant
    - Hệ thống hỏi đáp tài liệu có dẫn nguồn (citations) bằng TF-IDF/cosine similarity, chunking, hỗ trợ SentenceTransformers.
    - FastAPI endpoints, cơ chế abstention khi điểm thấp và extractive fallback khi LLM lỗi; CI pass trên 8 synthetic test queries.
-   - Mở rộng 10/2026 (branch `claude/vigilant-johnson-b7w4u8`, CI xanh cả 2 job; cần merge vào `main`):
+   - Mở rộng 10/2026 (đã merge vào `main`, commit `fea7f83`, CI xanh cả 2 job):
      document parsing Markdown/TXT/HTML/PDF + data preprocessing (NFKC, nối chữ ngắt dòng, bỏ boilerplate);
      Qdrant vector database (sparse TF-IDF offline hoặc dense embeddings; embedded/on-disk/server);
      LangChain LCEL pipeline với citation check; đánh giá 16 câu hỏi / 3 tài liệu: hit rate, MRR, abstention,
@@ -108,12 +108,14 @@ Sử dụng AI Agent (Claude Code / Claude Cloud) để hỗ trợ toàn bộ qu
 4. **Support Ticket AI Triage** *(Personal project)*:
    - Repo: https://github.com/tvt987/support-ticket-ai-triage
    - Phân loại tự động 5 nhóm ticket bằng LLM, validate priority/sentiment, rule-based fallback, token-protected human review, masking thông tin liên hệ; không lưu raw ticket text. 10 HTTP tests, 120 schema combinations, 1.000 SQLite synthetic decisions.
+   - ⚠️ Kiểm tra 10/2026: repo công khai (`4573d6d`) chỉ có 7 tests và bộ đánh giá 5 case; KHÔNG thấy các con số 10 HTTP / 120 / 720 / 1.000 ở bất kỳ commit nào. Không dùng các con số này trên CV cho tới khi commit script/test tương ứng (xem `output/verified-facts-and-gaps.md`).
 5. **Retail Reliability Lab** *(AI-assisted lab)*:
    - Thử nghiệm cache-aside Redis với TTL 60s, invalidation và outage fallback; 22 unit/integration tests trên real Redis; giảm median lookup từ 3.63ms xuống 0.005ms (100.000 rows synthetic).
 6. **Partner Integration BFF** *(Take-home project)*:
    - Repo: https://github.com/tvt987/partner-integration-bff (nội dung xác minh từ README công khai, 10/2026)
    - .NET 8 BFF nhận giao dịch đối tác: API-key auth (so sánh constant-time), FluentValidation, idempotency theo partnerId + transactionReference (202 replay / 409 conflict), publish sang RabbitMQ (hoặc in-memory khi dev).
    - Polly retry + timeout quanh API xác minh giả lập (~30% timeout); lỗi trả về ProblemDetails; unit test + integration test bằng WebApplicationFactory; Docker Compose (BFF, verification API, RabbitMQ).
+   - Kiểm tra repo `4005e30`: 42 test xUnit (Moq, FluentAssertions), gồm test idempotency khi xử lý đồng thời; chưa có CI.
 
 ---
 

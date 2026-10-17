@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ me.name }} - {{ cv.title }} CV</title>
+<style>{{ css | safe }}</style>
+</head>
+<body class="{{ mode }} theme-{{ cv.theme }}">
+<main class="page">
+
+<header class="head">
+  <div class="id">
+    <h1>{{ me.name }}</h1>
+    <p class="role">{{ cv.title }} <span class="sub">| {{ cv.subtitle }}</span></p>
+    <p class="stack">{{ cv.stack }}</p>
+    <p class="contact">
+      <span>{{ me.phone }}</span><span class="sep"> | </span>
+      <a href="mailto:{{ me.email }}">{{ me.email }}</a><span class="sep"> | </span>
+      <span>{{ me.location }} ({{ me.work_mode }})</span><br>
+      <a href="{{ me.github_url }}">{{ me.github }}</a><span class="sep"> | </span>
+      <a href="{{ me.linkedin_url | urlquote }}">{{ me.linkedin }}</a>
+    </p>
+  </div>
+  {% if mode == 'designed' %}<img class="photo" src="{{ photo }}" alt="Photo of {{ me.name }}">{% endif %}
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <p class="summary">{{ cv.summary }}</p>
+</section>
+
+<section>
+  <h2>Work Experience</h2>
+  {% for job in cv.experience %}
+  <div class="item">
+    <div class="item-head">
+      <span class="what"><strong>{{ job.role }}</strong> | {{ job.company }}{% if job.get('context') %}<span class="ctx">, {{ me.con_cung_context }}</span>{% endif %}</span>
+      <span class="when">{{ job.period }}</span>
+    </div>
+    {% if job.get('stack') %}<p class="tech">Tech: {{ job.stack }}</p>{% endif %}
+    <ul>{% for b in job.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Projects</h2>
+  {% for p in cv.projects %}{% set ref = me.project_catalogue[p.key] %}
+  <div class="item">
+    <div class="item-head">
+      <span class="what"><strong>{{ ref.name }}</strong> | {{ p.role }} | <span class="pstack">{{ p.stack }}</span></span>
+      {% if ref.get('link') %}<a class="when" href="https://{{ ref.link }}">{{ ref.link }}</a>{% endif %}
+    </div>
+    <ul>{% for b in p.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+  </div>
+  {% endfor %}
+  <p class="other"><strong>Other projects:</strong>
+  {% for key in cv.other_projects %}{% set ref = me.project_catalogue[key] %}{% if ref.get('link') %}<a href="https://{{ ref.link }}">{{ ref.name }}</a>{% else %}{{ ref.name }}{% endif %} ({{ ref.short }}){{ '; ' if not loop.last else '.' }}{% endfor %}
+  </p>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills">
+  {% for g in cv.skills %}<p><strong>{{ g.label }}:</strong> {{ g['items'] | join(', ') }}</p>{% endfor %}
+  </div>
+</section>
+
+<section class="edu">
+  <h2>Education and Languages</h2>
+  <p><strong>{{ me.education.school }}</strong> | {{ me.education.degree }} | {{ me.education.period }}</p>
+  {% for l in me.languages %}<p><strong>{{ l.name }}:</strong> {{ l.level }}</p>{% endfor %}
+</section>
+
+</main>
+<script>
+  // Fit report for build.py: free space (px) between content end and the bottom of the A4 sheet(s).
+  const sheet = (297 - 19) / 25.4 * 96;  // A4 minus @page top and bottom margins
+  const h = document.querySelector('.page').getBoundingClientRect().height;
+  const pages = Math.ceil(h / sheet);
+  document.body.dataset.fit = `${pages}:${(pages * sheet - h).toFixed(0)}`;
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+# Verified applicant facts. Source of truth: APPLICANT_CONTEXT.md and output/verified-facts-and-gaps.md.
+# Nothing may be added here that is not listed there as verified.
+name: Truong Van Tinh
+phone: "+84 931 467 024"
+email: tinhkun102@gmail.com
+location: Ho Chi Minh City, Vietnam
+work_mode: "on-site, hybrid or remote"
+github: github.com/tvt987
+github_url: https://github.com/tvt987
+linkedin: linkedin.com/in/trương-văn-tình-651b12289
+linkedin_url: https://www.linkedin.com/in/trương-văn-tình-651b12289/
+photo: ../../../resumes/src/assets/headshot.jpg
+
+education:
+  school: University of Information Technology (UIT), VNU-HCM
+  degree: Information Technology
+  period: Graduated 2026
+
+languages:
+  - name: English
+    level: good reading and writing of technical documents; basic spoken communication
+
+# Con Cung company context (public information, confirmed by the candidate).
+con_cung_context: "Vietnam's mother-and-baby retail chain"
+
+# Projects not featured on a track still appear on it, in one line, so no experience is dropped.
+project_catalogue:
+  bff:
+    name: Partner Integration BFF
+    short: ".NET 8 idempotent partner API with RabbitMQ, Polly and 42 xUnit tests"
+    link: github.com/tvt987/partner-integration-bff
+  layout:
+    name: Layout-Store
+    short: "ASP.NET Core / PostgreSQL planogram app, contributor"
+    link: github.com/tvt987/Layout-Store
+  ecom:
+    name: Ecommerce-Admin
+    short: "Angular 19 search-management admin with RxJS and NgRx SignalStore"
+    link: github.com/tvt987/Ecommerce-Admin
+  rag:
+    name: Retail RAG Assistant
+    short: "FastAPI RAG with Qdrant, LangChain and groundedness evaluation"
+    link: github.com/tvt987/retail-rag-assistant
+  triage:
+    name: Support Ticket AI Triage
+    short: "FastAPI LLM triage with validated outputs and human review"
+    link: github.com/tvt987/support-ticket-ai-triage
+  lab:
+    name: Retail Reliability Lab
+    short: "FastAPI + Redis cache-aside, 22 tests on real Redis"
