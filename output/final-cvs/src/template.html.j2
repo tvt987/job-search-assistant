@@ -34,10 +34,10 @@
   {% for job in cv.experience %}
   <div class="item">
     <div class="item-head">
-      <span class="what"><strong>{{ job.role }}</strong> | {{ job.company }}{% if job.get('context') %}<span class="ctx">, {{ me.con_cung_context }}</span>{% endif %}</span>
+      <span class="what"><strong>{{ job.role }}</strong> | {{ job.company }}</span>
       <span class="when">{{ job.period }}</span>
     </div>
-    {% if job.get('stack') %}<p class="tech">Tech: {{ job.stack }}</p>{% endif %}
+    {% if job.get('stack') %}<p class="tech">{% if job.get('context') %}{{ me.con_cung_context }}. {% endif %}Tech: {{ job.stack }}</p>{% endif %}
     <ul>{% for b in job.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
   </div>
   {% endfor %}
@@ -67,9 +67,9 @@
 </section>
 
 <section class="edu">
-  <h2>Education and Languages</h2>
+  <h2>Education</h2>
   <p><strong>{{ me.education.school }}</strong> | {{ me.education.degree }} | {{ me.education.period }}</p>
-  {% for l in me.languages %}<p><strong>{{ l.name }}:</strong> {{ l.level }}</p>{% endfor %}
+  <p><strong>Languages:</strong> {% for l in me.languages %}{{ l.name }} ({{ l.level }}){% endfor %}</p>
 </section>
 
 </main>

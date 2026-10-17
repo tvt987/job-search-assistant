@@ -6,10 +6,10 @@ subtitle: "Python & FastAPI"
 stack: "Python · FastAPI · RAG · LLM Integration · Qdrant · LangChain · Evaluation"
 
 summary: >-
-  Software engineer with 3+ years of development who applies AI at Con Cung, Vietnam's mother-and-baby retail
-  chain (vector semantic search, n8n market-intelligence pipelines, a Claude + MCP debugging loop), and builds
-  evaluated LLM applications in Python and FastAPI: RAG with Qdrant, LangChain, citations and groundedness
-  checks, and LLM ticket triage with human review.
+  Software engineer with 3+ years of software development (since Sep 2023) who applies AI at Con Cung (vector
+  semantic search, n8n market-intelligence pipelines, a Claude + MCP debug-and-test loop) and builds evaluated
+  GenAI apps in Python and FastAPI: RAG with Qdrant, LangChain, citations and
+  groundedness checks, and LLM ticket triage with human review.
 
 experience:
   - role: Full Stack Developer
@@ -18,7 +18,7 @@ experience:
     period: Nov 2023 – Present
     stack: ".NET, AngularJS, SQL Server, Dapper, Keycloak, n8n, Claude + MCP"
     bullets:
-      - "Added vector semantic search to a commerce portal so products and content are found by meaning, not exact keywords."
+      - "Applied vector semantic search in a commerce portal, matching search queries by meaning rather than exact keywords."
       - "Built n8n pipelines that scrape competitor data for market-intelligence reporting."
       - "Built a Claude + Agent Skills + MCP debug-and-test loop; used Custom GPTs and prompt engineering to speed up delivery."
       - "Designed retail data structures for shelves, facings and display groups that support store-layout optimization."
@@ -39,31 +39,31 @@ projects:
       - "Parsed Markdown, HTML, text and PDF; normalized Unicode and removed shared boilerplate before chunking with citations."
       - "Indexed TF-IDF sparse or SentenceTransformers dense vectors in Qdrant; answered via FastAPI and a LangChain LCEL chain."
       - "Abstained on low retrieval scores and fell back to cited extracts whenever the LLM failed or cited no retrieved passage."
-      - "Evaluated 16 questions on hit rate, MRR, abstention, fact recall and groundedness, which rejects wrong numbers and uncited claims; 29 tests in two CI jobs."
+      - "Built a 16-question synthetic eval (hit rate, MRR, abstention, fact recall, lexical groundedness that rejects wrong numbers and uncited claims) that gates CI; 29 tests in two jobs."
   - key: triage
     role: Personal project
-    stack: "Python, FastAPI, LLM, SQLite, Docker"
+    stack: "Python, FastAPI, Pydantic, LLM, SQLite"
     bullets:
-      - "Triaged tickets (4 categories + other, priority, sentiment) with a rules baseline or an LLM whose output is schema-validated."
-      - "Forced human review for urgent keywords, masked emails and phone numbers before the model call, token-protected the review API and stored decisions without message text."
+      - "Triaged tickets (4 categories + other, priority, sentiment) with schema-validated LLM output and a rules fallback."
+      - "Forced human review for urgent keywords, masked emails and phone numbers before the model call, token-protected the review API and stored decisions without message text; 7 tests and a 5-case eval in CI."
   - key: lab
-    role: AI-assisted lab
-    stack: "FastAPI, Redis, SQLite, Docker Compose"
+    role: AI-assisted lab, no public repo
+    stack: "FastAPI, Redis, SQLite"
     bullets:
-      - "Validated Redis cache-aside (60-second TTL, invalidation, outage fallback) in 22 tests on real Redis; cut median SQLite lookup from 3.63 ms to 0.005 ms on 100,000 synthetic rows."
+      - "Validated Redis cache-aside (60-second TTL, invalidation, outage fallback) in 22 tests on real Redis; cut median SQLite lookup 3.63 → 0.005 ms (200 queries, 100,000 synthetic rows); wrote undeployed Compose/Azure templates."
 other_projects: [bff, ecom, layout]
 
 skills:
   - label: AI applications
     items: [RAG, LLM Integration, Prompt Engineering, Document Parsing, Data Preprocessing, Chunking, Semantic Embeddings, TF-IDF, Vector Search, Document Retrieval, NLP (text retrieval), Output Validation, Abstention and Fallbacks, Human-in-the-loop Workflows, Data Pipelines, AI Agents, Retrieval Evaluation (hit rate, MRR), Fact Recall, Groundedness Evaluation]
   - label: Python & tools
-    items: [Python, FastAPI, LangChain, Qdrant, Vector Databases, SentenceTransformers, OpenAI-compatible APIs, SQLite, REST APIs, Input Validation, n8n, MCP, Claude, OpenAI (ChatGPT, Custom GPTs), Cursor, GitHub Copilot, OpenClaw, Agent Skills]
+    items: [Python, FastAPI, Pydantic, LangChain, Qdrant, Vector Databases, SentenceTransformers, OpenAI-compatible APIs, SQLite, REST APIs, Input Validation, n8n, MCP, Claude, OpenAI (ChatGPT, Custom GPTs), Cursor, GitHub Copilot, Agent Skills]
   - label: Backend & data
-    items: [C#, .NET, ASP.NET Core, Dapper, SQL Server, PostgreSQL, Redis, Database Design, Query Optimization, IIS]
+    items: [C#, .NET, ASP.NET Core, Dapper, SQL Server, PostgreSQL, Redis, Database Design, Query Optimization, IIS, Azure, AWS]
   - label: Security
     items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, RBAC, Contact-data Masking]
   - label: Testing & DevOps
-    items: [Unit Testing, Integration Testing, Docker, CI/CD, GitHub Actions, Git, Logging, Monitoring/Observability, Azure, AWS]
+    items: [Unit Testing, Integration Testing, Docker, CI/CD, GitHub Actions, Git, Logging, Monitoring/Observability]
   - label: Frontend
     items: [Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
   - label: Practices

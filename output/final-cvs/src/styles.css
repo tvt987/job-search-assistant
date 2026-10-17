@@ -21,6 +21,9 @@ body {
   font-size: var(--body);
   line-height: 1.27;
   color: var(--text);
+  /* Ligatures (fi, ff, fl, ti) extract as single code points in many parsers: "beneﬁt", "bﬀ". */
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }

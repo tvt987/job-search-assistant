@@ -64,9 +64,8 @@ function cvDoc(me, cv) {
   c.push(heading("Work Experience"));
   cv.experience.forEach((job, i) => {
     const left = [run(job.role, { bold: true }), run(` | ${job.company}`)];
-    if (job.context) left.push(run(`, ${me.con_cung_context}`));
     c.push(itemHead(left, run(job.period, { size: SMALL }), i ? 70 : 0));
-    if (job.stack) c.push(para([run(`Tech: ${job.stack}`, { italics: true, size: SMALL })]));
+    if (job.stack) c.push(para([run(`${job.context ? me.con_cung_context + ". " : ""}Tech: ${job.stack}`, { italics: true, size: SMALL })]));
     job.bullets.forEach((b) => c.push(bullet(b)));
   });
 
@@ -88,10 +87,10 @@ function cvDoc(me, cv) {
   c.push(heading("Technical Skills"));
   cv.skills.forEach((g) => c.push(para([run(`${g.label}: `, { bold: true, size: SMALL }), run(g.items.join(", "), { size: SMALL })], { before: 10 })));
 
-  c.push(heading("Education and Languages"));
+  c.push(heading("Education"));
   const e = me.education;
   c.push(para([run(e.school, { bold: true }), run(` | ${e.degree} | ${e.period}`)]));
-  me.languages.forEach((l) => c.push(para([run(`${l.name}: `, { bold: true }), run(l.level)])));
+  c.push(para([run("Languages: ", { bold: true }), run(me.languages.map((l) => `${l.name} (${l.level})`).join("; "))]));
 
   return new Document({
     creator: me.name,

@@ -6,10 +6,9 @@ subtitle: "C# / .NET"
 stack: "C# · ASP.NET Core Web API · SQL Server · Dapper · Keycloak · RabbitMQ · Docker"
 
 summary: >-
-  Backend developer with 3+ years of software development, building .NET services since November 2023 at
-  Con Cung, Vietnam's mother-and-baby retail chain: voucher and subscription APIs on SQL Server, Dapper and
-  stored procedures, Keycloak OAuth 2.0 / OIDC security and ERP integration. Portfolio: an idempotent .NET 8
-  integration API with RabbitMQ, Polly and 42 xUnit tests.
+  Backend developer with 3+ years of software development (since Sep 2023), building .NET services at Con Cung
+  since Nov 2023: voucher and subscription APIs on SQL Server, Dapper and stored procedures, Keycloak OAuth 2.0 /
+  OIDC security, ERP integration. Portfolio: an idempotent .NET 8 API with RabbitMQ, Polly and 42 xUnit tests.
 
 experience:
   - role: Full Stack Developer
@@ -18,13 +17,13 @@ experience:
     period: Nov 2023 – Present
     stack: ".NET, AngularJS, SQL Server, Dapper, Keycloak, Docker, IIS, n8n"
     bullets:
-      - "Delivered .NET voucher APIs (search, create, update) with permission checks, promotion validation and batch Excel preview."
-      - "Mapped stored-procedure results to typed Dapper models for 7 subscription benefit calculations on 3/6/12-month plans."
-      - "Implemented Keycloak JWT / OAuth 2.0 / OpenID Connect authentication and role-based authorization."
+      - "Delivered .NET voucher APIs (search, create, update) with permission checks, promotion validation, pre-batch Excel preview."
+      - "Implemented 7 subscription benefit calculations (3/6/12-month plans), mapping stored procedures to typed Dapper models."
+      - "Implemented Keycloak JWT / OAuth 2.0 / OIDC auth and role-based authorization; supported Docker and IIS deployment."
       - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
       - "Designed retail data structures for shelves, facings and display groups used in store-layout optimization."
-      - "Added vector semantic search to a commerce portal; built n8n competitor-scraping and market-intelligence pipelines."
-      - "Built a preview-and-copy tool for 4 generated code-template types; supported Docker and IIS deployment."
+      - "Applied vector semantic search in a commerce portal; built n8n competitor-scraping and market-intelligence pipelines."
+      - "Built a preview-and-copy tool for 4 generated code-template types: controller, repository, view and script."
       - "Used Custom GPTs, prompt engineering and a Claude + Agent Skills + MCP loop to speed up debugging and testing."
   - role: Frontend Intern
     company: FPT
@@ -39,22 +38,23 @@ projects:
     bullets:
       - "Built a partner-transaction API with API-key auth, idempotency on partner and transaction reference (202 replay, 409 conflict) and RabbitMQ queuing; wrapped a verifier that times out on ~30% of calls in Polly retry and timeout."
       - "Wrote 42 xUnit tests, incl. concurrency (a duplicate payload is published once) and WebApplicationFactory endpoint tests."
+      - "Packaged the API, verifier and RabbitMQ in Docker Compose with health checks, FluentValidation and ProblemDetails errors."
   - key: layout
     role: Contributor
     stack: "C#, ASP.NET Core, Dapper, PostgreSQL"
     bullets:
       - "Contributed 10 ASP.NET Core routes for search, CRUD, approval and Excel import, calling PostgreSQL stored procedures through async interfaces and dependency injection."
   - key: lab
-    role: AI-assisted lab
-    stack: "FastAPI, Redis, SQLite, Docker Compose"
+    role: AI-assisted lab, no public repo
+    stack: "FastAPI, Redis, SQLite"
     bullets:
       - "Validated Redis cache-aside (60-second TTL, invalidation, outage fallback) in 22 API and cache tests on real Redis."
-      - "Cut median SQLite lookup 3.63 → 0.005 ms (200 queries, 100,000 synthetic rows); wrote undeployed Azure templates."
+      - "Cut median SQLite lookup 3.63 → 0.005 ms (200 queries, 100,000 synthetic rows); wrote undeployed Compose/Azure templates."
 other_projects: [triage, rag, ecom]
 
 skills:
   - label: Backend
-    items: [C#, .NET 8, ASP.NET Core, Web API, RESTful API Design, ASP.NET MVC, Dapper, Entity Framework Core (EF Core), LINQ]
+    items: [C#, .NET 8, .NET Core, ASP.NET Core, Web API, RESTful API Design, Dapper, Entity Framework Core (EF Core), LINQ]
   - label: Data
     items: [SQL Server, PostgreSQL, Stored Procedures, Database Design, Query Optimization, Indexing, Redis, MySQL]
   - label: Integration
@@ -62,14 +62,14 @@ skills:
   - label: Security
     items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC]
   - label: Testing & DevOps
-    items: [xUnit, Moq, Unit Testing, Integration Testing, Docker, IIS, CI/CD, GitHub Actions, Git, Git Flow, Logging, Observability]
+    items: [xUnit, Moq, Unit Testing, Integration Testing, Docker, Docker Compose, IIS, CI/CD, GitHub Actions, Git, Git Flow]
   - label: Engineering
-    items: [OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Debugging, Performance Optimization]
+    items: [OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Performance Optimization]
   - label: Frontend
     items: [Angular, AngularJS, TypeScript, JavaScript, RxJS, React, HTML5, CSS3, Tailwind CSS]
   - label: AI-assisted dev
     items: [LLMs, Prompt Engineering, Custom GPTs, AI Agents, Agent Skills, MCP, Claude, Cursor, GitHub Copilot, n8n, OpenClaw]
-  - label: Other stacks
-    items: [Python, FastAPI, Node.js, Java Spring Boot, Azure, AWS]
+  - label: Other
+    items: [ASP.NET MVC, Logging, Observability, Debugging, Azure, AWS, Python, FastAPI, Node.js, Java Spring Boot]
   - label: Practices
     items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]

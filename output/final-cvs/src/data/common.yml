@@ -35,16 +35,16 @@ project_catalogue:
     link: github.com/tvt987/Layout-Store
   ecom:
     name: Ecommerce-Admin
-    short: "Angular 19 search-management admin with RxJS and NgRx SignalStore"
+    short: "Angular 19 search-admin screens with RxJS and NgRx SignalStore"
     link: github.com/tvt987/Ecommerce-Admin
   rag:
     name: Retail RAG Assistant
-    short: "FastAPI RAG with Qdrant, LangChain and groundedness evaluation"
+    short: "FastAPI, TF-IDF / Qdrant, LangChain, groundedness eval"
     link: github.com/tvt987/retail-rag-assistant
   triage:
     name: Support Ticket AI Triage
-    short: "FastAPI LLM triage with validated outputs and human review"
+    short: "FastAPI LLM triage, validated outputs, rules fallback, human review"
     link: github.com/tvt987/support-ticket-ai-triage
   lab:
     name: Retail Reliability Lab
-    short: "FastAPI + Redis cache-aside, 22 tests on real Redis"
+    short: "AI-assisted, no repo: Redis cache-aside, 60 s TTL, invalidation, outage fallback, 22 tests on real Redis; SQLite lookup 3.63 → 0.005 ms; undeployed Compose/Azure templates"
