@@ -63,10 +63,10 @@ skills:
     items: [C#, .NET 8, .NET Core, ASP.NET Core, Web API, RESTful API Design, Dapper, Entity Framework Core (EF Core), LINQ]
   - label: Data
     items: [SQL Server, PostgreSQL, Stored Procedures, Database Design, Query Optimization, Indexing, Redis, MySQL, Vector Databases]
-  - label: Integration & security
+  - label: Auth & messaging
     items: [Keycloak, JWT, OAuth 2.0, OpenID Connect, Claims, RBAC, RabbitMQ, Message Queues, Polly]
   - label: Testing & DevOps
-    items: [xUnit, Unit Testing, Integration Testing, Docker, IIS, CI/CD, GitHub Actions, Git, Git Flow, Swagger/OpenAPI]
+    items: [xUnit, Unit Testing, Integration Testing, Docker, IIS, CI/CD, GitHub Actions, Git, Git Flow, Swagger/OpenAPI, Debugging]
   - label: Engineering
     items: [OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Performance Optimization]
   - label: AI-assisted dev
@@ -74,4 +74,4 @@ skills:
   - label: Other
     items: [React, ASP.NET MVC, Microservices, Logging, Observability, Python, FastAPI, Node.js, Java Spring Boot, Azure, AWS]
   - label: Practices
-    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication, Debugging]
+    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]

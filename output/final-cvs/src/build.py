@@ -5,7 +5,9 @@ Usage:
     python3 output/final-cvs/src/build.py             # all tracks, both layouts
     python3 output/final-cvs/src/build.py ai --png    # one track, with PNG previews in build/
 
-Content: data/*.yml (verified facts only). Design: template.html.j2 + styles.css.
+Content: data/*.yml (verified facts only).
+Design: designed.html.j2 + designed.css (photo version), template.html.j2 + styles.css (ATS-first version).
+The designed PDFs are also copied to resumes/ and the repository root, the paths CLAUDE.md uses for applications.
 Rendering: headless Chromium -> A4 PDF with real, selectable text and clickable links.
 The original CVs in resumes/ are never read or written by this script.
 """
@@ -57,8 +59,9 @@ def render(track: str, mode: str) -> str:
                       autoescape=True, trim_blocks=True, lstrip_blocks=True)
     env.filters["urlquote"] = lambda u: quote(u, safe=":/?#[]@!$&'()*+,;=~")
     photo = (SRC / me["photo"]).resolve()
-    return env.get_template("template.html.j2").render(
-        me=me, cv=cv, mode=mode, css=(SRC / "styles.css").read_text(encoding="utf-8"),
+    tpl, css = ("designed.html.j2", "designed.css") if mode == "designed" else ("template.html.j2", "styles.css")
+    return env.get_template(tpl).render(
+        me=me, cv=cv, mode=mode, css=(SRC / css).read_text(encoding="utf-8"),
         photo="data:image/jpeg;base64," + base64.b64encode(photo.read_bytes()).decode(),
     )
 
@@ -113,7 +116,10 @@ def main() -> None:
             fit = build_pdf(render(track, mode), pdf)
             set_metadata(pdf, me, cv)
             n = pages(pdf)
-            print(f"{'OK ' if n == 1 else '!! '}{pdf.name:38s} {n}p  {fit}")
+            print(f"{'OK ' if n == 1 and ', -' not in fit else '!! '}{pdf.name:38s} {n}p  {fit}")
+            if mode == "designed":
+                for target in (OUT.parent.parent / "resumes", OUT.parent.parent):
+                    shutil.copyfile(pdf, target / pdf.name)
             if "--png" in sys.argv:
                 for old in BUILD.glob(f"{pdf.stem}-*.png"):
                     old.unlink()

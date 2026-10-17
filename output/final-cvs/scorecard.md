@@ -8,7 +8,7 @@ These are internal panel estimates from independent reviewer agents, using the 1
 | Full Stack .NET + Angular | 65 | **86** | ~89% → **99%** | 14/15 |
 | AI Application Engineer | 60 | **88** | ~78% → **98%** | 14/15 |
 
-Round 4 applied minor fixes only and was not re-scored.
+Round 4 applied minor fixes only and was not re-scored. After scoring, the designed version was switched to the candidate's preferred header-band layout. The content is identical; the visual sub-score was not re-measured for that layout.
 
 The target of 95 was not reached. The remaining gap needs facts that only the candidate can supply: business impact at Con Cung, where the Angular 19 work was done, CI for the BFF, and a repo for the Reliability Lab. See `../next-improvements.md`.
 

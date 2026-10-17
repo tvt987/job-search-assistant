@@ -1,0 +1,105 @@
+/* Designed one-page CV: the look of the earlier resumes/ design (header band, round photo, contact chips,
+   section icons, experience timeline, project rails, skills table), rebuilt for parsers:
+   - no positioned or transformed element contains text, so the PDF content stream keeps reading order;
+   - small letter-spacing only, so headings do not extract as "W O R K";
+   - ligatures off, so "fi"/"ff" do not become single code points;
+   - body text 9.3-9.5pt, labels at least 8pt, no transparency on text. */
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  font-family: Carlito, Calibri, "Liberation Sans", Arial, sans-serif;
+  font-size: 9.4pt; line-height: 1.3; color: var(--ink);
+  font-variant-ligatures: none; font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  --ink: #111827; --muted: #374151; --rule: #D5DCE5;
+}
+body.theme-navy   { --b900:#0A2242; --b700:#153E73; --accent:#2563EB; --soft:#EDF3FE; --line:#C9DCFB; --onband:#CFE0FF; }
+body.theme-violet { --b900:#1E1A4D; --b700:#352D86; --accent:#5A4AE3; --soft:#F0EEFE; --line:#D3CDFA; --onband:#DDD8FF; }
+body.theme-teal   { --b900:#07292B; --b700:#0D4A4A; --accent:#0E9488; --soft:#E7F6F3; --line:#B9E3DB; --onband:#BFEDE5; }
+a { color: inherit; text-decoration: none; }
+.sheet { width: 210mm; }
+
+/* Header band */
+.band-top { height: 1.6mm; background: var(--accent); }
+.band { display: flex; align-items: center; gap: 7mm; padding: 4.6mm 12mm 3.8mm; background: var(--b900); color: #fff; }
+.identity { flex: 1; min-width: 0; }
+.name { font-size: 19.5pt; font-weight: 700; line-height: 1.05; letter-spacing: .3pt; text-transform: uppercase; }
+.role-line { margin-top: 1.3mm; display: flex; align-items: center; gap: 2.4mm; }
+.role-line .sep { width: 7mm; height: .7mm; border-radius: 1mm; background: var(--accent); flex: none; }
+.role-line .role { font-size: 11pt; font-weight: 700; }
+.role-line .sub { font-size: 11pt; color: #fff; }
+.tagline { margin-top: 1mm; font-size: 9pt; font-weight: 700; color: var(--onband); }
+.contacts { margin-top: 2.2mm; display: flex; flex-wrap: wrap; gap: 1mm 1.4mm; }
+.contacts .brk { flex-basis: 100%; height: 0; }
+.contact { display: flex; align-items: center; gap: 1.3mm; font-size: 8.4pt; color: #fff;
+           border: .25mm solid #9CA9BD; border-radius: 9mm; padding: .55mm 2.1mm; }
+.contact svg { width: 3mm; height: 3mm; stroke: currentColor; fill: none; stroke-width: 1.8; flex: none; }
+.photo-ring { flex: none; width: 27mm; height: 27mm; border-radius: 50%; padding: .7mm; background: #fff; }
+.photo-ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+
+/* Body and section headings */
+.body { padding: 3.2mm 12mm 0; }
+.body > section { margin-top: 2mm; }
+.body > section:first-child { margin-top: 0; }
+.sh { display: flex; align-items: center; gap: 2mm; margin-bottom: 1.4mm; }
+.sh .ic { flex: none; width: 5.4mm; height: 5.4mm; border-radius: 1.5mm; background: var(--soft); color: var(--accent);
+          display: flex; align-items: center; justify-content: center; }
+.sh .ic svg { width: 3.2mm; height: 3.2mm; stroke: currentColor; fill: none; stroke-width: 1.9; }
+.sh h2 { font-size: 9.8pt; font-weight: 700; letter-spacing: .5pt; text-transform: uppercase; color: var(--b900); white-space: nowrap; }
+.sh .ln { flex: 1; height: .35mm; background: var(--line); }
+
+.summary { font-size: 9.4pt; line-height: 1.36; background: var(--soft); border-left: 1.1mm solid var(--accent);
+           border-radius: 0 2mm 2mm 0; padding: 1.7mm 3.2mm; }
+
+/* Experience timeline: the rail is a background and the node a float, so nothing with text is positioned. */
+.job { padding-left: 6.2mm; padding-bottom: 1.2mm;
+       background: linear-gradient(var(--rule), var(--rule)) no-repeat 1.75mm 5mm / .4mm calc(100% - 5mm); }
+.job:last-child { padding-bottom: 0; }
+.job-top { display: flex; align-items: baseline; justify-content: space-between; gap: 4mm; }
+.job-title { font-size: 10.2pt; font-weight: 700; color: var(--b900); }
+.job-title::before { content: ""; float: left; width: 3.9mm; height: 3.9mm; margin: .35mm 0 0 -6.2mm;
+                     border-radius: 50%; border: 1mm solid var(--accent); background: #fff; }
+.job-title i { font-style: normal; font-weight: 400; color: var(--muted); }
+.job-title em { font-style: normal; color: var(--accent); }
+.period { flex: none; font-size: 8.4pt; font-weight: 700; color: var(--accent); background: var(--soft);
+          border-radius: 6mm; padding: .5mm 2.2mm; white-space: nowrap; }
+.job-note { margin-top: .3mm; font-size: 8.8pt; color: var(--muted); }
+.job-note .ctx { color: var(--ink); font-weight: 700; }
+
+/* Bullets: inline marker with a hanging indent instead of an absolutely positioned one. */
+ul.bul { list-style: none; margin-top: .8mm; }
+ul.bul li { font-size: 9.3pt; line-height: 1.28; margin-top: .45mm; padding-left: 3.6mm; text-indent: -3.6mm; }
+ul.bul li:first-child { margin-top: 0; }
+ul.bul li::before { content: ""; display: inline-block; width: 1.3mm; height: 1.3mm; margin: 0 2.3mm .45mm 0;
+                    vertical-align: middle; border-radius: .3mm; background: var(--accent); transform: rotate(45deg); }
+
+/* Projects */
+.proj { border-left: .9mm solid var(--line); padding: .5mm 0 .5mm 2.6mm; margin-top: .9mm; break-inside: avoid; }
+.proj:first-of-type { margin-top: 0; }
+.proj-top { display: flex; align-items: baseline; justify-content: space-between; gap: 3mm; }
+.proj-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: .4mm 2mm; }
+.proj-name { font-size: 9.7pt; font-weight: 700; color: var(--b900); }
+.proj-role { font-size: 8pt; font-weight: 700; letter-spacing: .3pt; text-transform: uppercase; color: var(--accent); }
+.proj-stack { font-size: 8.7pt; color: var(--muted); }
+.proj-stack::before { content: "· "; }
+.proj-top .link { flex: none; display: inline-flex; align-items: center; gap: 1.1mm; font-size: 8.5pt; color: var(--accent); white-space: nowrap; }
+.proj-top .link svg { width: 2.9mm; height: 2.9mm; stroke: currentColor; fill: none; stroke-width: 1.9; }
+.proj ul.bul { margin-top: .4mm; }
+.other { margin-top: 1.1mm; font-size: 8.9pt; line-height: 1.3; color: var(--ink); }
+.other b { color: var(--b900); }
+.other a { color: var(--b700); font-weight: 700; }
+
+/* Skills table */
+.skill-row { display: grid; grid-template-columns: 25mm 1fr; gap: 1.8mm; padding: .4mm 0; border-top: .25mm solid var(--rule); }
+.skill-row:first-child { border-top: none; padding-top: 0; }
+.skill-label { font-size: 8.8pt; font-weight: 700; color: var(--b900); }
+.skill-items { font-size: 8.9pt; line-height: 1.28; }
+
+/* Education and languages strip */
+.cards { border: .25mm solid var(--rule); border-radius: 2mm; background: #FCFDFF; padding: .8mm 2.8mm; }
+.card { display: flex; align-items: baseline; gap: 2.2mm; padding: .3mm 0; }
+.card .ct { flex: none; width: 23mm; display: flex; align-items: center; gap: 1.5mm; }
+.card .ct svg { width: 3.1mm; height: 3.1mm; stroke: var(--accent); fill: none; stroke-width: 1.9; flex: none; }
+.card .ct h3 { font-size: 8.2pt; font-weight: 700; letter-spacing: .3pt; text-transform: uppercase; color: var(--muted); }
+.card .val { font-size: 9pt; }
+.card .val b { color: var(--b900); }

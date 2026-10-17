@@ -1,11 +1,11 @@
-# Final QA run 2026-10-17T09:21Z on the delivered files
+# Final QA run 2026-10-17T14:23Z on the delivered files
 # Command: python3 output/final-cvs/src/qa.py
 CV_Backend_TruongVanTinh.pdf
   one A4 page                  PASS
   bullets in reading order     PASS
   no ligature code points      PASS
-  smallest text >= 9pt         PASS (9.5pt)
-  links ok                     PASS (8)
+  smallest text >= 8pt         PASS (8.0pt)
+  links ok                     PASS (9)
   photo only on designed       PASS
   forbidden claims absent      PASS 
   required facts present       PASS 
@@ -27,8 +27,8 @@ CV_FullStack_TruongVanTinh.pdf
   one A4 page                  PASS
   bullets in reading order     PASS
   no ligature code points      PASS
-  smallest text >= 9pt         PASS (9.5pt)
-  links ok                     PASS (8)
+  smallest text >= 8pt         PASS (8.0pt)
+  links ok                     PASS (9)
   photo only on designed       PASS
   forbidden claims absent      PASS 
   required facts present       PASS 
@@ -50,8 +50,8 @@ CV_AI_TruongVanTinh.pdf
   one A4 page                  PASS
   bullets in reading order     PASS
   no ligature code points      PASS
-  smallest text >= 9pt         PASS (9.5pt)
-  links ok                     PASS (8)
+  smallest text >= 8pt         PASS (8.0pt)
+  links ok                     PASS (9)
   photo only on designed       PASS
   forbidden claims absent      PASS 
   required facts present       PASS 
@@ -69,6 +69,8 @@ CV_AI_TruongVanTinh.docx
   no ligature code points      PASS
   forbidden claims absent      PASS 
   required facts present       PASS 
-original CVs in resumes/ unchanged since 6a11dc4   PASS
+resumes/ and root copies of CV_Backend_TruongVanTinh.pdf    PASS
+resumes/ and root copies of CV_FullStack_TruongVanTinh.pdf  PASS
+resumes/ and root copies of CV_AI_TruongVanTinh.pdf         PASS
 
 ALL CHECKS PASSED

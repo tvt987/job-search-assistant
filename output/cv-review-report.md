@@ -21,14 +21,14 @@ Related files:
 - **ATS-first PDF** for portals and multinational ATS uploads (LinkedIn, Greenhouse, Workday and similar).
 - **DOCX** when a recruiter asks for Word or wants to edit the CV.
 
-All nine files are one A4 page, with body text at 10pt and nothing smaller than 9.5pt. Rebuild with:
+All nine files are one A4 page. The designed PDFs use the header-band design the candidate preferred (bullets 9.3pt, labels at least 8pt); the ATS-first PDFs and DOCX use 10pt body text and nothing below 9.5pt. Rebuild with:
 ```
 python3 output/final-cvs/src/build.py
 node output/final-cvs/src/build_docx.js
 python3 output/final-cvs/src/qa.py
 ```
 
-The original CVs in `resumes/` were not modified.
+The designed PDFs are also copied to `resumes/` and the repository root, the paths `CLAUDE.md` uses for applications, so those always hold the final version. The original CVs remain in git history (commit `5e8e9db`).
 
 ## Positioning
 
@@ -63,7 +63,9 @@ The original CVs in `resumes/` were not modified.
    - Exact keyword forms (".NET Core", "RESTful API Design", "Retrieval-Augmented Generation").
    - The employer name is kept separate from its description.
 5. **Design.**
-   - Removed the random bold fragments, faded colours and icons.
+   - The designed version keeps the candidate's preferred layout: header band, round photo, contact chips, section icons, experience timeline, project rails and a skills table.
+   - It was rebuilt so parsers read it correctly: no positioned element holds text (bullets stay under their job), headings are not letter-spaced, ligatures are off, and there is no faded text.
+   - Removed the random bold fragments of the originals.
    - Added a clear hierarchy (name, role, keyword line, sections) with one accent colour per track and high contrast.
    - The photo appears only in the designed version.
 6. **Nothing dropped.** Every skill and experience item in the original CVs appears in the new ones. Projects not featured on a track are kept in an "Other projects" line, and the remaining skills are regrouped (for example "Other stacks", "Practices").
@@ -112,10 +114,10 @@ All checks passed on the delivered files (`final-cvs/qa-results.txt`):
 - one A4 page;
 - bullets in reading order;
 - no ligatures;
-- minimum font 9.5pt;
+- minimum font 9.5pt in the ATS-first files, 8pt labels and 9.3pt bullets in the designed files;
 - all 8 links present;
 - photo only on the designed version;
 - no retired claims;
 - required verified facts present;
 - each DOCX renders to one page;
-- `resumes/` unchanged.
+- `resumes/` and the root copies identical to the final designed PDFs.
