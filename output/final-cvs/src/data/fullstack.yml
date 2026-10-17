@@ -34,7 +34,7 @@ experience:
 
 projects:
   - key: ecom
-    role: Admin screens, shared codebase
+    role: Frontend development
     stack: "Angular 19, TypeScript, RxJS"
     bullets:
       - "Built responsive Angular 19 admin screens in a shared e-commerce admin codebase, with search, create and update flows on authenticated APIs."
@@ -71,7 +71,7 @@ skills:
     items: [OOP, SOLID, Design Patterns, Dependency Injection, Repository Pattern, Clean Architecture, Performance Optimization]
   - label: AI-assisted dev
     items: [LLMs, Prompt Engineering, Custom GPTs, AI Agents, Agent Skills, MCP, Claude, Cursor, GitHub Copilot, n8n, OpenClaw]
-  - label: Other stacks
-    items: [React, ASP.NET MVC, Microservices, Logging, Observability, Debugging, Python, FastAPI, Node.js, Java Spring Boot, Azure, AWS]
+  - label: Other
+    items: [React, ASP.NET MVC, Microservices, Logging, Observability, Python, FastAPI, Node.js, Java Spring Boot, Azure, AWS]
   - label: Practices
-    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication]
+    items: [Agile/Scrum, Code Review, Technical Documentation, Problem Solving, Cross-team Collaboration, Communication, Debugging]

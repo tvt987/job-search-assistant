@@ -8,7 +8,7 @@ stack: "C# · ASP.NET Core Web API · SQL Server · Dapper · Keycloak · Rabbit
 summary: >-
   Backend developer with 3+ years of software development (since Sep 2023), building .NET services at Con Cung
   since Nov 2023: voucher APIs and subscription-benefit logic on SQL Server, Dapper and stored procedures, Keycloak OAuth 2.0 /
-  OIDC security, ERP integration. Portfolio: an idempotent .NET 8 API with RabbitMQ, Polly and 42 xUnit tests.
+  OIDC security and ERP integration. Portfolio: an idempotent .NET 8 API with RabbitMQ, Polly and 42 xUnit tests.
 
 experience:
   - role: Full Stack Developer
@@ -17,7 +17,7 @@ experience:
     period: Nov 2023 – Present
     stack: ".NET, AngularJS, SQL Server, Dapper, Keycloak, Docker, IIS, n8n"
     bullets:
-      - "Delivered .NET voucher APIs (search, create, update) with permission checks, promotion validation, pre-batch Excel preview."
+      - "Delivered .NET voucher APIs (search, create, update) with permission checks, promotion validation and pre-batch Excel preview."
       - "Implemented 7 subscription benefit calculations (3/6/12-month plans), mapping stored procedures to typed Dapper models."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC auth and role-based authorization; supported Docker and IIS deployment."
       - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
@@ -52,10 +52,10 @@ projects:
       - "Cut median SQLite lookup 3.63 to 0.005 ms (200 queries, 100k synthetic rows); wrote undeployed Compose/Azure templates."
 other_projects:
   - key: triage
-    text: "FastAPI, schema-validated LLM output, PII masking, rules fallback, human review, duplicate ticket 409, CI"
+    text: "FastAPI, 5-label LLM triage, schema-validated output, contact-data masking, token-protected review, rules fallback, duplicate ticket 409, CI"
   - rag
   - key: ecom
-    text: "Angular 19 admin screens, RxJS, NgRx SignalStore"
+    text: "Angular 19 admin screens on authenticated APIs, RxJS, NgRx SignalStore"
 
 skills:
   - label: Backend

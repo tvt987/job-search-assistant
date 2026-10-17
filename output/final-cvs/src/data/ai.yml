@@ -19,10 +19,10 @@ experience:
     stack: ".NET, AngularJS, SQL Server, Dapper, Keycloak, n8n, Claude + MCP"
     bullets:
       - "Applied vector semantic search in a commerce portal, matching search queries by meaning rather than exact keywords."
-      - "Built n8n pipelines that scrape competitor data for market-intelligence reporting."
+      - "Built n8n pipelines that scrape competitor data for market intelligence."
       - "Built a Claude + Agent Skills + MCP debug-and-test loop; used Custom GPTs and prompt engineering to speed up delivery."
       - "Designed retail data structures for shelves, facings and display groups that support store-layout optimization."
-      - "Delivered AngularJS / .NET voucher workflows, 7 subscription benefit calculations, a preview tool for 4 code templates."
+      - "Delivered AngularJS / .NET voucher workflows, 7 subscription benefit calculations, plus a preview tool for 4 code templates."
       - "Implemented Keycloak JWT / OAuth 2.0 / OIDC auth and role-based authorization; supported Docker and IIS deployment."
       - "Fixed SQL Server / Dapper retrieval defects and verified ERP API request and response mappings."
   - role: Frontend Intern
@@ -59,7 +59,7 @@ other_projects:
 
 skills:
   - label: AI applications
-    items: [RAG (Retrieval-Augmented Generation), LLM Integration, Prompt Engineering, Document Parsing, Data Preprocessing, Chunking, Semantic Embeddings, TF-IDF, Vector Search, Document Retrieval, NLP (text retrieval), Output Validation, Abstention and Fallbacks, Human-in-the-loop Workflows, Data Pipelines, AI Agents, RAG Evaluation (hit rate, MRR, fact recall, groundedness)]
+    items: [RAG (Retrieval-Augmented Generation), LLM Integration, Prompt Engineering, Document Parsing, Data Preprocessing, Chunking, Semantic Embeddings, TF-IDF, Cosine Similarity, Vector Search, Document Retrieval, NLP (text retrieval), Output Validation, Abstention and Fallbacks, Human-in-the-loop Workflows, Data Pipelines, AI Agents, RAG Evaluation (hit rate, MRR, fact recall, groundedness)]
   - label: Python & tools
     items: [Python, FastAPI, Pydantic, LangChain, Qdrant, Vector Databases, SentenceTransformers, OpenAI-compatible APIs, SQLite, REST APIs, Input Validation, n8n, MCP, Claude, OpenAI (ChatGPT, Custom GPTs), Cursor, GitHub Copilot, Agent Skills]
   - label: Backend & data
